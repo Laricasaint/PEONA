@@ -1,0 +1,322 @@
+/* ===== Layout experimental: sidebar vertical (chumbo + lima) =====
+ * Usado apenas por index_sidebar.html — não altera o index.html canônico.
+ */
+body.layout-sidebar {
+  --sidebar-w: 248px;
+}
+
+body.layout-sidebar .app-shell {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+/* ---- Sidebar ---- */
+body.layout-sidebar .sidebar {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  width: var(--sidebar-w);
+  min-width: var(--sidebar-w);
+  max-width: var(--sidebar-w);
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--chumbo-serra-dourada, #2F302A);
+  color: var(--areia-caldas, #F3EEE4);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 14px 24px;
+  box-sizing: border-box;
+  z-index: 50;
+  scrollbar-width: thin;
+}
+
+body.layout-sidebar .sidebar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 4px 6px 18px;
+  border-bottom: 1px solid rgba(243, 238, 228, 0.14);
+  margin-bottom: 14px;
+}
+
+body.layout-sidebar .sidebar-brand .logo-img {
+  height: 28px;
+  max-width: 150px;
+}
+
+body.layout-sidebar .sidebar-brand .hub-titles {
+  min-width: 0;
+  width: 100%;
+}
+
+body.layout-sidebar .sidebar-brand .header-title,
+body.layout-sidebar .sidebar-brand .hub-titles h1 {
+  font-size: 17px;
+  font-weight: 650;
+  line-height: 1.25;
+  color: var(--areia-caldas, #F3EEE4);
+}
+
+body.layout-sidebar .sidebar-brand .header-subtitle,
+body.layout-sidebar .sidebar-brand .hero-desc {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(243, 238, 228, 0.72);
+}
+
+/* Abas verticais */
+body.layout-sidebar .sidebar .tabs-bar {
+  position: static;
+  width: 100%;
+  min-height: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: block;
+  flex: 1 1 auto;
+}
+
+body.layout-sidebar .sidebar .tabs-inner.tabs,
+body.layout-sidebar .sidebar .tabs-navigation {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 4px;
+  overflow: visible;
+}
+
+body.layout-sidebar .sidebar .tabs .tab,
+body.layout-sidebar .sidebar .tabs button.tab {
+  width: 100%;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 11px 12px;
+  border-radius: 10px;
+  color: rgba(243, 238, 228, 0.78);
+  font-size: 13.5px;
+  font-weight: 500;
+  white-space: normal;
+  text-align: left;
+  line-height: 1.3;
+}
+
+body.layout-sidebar .sidebar .tabs .tab:hover {
+  background: rgba(243, 238, 228, 0.08);
+  color: var(--areia-caldas, #F3EEE4);
+}
+
+body.layout-sidebar .sidebar .tabs .tab.active {
+  background: var(--lima-goias, #C5E838);
+  color: var(--chumbo-serra-dourada, #2F302A);
+  font-weight: 650;
+}
+
+body.layout-sidebar .sidebar .tabs .tab.active .tab-icon {
+  stroke: var(--chumbo-serra-dourada, #2F302A);
+}
+
+body.layout-sidebar .sidebar .tab-icon {
+  width: 18px;
+  height: 18px;
+}
+
+body.layout-sidebar .sidebar-credit {
+  margin-top: auto;
+  padding: 16px 8px 6px;
+  text-align: center;
+  border: none;
+  border-top: 1px solid rgba(243, 238, 228, 0.18);
+  box-shadow: none;
+}
+
+body.layout-sidebar .sidebar-credit-title {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: var(--areia-caldas, #F3EEE4);
+}
+
+body.layout-sidebar .sidebar-credit-org {
+  margin: 4px 0 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  color: rgba(243, 238, 228, 0.62);
+}
+
+body.layout-sidebar .sidebar-credit-dot {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: rgba(243, 238, 228, 0.55);
+  vertical-align: middle;
+}
+
+/* ---- Coluna principal ---- */
+body.layout-sidebar .app-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--fundo);
+}
+
+/* Timeline só na coluna principal — centralizada no fundo areia */
+body.layout-sidebar .period-bar {
+  background: transparent;
+  border: none;
+  border-top: none;
+  border-bottom: none;
+  box-shadow: none;
+  outline: none;
+  color: var(--chumbo-serra-dourada, #2F302A);
+  padding: 12px 24px 10px;
+  position: static;
+  z-index: auto;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-kerning: normal;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+
+body.layout-sidebar .period-bar .topbar-inner,
+body.layout-sidebar .period-bar .topbar-period-block {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 4px 0;
+  box-sizing: border-box;
+  text-align: left;
+  vertical-align: top;
+}
+
+body.layout-sidebar .period-bar .timeline-scroll {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+  justify-content: initial;
+}
+
+body.layout-sidebar .period-bar .timeline-year {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--chumbo-serra-dourada, #2F302A);
+}
+
+body.layout-sidebar .period-bar .timeline-year:hover {
+  background: rgba(197, 232, 56, 0.18);
+}
+
+body.layout-sidebar .period-bar .timeline-month {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 11.5px;
+  font-weight: 400;
+  color: var(--texto-sec, #5A625C);
+}
+
+body.layout-sidebar .period-bar .timeline-year-block + .timeline-year-block {
+  border-left: none;
+}
+
+body.layout-sidebar .period-bar .timeline-segment {
+  background: #D8D3C8;
+}
+
+body.layout-sidebar .period-bar .timeline-segment.selected,
+body.layout-sidebar .period-bar .timeline-month-col.range-start .timeline-segment,
+body.layout-sidebar .period-bar .timeline-month-col.range-end .timeline-segment {
+  background: var(--lima-goias, #C5E838);
+}
+
+body.layout-sidebar .period-bar .timeline-segment.in-range {
+  background: var(--verde-araguaia, #6EB02E);
+}
+
+body.layout-sidebar .period-bar .timeline-month-col.range-start .timeline-segment::before,
+body.layout-sidebar .period-bar .timeline-month-col.range-end .timeline-segment::after {
+  background: var(--lima-goias, #C5E838);
+  border-color: var(--areia-caldas, #F3EEE4);
+}
+
+body.layout-sidebar .wrap {
+  max-width: none;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+body.layout-sidebar .wrap.dashboard-content {
+  padding-top: 22px;
+}
+
+body.layout-sidebar #tab-visao .vg-chart-main canvas,
+body.layout-sidebar .chart-box canvas {
+  display: block;
+}
+
+@media (max-width: 960px) {
+  body.layout-sidebar {
+    --sidebar-w: 212px;
+  }
+
+  body.layout-sidebar .sidebar-brand .header-title,
+  body.layout-sidebar .sidebar-brand .hub-titles h1 {
+    font-size: 15px;
+  }
+
+  body.layout-sidebar .sidebar .tabs .tab,
+  body.layout-sidebar .sidebar .tabs button.tab {
+    font-size: 12.5px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  body.layout-sidebar .app-shell {
+    flex-direction: column;
+  }
+
+  body.layout-sidebar .sidebar {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    height: auto;
+    max-height: none;
+  }
+
+  body.layout-sidebar .sidebar .tabs-inner.tabs,
+  body.layout-sidebar .sidebar .tabs-navigation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  body.layout-sidebar .sidebar .tabs .tab,
+  body.layout-sidebar .sidebar .tabs button.tab {
+    width: auto;
+    flex: 1 1 auto;
+  }
+}

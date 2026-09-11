@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acompanhamento de Provisões Técnicas — PEONA | Ipasgo Saúde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260912x" />
+  <link rel="stylesheet" href="css/styles-sidebar.css?v=20260912x" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="vendor/katex/katex.min.css" />
+  <script src="vendor/katex/katex.min.js"></script>
+</head>
+<body class="layout-sidebar">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+      <div class="sidebar-brand">
+        <img
+          class="logo-img"
+          src="assets/logo-ipasgo-saude.png"
+          alt="ipasgo Saúde"
+          width="132"
+          height="30"
+        />
+        <div class="hub-titles">
+          <h1 class="header-title">Acompanhamento da PEONA</h1>
+          <p class="header-subtitle hero-desc">Provisão para Eventos Ocorridos e Não Avisados</p>
+        </div>
+      </div>
+
+      <nav class="tabs-bar" aria-label="Navegação do painel">
+        <div class="tabs-inner tabs tabs-navigation" role="tablist">
+          <button type="button" class="tab active" data-tab="visao" role="tab" aria-selected="true">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+            <span>Visão Geral</span>
+          </button>
+          <button type="button" class="tab" data-tab="mh" role="tab" aria-selected="false">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/><path d="M10 9h4"/><path d="M12 7v4"/></svg>
+            <span>Médico-Hospitalar</span>
+          </button>
+          <button type="button" class="tab" data-tab="odonto" role="tab" aria-selected="false">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.8 0-5 2.4-5 5.4 0 2.2 1 4.2 2.2 6.1.7 1.1 1.3 2.2 1.5 3.5.2 1.1.5 2.5 1.3 2.5s1.1-1.4 1.3-2.5c.2-1.3.8-2.4 1.5-3.5C16 12.6 17 10.6 17 8.4 17 5.4 14.8 3 12 3z"/><path d="M10 9.5c.5.6 1.2 1 2 1s1.5-.4 2-1"/></svg>
+            <span>Odontológico</span>
+          </button>
+          <button type="button" class="tab" data-tab="runoff" role="tab" aria-selected="false">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/><path d="M14 7h4v4"/></svg>
+            <span>Run-Off Puro</span>
+          </button>
+          <button type="button" class="tab" data-tab="consistencia" role="tab" aria-selected="false">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Consistência</span>
+          </button>
+          <button type="button" class="tab" data-tab="rumoipasgo" role="tab" aria-selected="false">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/></svg>
+            <span>RUMO × IPASGO</span>
+          </button>
+          <button type="button" class="tab" data-tab="metodologia" role="tab" aria-selected="false">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <span>Metodologia</span>
+          </button>
+          <button type="button" class="tab" data-tab="input" role="tab" aria-selected="false">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+            <span>Input</span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="sidebar-credit">
+        <p class="sidebar-credit-title">Controle Atuarial</p>
+        <p class="sidebar-credit-org">GEPIN <span class="sidebar-credit-dot" aria-hidden="true"></span> COINI</p>
+      </div>
+
+      <!-- Controles nativos ocultos (estado / acessibilidade) -->
+      <div class="sr-only-filters" aria-hidden="true">
+        <select id="filtro-ano" tabindex="-1"></select>
+        <select id="filtro-modo" tabindex="-1">
+          <option value="mes">Mês específico</option>
+          <option value="intervalo">Intervalo de meses</option>
+          <option value="ano">Ano completo</option>
+        </select>
+        <select id="filtro-mes" tabindex="-1"></select>
+        <input type="month" id="filtro-ini" tabindex="-1" />
+        <input type="month" id="filtro-fim" tabindex="-1" />
+        <div id="box-mes"></div>
+        <div id="box-ini" class="hidden"></div>
+        <div id="box-fim" class="hidden"></div>
+        <span id="period-selected-label"></span>
+      </div>
+    </aside>
+
+    <div class="app-main">
+      <header class="period-bar" id="topbar">
+        <div class="topbar-inner topbar-period-block">
+          <div class="timeline-scroll" id="timeline-scroll">
+            <div class="timeline" id="timeline" role="group" aria-label="Linha do tempo de competências"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="wrap dashboard-content">
+    <div id="alerta-periodo" class="alert-item erro hidden"></div>
+
+    <!-- VISÃO GERAL -->
+    <section class="panel active" id="tab-visao">
+      <div class="kpis-main" id="vg-kpis"></div>
+
+      <div class="grid-charts vg-grid-charts">
+        <div class="card card-evo">
+          <div class="card-head vg-head">
+            <div class="vg-title-block section-heading">
+              <h2 class="section-title" id="vg-chart-title">Evolução mensal da PEONA</h2>
+              <p class="card-sub section-subtitle" id="vg-evo-sub">—</p>
+            </div>
+            <div class="vg-controls">
+              <div class="vg-seg" id="vg-evo-seg" role="group" aria-label="Segmento da série">
+                <button type="button" class="active" data-evo="total">Consolidado</button>
+                <button type="button" data-evo="mh">MH</button>
+                <button type="button" data-evo="od">Odonto</button>
+              </div>
+              <div class="vg-seg" id="vg-chart-mode" role="group" aria-label="Tipo de gráfico">
+                <button type="button" class="active" data-chart-mode="valor">Valor</button>
+                <button type="button" data-chart-mode="variacao">Variação</button>
+              </div>
+            </div>
+          </div>
+          <div class="chart-box vg-chart-main" id="vg-evolucao-wrap">
+            <canvas id="vg-evolucao"></canvas>
+            <canvas id="vg-variacao" class="hidden"></canvas>
+            <div id="vg-evolucao-empty" class="chart-empty hidden"></div>
+          </div>
+        </div>
+
+        <div class="card vg-comp-card">
+          <div class="vg-title-block section-heading section-heading--ipe">
+            <h2 class="section-title">Composição assistencial <span class="tip" title="PEONA consolidada = Médico-Hospitalar + Odontológico (saídas do R)">?</span></h2>
+            <p class="card-sub section-subtitle">Distribuição da PEONA por segmento</p>
+          </div>
+          <div id="vg-composicao"></div>
+        </div>
+      </div>
+
+      <div class="card vg-periodo-card hidden" id="vg-periodo-card">
+        <div class="vg-title-block section-heading">
+          <h2 class="section-title">Valores mensais da PEONA</h2>
+          <p class="card-sub section-subtitle">Posição da provisão em cada competência selecionada</p>
+        </div>
+        <div class="vg-periodo-resumo" id="vg-periodo-resumo"></div>
+        <div class="vg-periodo-notas" id="vg-periodo-notas"></div>
+        <div class="vg-periodo-table-wrap">
+          <table class="vg-periodo-table" id="vg-periodo-table">
+            <thead>
+              <tr>
+                <th>Competência</th>
+                <th>PEONA consolidada</th>
+                <th>Médico-Hospitalar</th>
+                <th>Odontológico</th>
+                <th>Variação R$</th>
+                <th>Variação %</th>
+                <th>Participação MH</th>
+                <th>Participação Odontológica</th>
+              </tr>
+            </thead>
+            <tbody id="vg-periodo-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card vg-explica" id="vg-explica-card">
+        <div class="vg-title-block section-heading">
+          <h2 class="section-title">O que a PEONA representa nesta competência?</h2>
+          <p class="card-sub section-subtitle">Estimativa dos eventos ocorridos e ainda não avisados</p>
+        </div>
+        <div id="vg-explica"></div>
+      </div>
+
+      <div class="card vg-repr hidden" id="vg-repr-card">
+        <div class="vg-title-block section-heading">
+          <h2 class="section-title">Indicador de representatividade</h2>
+          <p class="card-sub section-subtitle">Relação entre a PEONA e a base média de avisos por segmento</p>
+        </div>
+        <div id="vg-repr"></div>
+      </div>
+    </section>
+
+    <!-- MH -->
+    <section class="panel" id="tab-mh">
+      <header class="mh-page-head">
+        <div class="mh-seg-bar">
+          <span class="mh-seg-label">PEONA Estimada</span>
+          <div class="mh-page-controls">
+            <div class="mh-janela-seg" id="mh-janela-seg" role="group" aria-label="Janela de run-off">
+              <button type="button" class="active" data-mh-janela="6">6 meses</button>
+              <button type="button" data-mh-janela="12">12 meses</button>
+            </div>
+            <button type="button" class="btn-fonte-tec" id="mh-btn-fonte" aria-haspopup="dialog" aria-controls="fonte-drawer">
+              Fonte técnica
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="mh-kpis" id="mh-kpis"></div>
+
+      <details class="mh-block mh-block--fluxo mh-block--collapsible" id="mh-bloco-matematica" open>
+        <summary class="mh-tri-head">
+          <h3 class="mh-tri-title">Fluxo resumido da memória de cálculo</h3>
+        </summary>
+        <div class="mh-block-body" id="mh-memoria"></div>
+      </details>
+
+      <details class="mh-block mh-block--tri mh-block--collapsible" id="mh-bloco-triangulo" open>
+        <summary class="mh-tri-head">
+          <h3 class="mh-tri-title">Triângulo de desenvolvimento</h3>
+        </summary>
+        <div class="mh-block-body" id="mh-triangulo"></div>
+      </details>
+
+      <details class="mh-block mh-block--tri mh-block--collapsible hidden" id="mh-bloco-ocorrencia" hidden open>
+        <summary class="mh-tri-head">
+          <h3 class="mh-tri-title">Abertura por Data de Ocorrência</h3>
+        </summary>
+        <div class="mh-block-body" id="mh-triangulo-ocorrencia"></div>
+      </details>
+
+      <section class="mh-block" id="mh-bloco-fatores">
+        <h3 class="mh-block-title">Fatores <span class="mh-math-inline">M<sub>k</sub></span></h3>
+        <div id="mh-fatores"></div>
+      </section>
+    </section>
+
+    <!-- ODONTO -->
+    <section class="panel" id="tab-odonto">
+      <header class="mh-page-head mh-page-head--od">
+        <div class="mh-seg-bar">
+          <span class="mh-seg-label">PEONA Estimada</span>
+          <div class="mh-page-controls">
+            <div class="mh-janela-seg" id="od-janela-seg" role="group" aria-label="Janela de run-off">
+              <button type="button" class="active" data-od-janela="6">6 meses</button>
+              <button type="button" data-od-janela="12">12 meses</button>
+            </div>
+            <button type="button" class="btn-fonte-tec" id="od-btn-fonte" aria-haspopup="dialog" aria-controls="fonte-drawer">
+              Fonte técnica
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="mh-kpis" id="od-kpis"></div>
+
+      <details class="mh-block mh-block--fluxo mh-block--collapsible" id="od-bloco-matematica" open>
+        <summary class="mh-tri-head">
+          <h3 class="mh-tri-title">Fluxo resumido da memória de cálculo</h3>
+        </summary>
+        <div class="mh-block-body" id="od-memoria"></div>
+      </details>
+
+      <details class="mh-block mh-block--tri mh-block--collapsible" id="od-bloco-triangulo" open>
+        <summary class="mh-tri-head">
+          <h3 class="mh-tri-title">Triângulo de desenvolvimento</h3>
+        </summary>
+        <div class="mh-block-body" id="od-triangulo"></div>
+      </details>
+
+      <details class="mh-block mh-block--tri mh-block--collapsible hidden" id="od-bloco-ocorrencia" hidden open>
+        <summary class="mh-tri-head">
+          <h3 class="mh-tri-title">Abertura por Data de Ocorrência</h3>
+        </summary>
+        <div class="mh-block-body" id="od-triangulo-ocorrencia"></div>
+      </details>
+
+      <section class="mh-block" id="od-bloco-fatores">
+        <h3 class="mh-block-title">Fatores <span class="mh-math-inline">M<sub>k</sub></span></h3>
+        <div id="od-fatores"></div>
+      </section>
+    </section>
+
+    <!-- RUN-OFF PURO -->
+    <section class="panel" id="tab-runoff">
+      <header class="mh-page-head">
+        <div class="mh-seg-bar">
+          <span class="mh-seg-label">Run-Off Puro</span>
+          <div class="mh-page-controls">
+            <div class="mh-janela-seg" id="ro-seg-toggle" role="group" aria-label="Segmento">
+              <button type="button" class="active" data-ro-seg="MH">Médico-hospitalar</button>
+              <button type="button" data-ro-seg="OD">Odontológico</button>
+            </div>
+            <div class="mh-janela-seg" id="ro-janela-seg" role="group" aria-label="Janela de run-off">
+              <button type="button" class="active" data-ro-janela="6">6 meses</button>
+              <button type="button" data-ro-janela="12">12 meses</button>
+            </div>
+            <button type="button" class="btn-fonte-tec" id="ro-btn-fonte" aria-haspopup="dialog" aria-controls="fonte-drawer">
+              Fonte técnica
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="mh-kpis" id="ro-kpis"></div>
+
+      <details class="mh-block mh-block--tri mh-block--collapsible" id="ro-bloco-triangulo" open>
+        <summary class="mh-tri-head">
+          <h3 class="mh-tri-title">Triângulo por Data de Aviso — diagonal do run-off</h3>
+        </summary>
+        <div class="mh-block-body" id="ro-triangulo"></div>
+      </details>
+
+      <details class="mh-block mh-block--fluxo mh-block--collapsible" id="ro-bloco-matematica" open>
+        <summary class="mh-tri-head">
+          <h3 class="mh-tri-title">Soma da diagonal</h3>
+        </summary>
+        <div class="mh-block-body" id="ro-memoria"></div>
+      </details>
+    </section>
+
+    <!-- CONSISTÊNCIA -->
+    <section class="panel" id="tab-consistencia">
+      <header class="cs-page-head">
+        <div class="cs-seg-bar" role="group" aria-label="Segmento do teste">
+          <span class="cs-seg-label">Teste de Consistência</span>
+          <div class="cs-page-controls">
+            <div class="cs-janela-seg" id="cs-seg-toggle" role="group" aria-label="Segmento">
+              <button type="button" class="active" data-consist-seg="MH">Médico-hospitalar</button>
+              <button type="button" data-consist-seg="OD">Odontológico</button>
+            </div>
+            <div class="cs-janela-seg" id="cs-janela-seg" role="group" aria-label="Janela do teste">
+              <button type="button" class="active" data-consist-janela="6">6 meses</button>
+              <button type="button" data-consist-janela="12">12 meses</button>
+            </div>
+            <button type="button" class="btn-fonte-tec" id="cs-btn-fonte" aria-haspopup="dialog" aria-controls="fonte-drawer">
+              Fonte técnica
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="mh-kpis" id="cs-resultado"></div>
+
+      <section class="cs-block" id="cs-bloco-graficos">
+        <div class="cs-chart-toolbar">
+          <div class="seg-toggle" id="cs-chart-toggle" role="group" aria-label="Tipo de gráfico">
+            <button type="button" class="active" data-consist-chart="mensal">Variação mensal</button>
+            <button type="button" data-consist-chart="media">Variação média</button>
+          </div>
+        </div>
+        <div class="cs-chart-box"><canvas id="consist-chart"></canvas></div>
+      </section>
+
+      <section class="cs-block" id="cs-bloco-tabela">
+        <h3>Histórico por competência</h3>
+        <div id="consist-tabela"></div>
+      </section>
+    </section>
+
+    <!-- RUMO × IPASGO -->
+    <section class="panel" id="tab-rumoipasgo">
+      <div class="mh-kpis" id="ri-kpis"></div>
+
+      <section class="ri-block">
+        <h3>PEONA RUMO × PEONA IPASGO</h3>
+        <div class="chart-box ri-chart">
+          <canvas id="ri-evolucao"></canvas>
+          <div id="ri-evolucao-empty" class="chart-empty hidden"></div>
+        </div>
+      </section>
+
+      <section class="ri-block">
+        <h3>Variação IPASGO × RUMO</h3>
+        <div class="chart-box ri-chart ri-chart-var">
+          <canvas id="ri-variacao"></canvas>
+          <div id="ri-variacao-empty" class="chart-empty hidden"></div>
+        </div>
+      </section>
+
+      <section class="ri-block">
+        <h3>Leitura das variações</h3>
+        <ul class="ri-leitura" id="ri-leitura"></ul>
+      </section>
+
+      <section class="ri-block">
+        <h3>Histórico mensal</h3>
+        <div id="ri-tabela" class="ri-table-wrap"></div>
+      </section>
+    </section>
+
+    <!-- METODOLOGIA -->
+    <section class="panel" id="tab-metodologia">
+      <div class="mh-kpis meto-kpis">
+        <div class="mh-kpi">
+          <div class="mh-kpi-head"><span class="lbl">O que é</span></div>
+          <div class="val">PEONA</div>
+          <div class="sub">Provisão para Eventos Ocorridos e Não Avisados — cobre eventos já ocorridos e ainda não avisados à operadora.</div>
+        </div>
+        <div class="mh-kpi">
+          <div class="mh-kpi-head"><span class="lbl">Objetivo</span></div>
+          <div class="val">Solvência</div>
+          <div class="sub">Garantir recursos suficientes para obrigações assistenciais, conforme RN 574/2023 e NTAP 001/2025.</div>
+        </div>
+        <div class="mh-kpi">
+          <div class="mh-kpi-head"><span class="lbl">Periodicidade</span></div>
+          <div class="val">Mensal</div>
+          <div class="sub">Cálculo e constituição mensais, com segregação Médico-Hospitalar e Odontológica.</div>
+        </div>
+      </div>
+
+      <section class="ri-block">
+        <h3>Formação do cálculo <span class="meto-code">peona_ipasgo_v2</span></h3>
+        <ol class="meto-steps">
+          <li>Montagem do triângulo híbrido (histórico fixo até out/2025 + automático a partir de nov/2025).</li>
+          <li>Percentual médio ponderado de atraso <span class="meto-math">M̄<sub>kj</sub></span> na janela <span class="meto-math">n</span>.</li>
+          <li>Índice de PEONA <span class="meto-math">I<sub>k</sub> = Σ<sub>j</sub> M̄<sub>kj</sub></span>.</li>
+          <li>Base de cálculo <span class="meto-math">B<sub>k</sub></span> = média dos totais avisados na janela.</li>
+          <li><span class="meto-math">PEONA<sub>k</sub> = I<sub>k</sub> × B<sub>k</sub></span>; Total = MH + OD.</li>
+        </ol>
+      </section>
+
+      <section class="ri-block">
+        <h3>Teste de consistência</h3>
+        <p class="meto-text">Compara a PEONA estimada ao run-off puro observado a posteriori. Histórico lido da planilha até set/2025; a partir de out/2025, cálculo automático em janelas 6m e 12m.</p>
+      </section>
+
+      <section class="ri-block">
+        <h3>RUMO × IPASGO</h3>
+        <p class="meto-text">Comparativo mensal das apurações PEONA RUMO e PEONA IPASGO, lido da aba <em>Garantias Ipasgo x RUMO</em> do Acompanhamento das Provisões. Diferença = IPASGO − RUMO; variação = (IPASGO ÷ RUMO) − 1.</p>
+      </section>
+
+      <section class="ri-block">
+        <h3>Limitações</h3>
+        <ul class="meto-list" id="meto-obs"></ul>
+      </section>
+
+      <details class="ri-block meto-tech">
+        <summary>Processamento, fontes de dados e arquivos técnicos</summary>
+        <p class="meto-text meto-tech-note">Conteúdo operacional para a área técnica. Não destinado à apresentação de Diretoria.</p>
+        <p class="meto-text">
+          O cálculo é executado pelo script <code>peona_ipasgo_v2.R</code>, a partir de
+          <code>PEONA_INPUT.xlsx</code>. Após a execução, sincronize os arquivos de saída para este painel
+          e reabra a página.
+        </p>
+        <p class="meto-text">Última sincronização: <strong id="meto-sync">—</strong></p>
+        <div class="export-row">
+          <a href="data/peona_serie_pbi.csv" download>Série (CSV R)</a>
+          <a href="data/peona_consistencia_pbi.csv" download>Consistência (CSV R)</a>
+          <a href="data/peona_triangulo_pbi.csv" download>Triângulo (CSV R)</a>
+          <a href="data/peona_resumo_mes_pbi.csv" download>Resumo do mês (CSV R)</a>
+          <a href="data/PEONA_Resultado_R.xlsx" download>Resultado Excel R</a>
+          <button type="button" id="btn-export-filtro">Exportar competência filtrada (CSV)</button>
+        </div>
+      </details>
+    </section>
+
+    <!-- INPUT -->
+    <section class="panel" id="tab-input">
+      <div class="mh-kpis" id="input-resumo"></div>
+
+      <section class="ri-block" aria-labelledby="input-arquivo-title">
+        <h3 id="input-arquivo-title">Arquivo processado</h3>
+        <div id="input-arquivo"></div>
+      </section>
+
+      <section class="ri-block" aria-labelledby="input-fontes-title">
+        <h3 id="input-fontes-title">Fontes e bases consideradas</h3>
+        <div id="input-fontes"></div>
+      </section>
+
+      <section class="ri-block" aria-labelledby="input-params-title">
+        <h3 id="input-params-title">Parâmetros aplicados pelo R</h3>
+        <div id="input-params"></div>
+      </section>
+
+      <section class="ri-block" aria-labelledby="input-obs-title">
+        <h3 id="input-obs-title">Observações registradas na aba OBS</h3>
+        <div id="input-obs"></div>
+      </section>
+
+      <section class="ri-block" aria-labelledby="input-tech-title">
+        <h3 id="input-tech-title">Informações técnicas adicionais</h3>
+        <div id="input-tech"></div>
+      </section>
+    </section>
+
+    <footer>Ipasgo Saúde · Acompanhamento de Provisões Técnicas (PEONA)</footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="fonte-drawer-backdrop hidden" id="fonte-drawer-backdrop" hidden></div>
+  <aside
+    class="fonte-drawer hidden"
+    id="fonte-drawer"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="fonte-drawer-title"
+    hidden
+  >
+    <header class="fonte-drawer-head">
+      <h2 id="fonte-drawer-title">Fonte técnica</h2>
+      <button type="button" class="fonte-drawer-close" id="fonte-drawer-close" aria-label="Fechar painel">
+        <span aria-hidden="true">×</span>
+      </button>
+    </header>
+    <div class="fonte-drawer-body" id="fonte-drawer-body" tabindex="0"></div>
+  </aside>
+
+  <script src="data/peona_data.js"></script>
+  <script src="js/app.js?v=20260912u"></script>
+</body>
+</html>

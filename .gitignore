@@ -1,0 +1,88 @@
+# =============================================================================
+# Repositório público: versiona apenas o painel HTML (UI + scripts de sync).
+# Dados sensíveis, planilhas e motor R ficam somente na máquina local.
+# =============================================================================
+
+# Ambientes e caches
+.venv/
+venv/
+env/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.Rhistory
+.RData
+.Rproj.user/
+
+# Temporários Office / sistema
+~$*
+**/~$*
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.log
+*.bak
+*.swp
+*.orig
+
+# IDE / editor
+.idea/
+.vscode/
+.cursor/
+*.code-workspace
+
+# Pastas locais de teste / resíduos
+peona_painel/_out/
+peona_painel/_tmp/
+peona_painel/_scratch/
+peona_app/
+_APAGAR*/
+_vazio_apagar/
+_lixo*/
+*.zip
+*.tar.gz
+
+# -----------------------------------------------------------------------------
+# Motor de cálculo e entradas (não publicar)
+# -----------------------------------------------------------------------------
+/peona_ipasgo_v2.R
+/peona_rumo_x_ipasgo.R
+/PEONA_INPUT.xlsx
+/Acompanhamento das Provisões.xlsx
+/~$PEONA_INPUT.xlsx
+/~$Acompanhamento das Provisões.xlsx
+*.xlsx
+*.xls
+*.rds
+
+# Saídas R espelhadas na raiz
+/historico_consistencia.csv
+/historico_consistencia.rds
+/historico_consistencia.json
+/historico_consistencia_auditoria.jsonl
+/historico_backups/
+/peona_rumo_x_ipasgo_pbi.csv
+/peona_rumo_x_ipasgo_meta.json
+/peona_serie_pbi.csv
+/peona_resumo_mes_pbi.csv
+/peona_consistencia_pbi.csv
+/peona_triangulo_pbi.csv
+/peona_data.js
+/peona_data.json
+/PEONA_Resultado_R.xlsx
+
+# -----------------------------------------------------------------------------
+# Payload do painel (números / histórico) — gera localmente com sync_dados.py
+# -----------------------------------------------------------------------------
+peona_painel/data/*
+!peona_painel/data/.gitkeep
+!peona_painel/data/historico_backups/
+peona_painel/data/historico_backups/*
+!peona_painel/data/historico_backups/.gitkeep
+peona_painel/_validacao_r.log
+peona_painel/_*.py
+peona_painel/**/~$*
