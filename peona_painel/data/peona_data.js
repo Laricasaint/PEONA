@@ -43,25 +43,11 @@ window.PEONA_DATA = {
     "janela_metodologica_principal": 6,
     "titulo_painel": "Painel Executivo de Provisões Técnicas — PEONA",
     "alertas_sync": [],
-    "obs": [
-      "valores com aviso em julho/24 foi feito =MÉDIA(últimos6meses)*(1+14,1%), pois não tinhamos dados",
-      "a partir da migração pro facplan, base parou de mostrar separação em MH e Odontológico, então foi feito feito pela proporção histórica (0,984747397799371 MH e 0,0152526022006295 Odonto) até dez/24",
-      "de jan/25 a mar/25, como ainda não tem a separação na base, está sendo feito conforme a proporção de despesa MH e despesa Odonto do próprio mês conforme constar no balancete pra ficar próximo da contabilidade",
-      "abr/25 a jul/25 a contabilidade pediu antes de fechar o balancete, então voltamos a usar a proporção histórica",
-      "agosto/25 usamos a separação feita pelo rubens na base v15 [caminho local]",
-      "set/25 usamos a separação feita pelo rubens na base v16 [caminho local]",
-      "out/25 usamos a separação feita pelo rubens na base v17 [caminho local]",
-      "dadas as divergencias com o contabil, agosto, setebro, outubro, novembro e dezembro retificamos as bases",
-      "para agosto/24 e setembro/24 usamos apenas a despesa (sem abatimento de glosa e coparticipação, que não costavam no balancete)",
-      "para outubro/24 e novembro/24 usamos despesa menos glosa (sem abater copart, que não estava lançada no balancete)",
-      "para fevereiro/24 usamos despesa menos glosa (sem abater copart, que não estava lançada no balancete",
-      "*** é possível que as glosas e coparts não contabilizadas nos meses de agosto a novembro sejam contabilizadas retroativamente nas competências futuras, gerando diferenças entre a base e o contábil)"
-    ],
+    "obs": [],
     "input_resumo": {
       "arquivo": "PEONA_INPUT.xlsx",
       "caminho": "PEONA_INPUT.xlsx",
       "abas": [
-        "OBS",
         "Dados",
         "MH 12",
         "Odonto 12",

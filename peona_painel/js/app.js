@@ -1700,59 +1700,6 @@
     return `<span class="input-status-dot ${ok ? "ok" : "ausente"}" aria-hidden="true"></span>`;
   }
 
-  function categorizarObs(texto) {
-    const t = String(texto).toLowerCase();
-    if (/não tinhamos|nao tinhamos|indispon|não tem a separação|nao tem a separação|parou de mostrar/.test(t))
-      return "indisponibilidade de dados";
-    if (/m[ée]dia\(|propor[cç][aã]o|estimat|\*\*\*/.test(t))
-      return "critério de estimativa";
-    if (/migra[cç][aã]o|base v\d|facplan|retificamos as bases/.test(t))
-      return "mudança de base";
-    if (/separação|separacao|mh e odonto|m[ée]dico-hospitalar e odontol/.test(t))
-      return "separação Médico-Hospitalar e Odontológico";
-    if (/balancete|cont[aá]bil|glosa|copart/.test(t))
-      return "fechamento contábil";
-    if (/rubens|operacional/.test(t)) return "alteração operacional";
-    return null;
-  }
-
-  function tituloObs(texto) {
-    const t = String(texto).trim();
-    const m = t.match(
-      /^((?:de\s+)?[a-zçãéíóúà./0-9\s-]{3,40}?)(?:,|\s+a\s+|\s+usamos|\s+foi|\s+como|\s+a\s+partir)/i
-    );
-    if (m) {
-      const short = m[1].replace(/\s+/g, " ").trim();
-      if (short.length >= 4 && short.length <= 48) return short;
-    }
-    const head = t.slice(0, 72).replace(/\s+/g, " ").trim();
-    return head.length < t.length ? `${head}…` : head;
-  }
-
-  function periodoObs(texto) {
-    const t = String(texto);
-    const meses =
-      t.match(
-        /(?:jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)[a-z]*\/?\s*\d{2,4}/gi
-      ) || [];
-    if (meses.length) return [...new Set(meses.map((x) => x.replace(/\s+/g, "")))].join(" · ");
-    const anos = t.match(/20\d{2}/g);
-    if (anos) return [...new Set(anos)].join(" · ");
-    return "Período não identificado no texto";
-  }
-
-  function anoObs(texto) {
-    const t = String(texto).toLowerCase();
-    const hits = [];
-    if (/2024|\/24\b|(?:jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)[a-z]*\/24\b|fevereiro\/24|julho\/24|agosto\/24|setembro\/24|outubro\/24|novembro\/24|dezembro\/24|dez\/24/.test(t))
-      hits.push(2024);
-    if (/2025|\/25\b|(?:jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)[a-z]*\/25\b|janeiro\/25|mar\/25|abr\/25|jul\/25|agosto\/25|set\/25|out\/25|novembro\/25|dezembro\/25/.test(t))
-      hits.push(2025);
-    if (/2026|\/26\b/.test(t)) hits.push(2026);
-    if (!hits.length) return "Geral";
-    return String(Math.min(...hits));
-  }
-
   function renderInput() {
     const meta = D().meta;
     const ir = meta.input_resumo || {};
@@ -1772,7 +1719,6 @@
       { nome: "MH 6", rotulo: "MH 6" },
       { nome: "Odonto 6", rotulo: "Odonto 6" },
       { nome: "Teste Consistência", rotulo: "Teste Consistência" },
-      { nome: "OBS", rotulo: "OBS" },
     ];
     const ausentes = obrigatorias.filter((a) => !temAba(abas, a.nome));
     const comps = meta.competencias_disponiveis || [];
@@ -1957,53 +1903,6 @@
           </tr>`;
         })
         .join("")}</tbody></table></div>`;
-
-    const obsList = meta.obs || [];
-    if (!obsList.length) {
-      $("#input-obs").innerHTML = `<p class="muted">Nenhuma observação registrada na aba OBS.</p>`;
-    } else {
-      const porAno = {};
-      obsList.forEach((texto, idx) => {
-        const ano = anoObs(texto);
-        if (!porAno[ano]) porAno[ano] = [];
-        porAno[ano].push({ texto, idx, titulo: tituloObs(texto), periodo: periodoObs(texto), cat: categorizarObs(texto) });
-      });
-      const anos = Object.keys(porAno).sort((a, b) => {
-        if (a === "Geral") return 1;
-        if (b === "Geral") return -1;
-        return Number(a) - Number(b);
-      });
-      const usarAcordeao = anos.length > 1 || obsList.length > 6;
-      const bloco = (itens) =>
-        itens
-          .map(
-            (o) => `<article class="input-obs-item">
-          <div class="input-obs-meta">
-            <span class="input-obs-periodo">${esc(o.periodo)}</span>
-            ${o.cat ? `<span class="input-obs-cat">${esc(o.cat)}</span>` : ""}
-          </div>
-          <h4 class="input-obs-titulo">${esc(o.titulo)}</h4>
-          <p class="input-obs-texto">${esc(o.texto)}</p>
-        </article>`
-          )
-          .join("");
-
-      if (usarAcordeao) {
-        $("#input-obs").innerHTML = anos
-          .map((ano, i) => {
-            const aberto = i === anos.length - 1 ? " open" : "";
-            return `<details class="input-obs-ano"${aberto}>
-            <summary>${esc(ano === "Geral" ? "Sem ano identificado" : ano)} <span class="muted">(${porAno[ano].length})</span></summary>
-            <div class="input-obs-list">${bloco(porAno[ano])}</div>
-          </details>`;
-          })
-          .join("");
-      } else {
-        $("#input-obs").innerHTML = `<div class="input-obs-list">${bloco(
-          anos.flatMap((a) => porAno[a])
-        )}</div>`;
-      }
-    }
 
     $("#input-tech").innerHTML = `
       <div class="input-tech-grid">
@@ -2435,7 +2334,6 @@
       segmentoLabel,
       peonaTexName,
       despesaVar,
-      obsShow,
       janelaSeg,
       consPeona,
     } = ctx;
@@ -2560,11 +2458,6 @@
       <section class="fonte-sec">
         <h3>Janela</h3>
         <p>Run-off de <strong>${esc(janelaTxt)}</strong> (${esc(aba)}). ${esc(janelaSeg)}.</p>
-      </section>
-      <section class="fonte-sec">
-        <h3>Observações</h3>
-        <ul>${obsShow.map((o) => `<li>${esc(o)}</li>`).join("") || "<li>Sem observações filtradas para este segmento.</li>"}</ul>
-        <p class="muted">Texto da aba OBS da PEONA_INPUT. Histórico fixo até o corte; após o corte o R complementa o triângulo pela base Dados.</p>
       </section>`;
   }
 
@@ -2579,7 +2472,6 @@
       peonaFluxoLabel,
       peonaTexName,
       accentColor,
-      obsRe,
       consFields,
       chartKey,
       despesaVar,
@@ -2806,9 +2698,6 @@
         </div>
       </div>`;
 
-    const obs = (D().meta.obs || []).filter((o) => obsRe.test(o));
-    const obsShow = obs.length ? obs : D().meta.obs || [];
-
     state.fonteTecnica[prefix] = {
       html: buildFonteTecnicaHtml({
         pack,
@@ -2827,7 +2716,6 @@
         segmentoLabel: tituloFixo,
         peonaTexName,
         despesaVar,
-        obsShow,
         janelaSeg: `Segmentação ativa: janela de ${janelaTxt}`,
         consPeona: consR?.[consFields.peona],
       }),
@@ -2847,7 +2735,6 @@
       peonaFluxoLabel: "PEONA MH",
       peonaTexName: "MH",
       accentColor: "#007940",
-      obsRe: /mh|m[ée]dico|hospitalar|propor[cç][aã]o|balancete|glosa|facplan|rubens|separação|separacao/i,
       consFields: {
         peona: "peona_mh",
         avisado: "total_avisado_mh",
@@ -2874,7 +2761,6 @@
       peonaFluxoLabel: "PEONA OD",
       peonaTexName: "OD",
       accentColor: "#C4A018",
-      obsRe: /odonto|odent|dental|dente|glosa|facplan|rubens|separação|separacao|propor[cç][aã]o/i,
       consFields: {
         peona: "peona_od",
         avisado: "total_avisado_od",
@@ -4320,13 +4206,6 @@
 
   /* ---------- Metodologia ---------- */
   function renderMetodologia() {
-    const obs = D().meta.obs || [];
-    const el = $("#meto-obs");
-    if (el) {
-      el.innerHTML = obs.length
-        ? obs.map((o) => `<li>${esc(o)}</li>`).join("")
-        : `<li>Nenhuma limitação registrada na base.</li>`;
-    }
     const sync = $("#meto-sync");
     if (sync) sync.textContent = D().meta.gerado_em || "—";
   }

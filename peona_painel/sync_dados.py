@@ -340,12 +340,8 @@ def ler_planilha_input() -> dict:
 
     wb = load_workbook(ARQUIVO_INPUT, data_only=True)
 
-    # OBS
+    # OBS da planilha não entram no painel (notas internas)
     obs = []
-    if "OBS" in wb.sheetnames:
-        for row in wb["OBS"].iter_rows(values_only=True):
-            if row and row[0]:
-                obs.append(str(row[0]))
 
     # Resultado
     resultado_aba = []
@@ -410,7 +406,7 @@ def ler_planilha_input() -> dict:
     input_resumo = {
         "arquivo": str(ARQUIVO_INPUT.name),
         "caminho": str(ARQUIVO_INPUT),
-        "abas": wb.sheetnames,
+        "abas": [a for a in wb.sheetnames if str(a).strip().upper() != "OBS"],
         "registros_dados_aprox": n_dados,
         "parametros_r": {
             "MES_CORTE_HISTORICO": "2025-10-01",
