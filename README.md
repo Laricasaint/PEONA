@@ -2,16 +2,16 @@
 
 Painel HTML para acompanhamento gerencial da PEONA.
 
-> **Repositório público:** versiona apenas a interface do painel (`peona_painel/`).  
-> Planilhas, saídas numéricas e o script R de cálculo **não** entram no Git (ficam locais).
+**Site:** [GitHub Pages](https://laricasaint.github.io/PEONA/)
 
-## Abrir o painel
+> O repositório versiona a interface do painel e o payload `data/peona_data.js` (necessário para o Pages).  
+> Planilhas e o script R de cálculo **não** entram no Git.
+
+## Abrir localmente
 
 ```text
 peona_painel/index_sidebar.html
 ```
-
-Com dados locais já sincronizados em `peona_painel/data/`.
 
 ## Estrutura versionada
 
@@ -19,35 +19,13 @@ Com dados locais já sincronizados em `peona_painel/data/`.
 |------|--------|
 | `peona_painel/index_sidebar.html` | Interface (layout sidebar) |
 | `peona_painel/css/` · `js/` · `assets/` | Estilos, lógica e logo |
-| `peona_painel/vendor/katex/` | Fórmulas (Metodologia / Consistência) |
-| `peona_painel/sync_dados.py` | Gera `data/peona_data.js` a partir do R e das planilhas locais |
-| `peona_painel/parse_*.py` · `historico_consistencia.py` | Parsers e histórico imutável |
-| `peona_painel/Iniciar_Painel_PEONA.bat` | Atalho local: R → sync → abre o HTML |
+| `peona_painel/vendor/katex/` | Fórmulas |
+| `peona_painel/data/peona_data.js` | Payload exibido no painel / Pages |
+| `peona_painel/sync_dados.py` | Gera `peona_data.js` a partir do R e das planilhas locais |
+| `.github/workflows/pages.yml` | Deploy automático no GitHub Pages |
 
-## Dados locais (não versionados)
+## Atualizar dados e republicar
 
-Na raiz do projeto (máquina local):
-
-- `peona_ipasgo_v2.R` — motor de cálculo
-- `PEONA_INPUT.xlsx` — triângulos, projeções, consistência ≥ out/2025
-- `Acompanhamento das Provisões.xlsx` — consistência 12m e RUMO × IPASGO
-
-Em `peona_painel/data/` (gerado pelo sync):
-
-- `peona_data.js` — payload exibido no painel
-- CSVs / histórico de consistência / RUMO × IPASGO
-
-## Atualizar dados (local)
-
-```bat
-peona_painel\Iniciar_Painel_PEONA.bat
-```
-
-Ou:
-
-```bash
-Rscript --vanilla peona_ipasgo_v2.R
-python peona_painel/sync_dados.py
-```
-
-Depois abra `peona_painel/index_sidebar.html`.
+1. Rode o sync local (`Iniciar_Painel_PEONA.bat` ou `python peona_painel/sync_dados.py`).
+2. Commit de `peona_painel/data/peona_data.js`.
+3. Push em `master` — o Actions publica o Pages.

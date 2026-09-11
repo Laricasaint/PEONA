@@ -76,10 +76,11 @@ _lixo*/
 /PEONA_Resultado_R.xlsx
 
 # -----------------------------------------------------------------------------
-# Payload do painel (números / histórico) — gera localmente com sync_dados.py
+# Payload do painel — CSVs/histórico locais; peona_data.js vai ao Pages
 # -----------------------------------------------------------------------------
 peona_painel/data/*
 !peona_painel/data/.gitkeep
+!peona_painel/data/peona_data.js
 !peona_painel/data/historico_backups/
 peona_painel/data/historico_backups/*
 !peona_painel/data/historico_backups/.gitkeep
