@@ -128,8 +128,33 @@ body.layout-sidebar .sidebar .tab-icon {
   height: 18px;
 }
 
-body.layout-sidebar .sidebar-credit {
+body.layout-sidebar .sidebar-foot {
   margin-top: auto;
+  padding-top: 12px;
+}
+
+body.layout-sidebar .sidebar-export {
+  display: block;
+  width: 100%;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--lima-goias, #C5E838);
+  color: var(--chumbo-serra-dourada, #2F302A);
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+body.layout-sidebar .sidebar-export:hover {
+  filter: brightness(0.96);
+}
+
+body.layout-sidebar .sidebar-credit {
+  margin-top: 0;
   padding: 16px 8px 6px;
   text-align: center;
   border: none;

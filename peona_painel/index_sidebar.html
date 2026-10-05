@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css?v=20260912x" />
-  <link rel="stylesheet" href="css/styles-sidebar.css?v=20260912x" />
+  <link rel="stylesheet" href="css/styles-sidebar.css?v=20261001a" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <link rel="stylesheet" href="vendor/katex/katex.min.css" />
   <script src="vendor/katex/katex.min.js"></script>
@@ -67,9 +67,14 @@
         </div>
       </nav>
 
-      <div class="sidebar-credit">
-        <p class="sidebar-credit-title">Controle Atuarial</p>
-        <p class="sidebar-credit-org">GEPIN <span class="sidebar-credit-dot" aria-hidden="true"></span> COINI</p>
+      <div class="sidebar-foot">
+        <button type="button" class="sidebar-export" id="btn-export-relatorio">
+          Exportar relatório
+        </button>
+        <div class="sidebar-credit">
+          <p class="sidebar-credit-title">Controle Atuarial</p>
+          <p class="sidebar-credit-org">GEPIN <span class="sidebar-credit-dot" aria-hidden="true"></span> COINI</p>
+        </div>
       </div>
 
       <!-- Controles nativos ocultos (estado / acessibilidade) -->
@@ -495,5 +500,6 @@
 
   <script src="data/peona_data.js?v=20261005"></script>
   <script src="js/app.js?v=20260912v"></script>
+  <script src="js/relatorio.js?v=20261001h"></script>
 </body>
 </html>
