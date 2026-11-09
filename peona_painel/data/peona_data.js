@@ -1,13 +1,12 @@
 window.PEONA_DATA = {
   "meta": {
-    "gerado_em": "2026-10-01T12:15:19",
+    "gerado_em": "2026-11-09T14:43:03",
     "fonte_r": "saídas do R",
     "arquivo_script": "peona_ipasgo_v2.R",
     "arquivo_input": "PEONA_INPUT.xlsx",
-    "mes_apuracao": "ago/2026",
-    "competencia_mais_recente": "2026-08-01",
+    "mes_apuracao": "set/2026",
+    "competencia_mais_recente": "2026-09-01",
     "competencias_disponiveis": [
-      "2024-02-01",
       "2024-03-01",
       "2024-04-01",
       "2024-05-01",
@@ -37,7 +36,8 @@ window.PEONA_DATA = {
       "2026-05-01",
       "2026-06-01",
       "2026-07-01",
-      "2026-08-01"
+      "2026-08-01",
+      "2026-09-01"
     ],
     "n_competencias_6m": 31,
     "janela_metodologica_principal": 6,
@@ -57,7 +57,7 @@ window.PEONA_DATA = {
         "Resultado",
         "Real x Projetada"
       ],
-      "registros_dados_aprox": 1082,
+      "registros_dados_aprox": 1112,
       "parametros_r": {
         "MES_CORTE_HISTORICO": "2025-10-01",
         "MES_CORTE_CONSISTENCIA": "2025-09-01",
@@ -75,36 +75,29 @@ window.PEONA_DATA = {
       ]
     },
     "consistencia_relatorio": {
-      "peona_processada": "2026-08-01",
-      "competencia_teste": "2026-05-01",
+      "peona_processada": "2026-09-01",
+      "competencia_teste": "2026-06-01",
       "janelas": [
         "6m",
         "12m"
       ],
-      "novos_incluidos": 4,
-      "segmentos_incluidos": [
-        "MH",
-        "OD"
-      ],
-      "registros_historicos_preservados": 52,
+      "novos_incluidos": 0,
+      "segmentos_incluidos": [],
+      "registros_historicos_preservados": 60,
       "registros_historicos_alterados": 0,
       "registros_historicos_excluidos": 0,
       "duplicidades_encontradas": 4,
-      "total_historico": 56,
+      "total_historico": 60,
       "seed": {
         "acao": "ja_existia",
-        "n_registros": 52,
+        "n_registros": 60,
         "mensagem": "Histórico já existe — carga inicial não sobrescrita."
       },
       "mensagens": [
-        "MH 2026-07-01 (6m): janela complementar incluida no historico.",
-        "OD 2026-07-01 (6m): janela complementar incluida no historico.",
-        "MH 2026-07-01 (12m): janela complementar incluida no historico.",
-        "OD 2026-07-01 (12m): janela complementar incluida no historico.",
-        "MH 2026-05-01 (6m): Teste ja existente - historico preservado.",
-        "MH 2026-05-01 (12m): Teste ja existente - historico preservado.",
-        "OD 2026-05-01 (6m): Teste ja existente - historico preservado.",
-        "OD 2026-05-01 (12m): Teste ja existente - historico preservado."
+        "MH 2026-06-01 (6m): Teste ja existente - historico preservado.",
+        "MH 2026-06-01 (12m): Teste ja existente - historico preservado.",
+        "OD 2026-06-01 (6m): Teste ja existente - historico preservado.",
+        "OD 2026-06-01 (12m): Teste ja existente - historico preservado."
       ],
       "erros": []
     }
@@ -112,45 +105,27 @@ window.PEONA_DATA = {
   "resumo_mes": [
     {
       "tipo": "MH",
-      "media_nm": 202012038.956667,
-      "fator_peona": 1.456822544,
-      "peona": 294295692.52,
-      "mes_apuracao": "ago/2026"
+      "media_nm": 207220564.48,
+      "fator_peona": 1.4471709585,
+      "peona": 299883582.918333,
+      "mes_apuracao": "set/2026"
     },
     {
       "tipo": "OD",
-      "media_nm": 2467462.28166662,
-      "fator_peona": 1.2982521282,
-      "peona": 3203388.15833328,
-      "mes_apuracao": "ago/2026"
+      "media_nm": 2459912.14666667,
+      "fator_peona": 1.2383460581,
+      "peona": 3046222.51,
+      "mes_apuracao": "set/2026"
     },
     {
       "tipo": "TOTAL",
       "media_nm": null,
       "fator_peona": null,
-      "peona": 297499080.678333,
-      "mes_apuracao": "ago/2026"
+      "peona": 302929805.428333,
+      "mes_apuracao": "set/2026"
     }
   ],
   "serie": [
-    {
-      "competencia": "2024-02-01",
-      "total_avisado": 191632293.65,
-      "media_nm": 174888882.33,
-      "fator_peona": 0.640793,
-      "peona": 112067630.36,
-      "Mk0": 0.514709,
-      "Mk1": 0.378179,
-      "Mk2": 0.072557,
-      "Mk3": 0.024073,
-      "Mk4": 0.007132,
-      "Mk5": 0.003351,
-      "variacao_r": null,
-      "variacao_pct": null,
-      "tipo": "MH",
-      "janela": 6,
-      "competencia_label": "fev/2024"
-    },
     {
       "competencia": "2024-03-01",
       "total_avisado": 198577421.59,
@@ -163,8 +138,8 @@ window.PEONA_DATA = {
       "Mk3": 0.022143,
       "Mk4": 0.006985,
       "Mk5": 0.003464,
-      "variacao_r": -566750.96,
-      "variacao_pct": -0.0050572227,
+      "variacao_r": null,
+      "variacao_pct": null,
       "tipo": "MH",
       "janela": 6,
       "competencia_label": "mar/2024"
@@ -675,39 +650,39 @@ window.PEONA_DATA = {
     },
     {
       "competencia": "2026-08-01",
-      "total_avisado": 220307734.55,
-      "media_nm": 202012038.96,
-      "fator_peona": 1.456823,
-      "peona": 294295692.52,
-      "Mk0": 0.008435,
-      "Mk1": 0.628054,
-      "Mk2": 0.292458,
-      "Mk3": 0.051697,
-      "Mk4": 0.008017,
-      "Mk5": 0.011339,
-      "variacao_r": 10256056.95,
-      "variacao_pct": 0.0361078373,
+      "total_avisado": 227255470.1,
+      "media_nm": 203169994.88,
+      "fator_peona": 1.459163,
+      "peona": 296458183.72,
+      "Mk0": 0.008304,
+      "Mk1": 0.626886,
+      "Mk2": 0.293205,
+      "Mk3": 0.051942,
+      "Mk4": 0.008271,
+      "Mk5": 0.011392,
+      "variacao_r": 12418548.15,
+      "variacao_pct": 0.0437211804,
       "tipo": "MH",
       "janela": 6,
       "competencia_label": "ago/2026"
     },
     {
-      "competencia": "2024-02-01",
-      "total_avisado": 2917516.44,
-      "media_nm": 2512067.2,
-      "fator_peona": 0.614772,
-      "peona": 1544349.54,
-      "Mk0": 0.597409,
-      "Mk1": 0.293856,
-      "Mk2": 0.050993,
-      "Mk3": 0.027561,
-      "Mk4": 0.014661,
-      "Mk5": 0.015521,
-      "variacao_r": null,
-      "variacao_pct": null,
-      "tipo": "OD",
+      "competencia": "2026-09-01",
+      "total_avisado": 205040293.04,
+      "media_nm": 207220564.48,
+      "fator_peona": 1.447171,
+      "peona": 299883582.92,
+      "Mk0": 0.010376,
+      "Mk1": 0.62895,
+      "Mk2": 0.294509,
+      "Mk3": 0.046575,
+      "Mk4": 0.00847,
+      "Mk5": 0.01112,
+      "variacao_r": 3425399.2,
+      "variacao_pct": 0.0115544093,
+      "tipo": "MH",
       "janela": 6,
-      "competencia_label": "fev/2024"
+      "competencia_label": "set/2026"
     },
     {
       "competencia": "2024-03-01",
@@ -721,8 +696,8 @@ window.PEONA_DATA = {
       "Mk3": 0.02486,
       "Mk4": 0.01391,
       "Mk5": 0.014482,
-      "variacao_r": 47407.31,
-      "variacao_pct": 0.0306972657,
+      "variacao_r": null,
+      "variacao_pct": null,
       "tipo": "OD",
       "janela": 6,
       "competencia_label": "mar/2024"
@@ -1233,39 +1208,39 @@ window.PEONA_DATA = {
     },
     {
       "competencia": "2026-08-01",
-      "total_avisado": 3349129.66,
-      "media_nm": 2467462.28,
-      "fator_peona": 1.298252,
-      "peona": 3203388.16,
-      "Mk0": 0.036478,
-      "Mk1": 0.733481,
-      "Mk2": 0.166809,
-      "Mk3": 0.03664,
-      "Mk4": 0.01173,
-      "Mk5": 0.014863,
-      "variacao_r": 440324.84,
-      "variacao_pct": 0.1593611102,
+      "total_avisado": 2697962.09,
+      "media_nm": 2358934.35,
+      "fator_peona": 1.239311,
+      "peona": 2923454.3,
+      "Mk0": 0.038156,
+      "Mk1": 0.750501,
+      "Mk2": 0.160933,
+      "Mk3": 0.038109,
+      "Mk4": 0.008889,
+      "Mk5": 0.003412,
+      "variacao_r": 160390.98,
+      "variacao_pct": 0.0580482456,
       "tipo": "OD",
       "janela": 6,
       "competencia_label": "ago/2026"
     },
     {
-      "competencia": "2024-08-01",
-      "total_avisado": 212349541.24,
-      "media_nm": 190838604.74,
-      "fator_peona": 0.697893,
-      "peona": 133184995.55,
-      "Mk0": 0.484039,
-      "Mk1": 0.386898,
-      "Mk2": 0.092239,
-      "Mk3": 0.024695,
-      "Mk4": 0.008209,
-      "Mk5": 0.003919,
-      "variacao_r": null,
-      "variacao_pct": null,
-      "tipo": "MH",
-      "janela": 12,
-      "competencia_label": "ago/2024"
+      "competencia": "2026-09-01",
+      "total_avisado": 2541348.2,
+      "media_nm": 2459912.15,
+      "fator_peona": 1.238346,
+      "peona": 3046222.51,
+      "Mk0": 0.037112,
+      "Mk1": 0.754548,
+      "Mk2": 0.157558,
+      "Mk3": 0.038016,
+      "Mk4": 0.009196,
+      "Mk5": 0.00357,
+      "variacao_r": 122768.21,
+      "variacao_pct": 0.0419942298,
+      "tipo": "OD",
+      "janela": 6,
+      "competencia_label": "set/2026"
     },
     {
       "competencia": "2024-09-01",
@@ -1279,8 +1254,8 @@ window.PEONA_DATA = {
       "Mk3": 0.02823,
       "Mk4": 0.009913,
       "Mk5": 0.004474,
-      "variacao_r": 13875448.73,
-      "variacao_pct": 0.1041817712,
+      "variacao_r": null,
+      "variacao_pct": null,
       "tipo": "MH",
       "janela": 12,
       "competencia_label": "set/2024"
@@ -1683,39 +1658,39 @@ window.PEONA_DATA = {
     },
     {
       "competencia": "2026-08-01",
-      "total_avisado": 220307734.55,
-      "media_nm": 194595494.29,
-      "fator_peona": 1.47454,
-      "peona": 286938840.79,
-      "Mk0": 0.005623,
-      "Mk1": 0.61863,
-      "Mk2": 0.300589,
-      "Mk3": 0.056304,
-      "Mk4": 0.008446,
-      "Mk5": 0.010407,
-      "variacao_r": 3537950.4,
-      "variacao_pct": 0.0124839071,
+      "total_avisado": 227255470.1,
+      "media_nm": 195174472.25,
+      "fator_peona": 1.475706,
+      "peona": 288020086.39,
+      "Mk0": 0.005563,
+      "Mk1": 0.618051,
+      "Mk2": 0.300954,
+      "Mk3": 0.056418,
+      "Mk4": 0.008577,
+      "Mk5": 0.010437,
+      "variacao_r": 4619196.0,
+      "variacao_pct": 0.0162991584,
       "tipo": "MH",
       "janela": 12,
       "competencia_label": "ago/2026"
     },
     {
-      "competencia": "2024-08-01",
-      "total_avisado": 3289049.65,
-      "media_nm": 2883208.76,
-      "fator_peona": 0.688376,
-      "peona": 1984731.03,
-      "Mk0": 0.525127,
-      "Mk1": 0.344151,
-      "Mk2": 0.08174,
-      "Mk3": 0.026188,
-      "Mk4": 0.011787,
-      "Mk5": 0.011006,
-      "variacao_r": null,
-      "variacao_pct": null,
-      "tipo": "OD",
+      "competencia": "2026-09-01",
+      "total_avisado": 205040293.04,
+      "media_nm": 197045508.89,
+      "fator_peona": 1.465279,
+      "peona": 288726689.49,
+      "Mk0": 0.006935,
+      "Mk1": 0.620571,
+      "Mk2": 0.300743,
+      "Mk3": 0.053533,
+      "Mk4": 0.008466,
+      "Mk5": 0.009751,
+      "variacao_r": 706603.09,
+      "variacao_pct": 0.0024533119,
+      "tipo": "MH",
       "janela": 12,
-      "competencia_label": "ago/2024"
+      "competencia_label": "set/2026"
     },
     {
       "competencia": "2024-09-01",
@@ -1729,8 +1704,8 @@ window.PEONA_DATA = {
       "Mk3": 0.02948,
       "Mk4": 0.012981,
       "Mk5": 0.010557,
-      "variacao_r": 227715.08,
-      "variacao_pct": 0.1147334688,
+      "variacao_r": null,
+      "variacao_pct": null,
       "tipo": "OD",
       "janela": 12,
       "competencia_label": "set/2024"
@@ -2133,59 +2108,42 @@ window.PEONA_DATA = {
     },
     {
       "competencia": "2026-08-01",
-      "total_avisado": 3349129.66,
-      "media_nm": 2349292.17,
-      "fator_peona": 1.29558,
-      "peona": 3043695.94,
-      "Mk0": 0.037632,
-      "Mk1": 0.723341,
-      "Mk2": 0.175681,
-      "Mk3": 0.043019,
-      "Mk4": 0.009813,
-      "Mk5": 0.010513,
-      "variacao_r": 165389.14,
-      "variacao_pct": 0.0574605682,
+      "total_avisado": 2697962.09,
+      "media_nm": 2295028.2,
+      "fator_peona": 1.265226,
+      "peona": 2903729.01,
+      "Mk0": 0.038522,
+      "Mk1": 0.731848,
+      "Mk2": 0.172871,
+      "Mk3": 0.043925,
+      "Mk4": 0.008308,
+      "Mk5": 0.004526,
+      "variacao_r": 25422.21,
+      "variacao_pct": 0.0088323504,
       "tipo": "OD",
       "janela": 12,
       "competencia_label": "ago/2026"
+    },
+    {
+      "competencia": "2026-09-01",
+      "total_avisado": 2541348.2,
+      "media_nm": 2313133.54,
+      "fator_peona": 1.251537,
+      "peona": 2894972.29,
+      "Mk0": 0.039429,
+      "Mk1": 0.741599,
+      "Mk2": 0.164432,
+      "Mk3": 0.0415,
+      "Mk4": 0.008627,
+      "Mk5": 0.004413,
+      "variacao_r": -8756.72,
+      "variacao_pct": -0.0030156817,
+      "tipo": "OD",
+      "janela": 12,
+      "competencia_label": "set/2026"
     }
   ],
   "consolidado_6m": [
-    {
-      "competencia": "2024-02-01",
-      "competencia_label": "fev/2024",
-      "peona_mh": 112067630.36,
-      "peona_od": 1544349.54,
-      "peona_total": 113611979.9,
-      "fator_mh": 0.640793,
-      "fator_od": 0.614772,
-      "media_mh": 174888882.33,
-      "media_od": 2512067.2,
-      "total_avisado_mh": 191632293.65,
-      "total_avisado_od": 2917516.44,
-      "variacao_r_mh": null,
-      "variacao_r_od": null,
-      "variacao_pct_mh": null,
-      "variacao_pct_od": null,
-      "Mk_mh": {
-        "Mk0": 0.514709,
-        "Mk1": 0.378179,
-        "Mk2": 0.072557,
-        "Mk3": 0.024073,
-        "Mk4": 0.007132,
-        "Mk5": 0.003351
-      },
-      "Mk_od": {
-        "Mk0": 0.597409,
-        "Mk1": 0.293856,
-        "Mk2": 0.050993,
-        "Mk3": 0.027561,
-        "Mk4": 0.014661,
-        "Mk5": 0.015521
-      },
-      "variacao_r_total": null,
-      "variacao_pct_total": null
-    },
     {
       "competencia": "2024-03-01",
       "competencia_label": "mar/2024",
@@ -2198,10 +2156,10 @@ window.PEONA_DATA = {
       "media_od": 2614991.04,
       "total_avisado_mh": 198577421.59,
       "total_avisado_od": 3116686.73,
-      "variacao_r_mh": -566750.96,
-      "variacao_r_od": 47407.31,
-      "variacao_pct_mh": -0.0050572227,
-      "variacao_pct_od": 0.0306972657,
+      "variacao_r_mh": null,
+      "variacao_r_od": null,
+      "variacao_pct_mh": null,
+      "variacao_pct_od": null,
       "Mk_mh": {
         "Mk0": 0.530224,
         "Mk1": 0.365436,
@@ -2218,8 +2176,8 @@ window.PEONA_DATA = {
         "Mk4": 0.01391,
         "Mk5": 0.014482
       },
-      "variacao_r_total": -519343.650000006,
-      "variacao_pct_total": -0.004571205
+      "variacao_r_total": null,
+      "variacao_pct_total": null
     },
     {
       "competencia": "2024-04-01",
@@ -3204,37 +3162,72 @@ window.PEONA_DATA = {
     {
       "competencia": "2026-08-01",
       "competencia_label": "ago/2026",
-      "peona_mh": 294295692.52,
-      "peona_od": 3203388.16,
-      "peona_total": 297499080.68,
-      "fator_mh": 1.456823,
-      "fator_od": 1.298252,
-      "media_mh": 202012038.96,
-      "media_od": 2467462.28,
-      "total_avisado_mh": 220307734.55,
-      "total_avisado_od": 3349129.66,
-      "variacao_r_mh": 10256056.95,
-      "variacao_r_od": 440324.84,
-      "variacao_pct_mh": 0.0361078373,
-      "variacao_pct_od": 0.1593611102,
+      "peona_mh": 296458183.72,
+      "peona_od": 2923454.3,
+      "peona_total": 299381638.02000004,
+      "fator_mh": 1.459163,
+      "fator_od": 1.239311,
+      "media_mh": 203169994.88,
+      "media_od": 2358934.35,
+      "total_avisado_mh": 227255470.1,
+      "total_avisado_od": 2697962.09,
+      "variacao_r_mh": 12418548.15,
+      "variacao_r_od": 160390.98,
+      "variacao_pct_mh": 0.0437211804,
+      "variacao_pct_od": 0.0580482456,
       "Mk_mh": {
-        "Mk0": 0.008435,
-        "Mk1": 0.628054,
-        "Mk2": 0.292458,
-        "Mk3": 0.051697,
-        "Mk4": 0.008017,
-        "Mk5": 0.011339
+        "Mk0": 0.008304,
+        "Mk1": 0.626886,
+        "Mk2": 0.293205,
+        "Mk3": 0.051942,
+        "Mk4": 0.008271,
+        "Mk5": 0.011392
       },
       "Mk_od": {
-        "Mk0": 0.036478,
-        "Mk1": 0.733481,
-        "Mk2": 0.166809,
-        "Mk3": 0.03664,
-        "Mk4": 0.01173,
-        "Mk5": 0.014863
+        "Mk0": 0.038156,
+        "Mk1": 0.750501,
+        "Mk2": 0.160933,
+        "Mk3": 0.038109,
+        "Mk4": 0.008889,
+        "Mk5": 0.003412
       },
-      "variacao_r_total": 10696381.790000021,
-      "variacao_pct_total": 0.037295262
+      "variacao_r_total": 12578939.130000055,
+      "variacao_pct_total": 0.0438592077
+    },
+    {
+      "competencia": "2026-09-01",
+      "competencia_label": "set/2026",
+      "peona_mh": 299883582.92,
+      "peona_od": 3046222.51,
+      "peona_total": 302929805.43,
+      "fator_mh": 1.447171,
+      "fator_od": 1.238346,
+      "media_mh": 207220564.48,
+      "media_od": 2459912.15,
+      "total_avisado_mh": 205040293.04,
+      "total_avisado_od": 2541348.2,
+      "variacao_r_mh": 3425399.2,
+      "variacao_r_od": 122768.21,
+      "variacao_pct_mh": 0.0115544093,
+      "variacao_pct_od": 0.0419942298,
+      "Mk_mh": {
+        "Mk0": 0.010376,
+        "Mk1": 0.62895,
+        "Mk2": 0.294509,
+        "Mk3": 0.046575,
+        "Mk4": 0.00847,
+        "Mk5": 0.01112
+      },
+      "Mk_od": {
+        "Mk0": 0.037112,
+        "Mk1": 0.754548,
+        "Mk2": 0.157558,
+        "Mk3": 0.038016,
+        "Mk4": 0.009196,
+        "Mk5": 0.00357
+      },
+      "variacao_r_total": 3548167.4099999666,
+      "variacao_pct_total": 0.0118516534
     }
   ],
   "consistencia": [
@@ -5684,127 +5677,37 @@ window.PEONA_DATA = {
     },
     {
       "competencia": "2026-07-01",
-      "competencia_label": "07/2026",
       "competencia_teste": "2026-07-01",
       "competencia_peona": "2026-10-01",
-      "tipo": "MH",
-      "segmento": "MH",
-      "janela": "6m",
-      "janela_meses": 6,
-      "janela_bloco": "6m",
-      "peona_estimada": 284039635.56666666,
-      "peona_real": 218382510.56000012,
-      "peona": 284039635.56666666,
-      "runoff_puro": 218382510.56000012,
-      "diferenca": 65657125.00666654,
-      "diferenca_pct": 0.3006519379152728,
-      "variacao_mensal": 0.3006519379152728,
-      "variacao_media": 0.10431063764749045,
-      "media_completa": true,
-      "status_mensal_ans": "dentro",
-      "status_mensal_rotulo": "Dentro do parâmetro ANS",
-      "status_media_ans": "dentro",
-      "status_media_rotulo": "Dentro do parâmetro ANS",
-      "status": "consistente",
-      "status_rotulo": "Consistente",
-      "status_mensagem": "Os dois critérios ANS estão dentro dos limites.",
-      "resultado_consolidado": "Consistente",
-      "status_mensal_exibicao": "Consistente",
-      "status_media_exibicao": "Consistente",
-      "pendente": false,
-      "periodo_resumo": false,
-      "regime": "atual_6m",
-      "fonte_regra": "peona_input",
-      "fonte_arquivo": "PEONA_INPUT.xlsx",
-      "fonte_aba": "Teste Consistência",
-      "fonte": "PEONA_INPUT.xlsx / Teste Consistência · bloco 6m",
-      "fonte_detalhe": "PEONA_INPUT · Teste Consistência · metodologia 6 meses.",
-      "ans_mensal_inf": -0.2453,
-      "ans_mensal_sup": 0.3094,
-      "ans_media_inf": -0.1078,
-      "ans_media_sup": 0.1362,
-      "mudanca_metodologica": "2025-10-01",
-      "data_inclusao": "2026-10-01T12:15:19",
-      "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
-      "bloqueado": true,
-      "fingerprint": "c4afaf90726dcc759224ef9aeced226bdfd1464ebee6f6509f7ad122bf36b6a1"
-    },
-    {
-      "competencia": "2026-07-01",
       "competencia_label": "07/2026",
-      "competencia_teste": "2026-07-01",
-      "competencia_peona": "2026-10-01",
-      "tipo": "OD",
-      "segmento": "OD",
-      "janela": "6m",
-      "janela_meses": 6,
-      "janela_bloco": "6m",
-      "peona_estimada": 2763063.3200000008,
-      "peona_real": 3259238.4699997096,
-      "peona": 2763063.3200000008,
-      "runoff_puro": 3259238.4699997096,
-      "diferenca": -496175.14999970887,
-      "diferenca_pct": -0.15223652843044444,
-      "variacao_mensal": -0.15223652843044444,
-      "variacao_media": 7.98170397925925e-05,
-      "media_completa": true,
-      "status_mensal_ans": "dentro",
-      "status_mensal_rotulo": "Dentro do parâmetro ANS",
-      "status_media_ans": "dentro",
-      "status_media_rotulo": "Dentro do parâmetro ANS",
-      "status": "consistente",
-      "status_rotulo": "Consistente",
-      "status_mensagem": "Os dois critérios ANS estão dentro dos limites.",
-      "resultado_consolidado": "Consistente",
-      "status_mensal_exibicao": "Consistente",
-      "status_media_exibicao": "Consistente",
-      "pendente": false,
-      "periodo_resumo": false,
-      "regime": "atual_6m",
-      "fonte_regra": "peona_input",
-      "fonte_arquivo": "PEONA_INPUT.xlsx",
-      "fonte_aba": "Teste Consistência",
-      "fonte": "PEONA_INPUT.xlsx / Teste Consistência · bloco 6m",
-      "fonte_detalhe": "PEONA_INPUT · Teste Consistência · metodologia 6 meses.",
-      "ans_mensal_inf": -0.2453,
-      "ans_mensal_sup": 0.3094,
-      "ans_media_inf": -0.1078,
-      "ans_media_sup": 0.1362,
-      "mudanca_metodologica": "2025-10-01",
-      "data_inclusao": "2026-10-01T12:15:19",
-      "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
-      "bloqueado": true,
-      "fingerprint": "640cd00d28bf68e79f9ca68db34aa9e888c118db838270cde8ea43e5355aa546"
-    },
-    {
-      "competencia": "2026-07-01",
-      "competencia_label": "07/2026",
-      "competencia_teste": "2026-07-01",
-      "competencia_peona": "2026-10-01",
       "tipo": "MH",
       "segmento": "MH",
       "janela": "12m",
       "janela_meses": 12,
-      "janela_bloco": "12m",
-      "peona_estimada": 287687037.9574999,
-      "peona_real": 218382510.56000015,
-      "peona": 287687037.9574999,
-      "runoff_puro": 218382510.56000015,
-      "diferenca": 69304527.39749977,
-      "diferenca_pct": 0.31735383579839604,
-      "variacao_mensal": 0.31735383579839604,
-      "variacao_media": 0.09113979187353116,
-      "media_completa": true,
+      "peona_estimada": 287687037.957,
+      "peona_real": 218382510.56,
+      "diferenca": 69304527.3975,
+      "variacao_mensal": 0.317353835798,
+      "variacao_media": 0.0911397918735,
       "status_mensal_ans": "fora",
-      "status_mensal_rotulo": "Fora do parâmetro ANS",
       "status_media_ans": "dentro",
-      "status_media_rotulo": "Dentro do parâmetro ANS",
       "status": "nao_consistente",
-      "status_rotulo": "Não consistente",
-      "status_mensagem": "Um ou mais critérios ANS estão fora dos limites.",
-      "resultado_consolidado": "Não consistente",
       "status_mensal_exibicao": "Não consistente",
       "status_media_exibicao": "Consistente",
+      "resultado_consolidado": "Não consistente",
+      "data_inclusao": "2026-10-01T12:15:19",
+      "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
+      "bloqueado": true,
+      "fingerprint": "fee04c4fdf6aea6699662856a731919ca450cf6f8f9ec497012c4721b5415355",
+      "janela_bloco": "12m",
+      "peona": 287687037.957,
+      "runoff_puro": 218382510.56,
+      "diferenca_pct": 0.317353835798,
+      "media_completa": true,
+      "status_mensal_rotulo": "Fora do parâmetro ANS",
+      "status_media_rotulo": "Dentro do parâmetro ANS",
+      "status_rotulo": "Não consistente",
+      "status_mensagem": "Um ou mais critérios ANS estão fora dos limites.",
       "pendente": false,
       "periodo_resumo": false,
       "regime": "atual_12m",
@@ -5817,41 +5720,88 @@ window.PEONA_DATA = {
       "ans_mensal_sup": 0.3094,
       "ans_media_inf": -0.1078,
       "ans_media_sup": 0.1362,
-      "mudanca_metodologica": "2025-10-01",
-      "data_inclusao": "2026-10-01T12:15:19",
-      "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
-      "bloqueado": true,
-      "fingerprint": "fee04c4fdf6aea6699662856a731919ca450cf6f8f9ec497012c4721b5415355"
+      "mudanca_metodologica": "2025-10-01"
     },
     {
       "competencia": "2026-07-01",
-      "competencia_label": "07/2026",
       "competencia_teste": "2026-07-01",
       "competencia_peona": "2026-10-01",
+      "competencia_label": "07/2026",
+      "tipo": "MH",
+      "segmento": "MH",
+      "janela": "6m",
+      "janela_meses": 6,
+      "peona_estimada": 284039635.567,
+      "peona_real": 218382510.56,
+      "diferenca": 65657125.0067,
+      "variacao_mensal": 0.300651937915,
+      "variacao_media": 0.104310637647,
+      "status_mensal_ans": "dentro",
+      "status_media_ans": "dentro",
+      "status": "consistente",
+      "status_mensal_exibicao": "Consistente",
+      "status_media_exibicao": "Consistente",
+      "resultado_consolidado": "Consistente",
+      "data_inclusao": "2026-10-01T12:15:19",
+      "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
+      "bloqueado": true,
+      "fingerprint": "c4afaf90726dcc759224ef9aeced226bdfd1464ebee6f6509f7ad122bf36b6a1",
+      "janela_bloco": "6m",
+      "peona": 284039635.567,
+      "runoff_puro": 218382510.56,
+      "diferenca_pct": 0.300651937915,
+      "media_completa": true,
+      "status_mensal_rotulo": "Dentro do parâmetro ANS",
+      "status_media_rotulo": "Dentro do parâmetro ANS",
+      "status_rotulo": "Consistente",
+      "status_mensagem": "Os dois critérios ANS estão dentro dos limites.",
+      "pendente": false,
+      "periodo_resumo": false,
+      "regime": "atual_6m",
+      "fonte_regra": "peona_input",
+      "fonte_arquivo": "PEONA_INPUT.xlsx",
+      "fonte_aba": "Teste Consistência",
+      "fonte": "PEONA_INPUT.xlsx / Teste Consistência · bloco 6m",
+      "fonte_detalhe": "PEONA_INPUT · Teste Consistência · metodologia 6 meses.",
+      "ans_mensal_inf": -0.2453,
+      "ans_mensal_sup": 0.3094,
+      "ans_media_inf": -0.1078,
+      "ans_media_sup": 0.1362,
+      "mudanca_metodologica": "2025-10-01"
+    },
+    {
+      "competencia": "2026-07-01",
+      "competencia_teste": "2026-07-01",
+      "competencia_peona": "2026-10-01",
+      "competencia_label": "07/2026",
       "tipo": "OD",
       "segmento": "OD",
       "janela": "12m",
       "janela_meses": 12,
-      "janela_bloco": "12m",
-      "peona_estimada": 2889839.159999999,
-      "peona_real": 3259238.4699997096,
-      "peona": 2889839.159999999,
-      "runoff_puro": 3259238.4699997096,
-      "diferenca": -369399.3099997104,
-      "diferenca_pct": -0.11333914759534103,
-      "variacao_mensal": -0.11333914759534103,
-      "variacao_media": 0.24514208414128824,
-      "media_completa": true,
+      "peona_estimada": 2889839.16,
+      "peona_real": 3259238.47,
+      "diferenca": -369399.31,
+      "variacao_mensal": -0.113339147595,
+      "variacao_media": 0.245142084141,
       "status_mensal_ans": "dentro",
-      "status_mensal_rotulo": "Dentro do parâmetro ANS",
       "status_media_ans": "fora",
-      "status_media_rotulo": "Fora do parâmetro ANS",
       "status": "nao_consistente",
-      "status_rotulo": "Não consistente",
-      "status_mensagem": "Um ou mais critérios ANS estão fora dos limites.",
-      "resultado_consolidado": "Não consistente",
       "status_mensal_exibicao": "Consistente",
       "status_media_exibicao": "Não consistente",
+      "resultado_consolidado": "Não consistente",
+      "data_inclusao": "2026-10-01T12:15:19",
+      "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
+      "bloqueado": true,
+      "fingerprint": "2e4a311816041162b46c89755cbc0d2d60907c364958f11d6f590324ac7899d8",
+      "janela_bloco": "12m",
+      "peona": 2889839.16,
+      "runoff_puro": 3259238.47,
+      "diferenca_pct": -0.113339147595,
+      "media_completa": true,
+      "status_mensal_rotulo": "Dentro do parâmetro ANS",
+      "status_media_rotulo": "Fora do parâmetro ANS",
+      "status_rotulo": "Não consistente",
+      "status_mensagem": "Um ou mais critérios ANS estão fora dos limites.",
       "pendente": false,
       "periodo_resumo": false,
       "regime": "atual_12m",
@@ -5864,11 +5814,242 @@ window.PEONA_DATA = {
       "ans_mensal_sup": 0.3094,
       "ans_media_inf": -0.1078,
       "ans_media_sup": 0.1362,
-      "mudanca_metodologica": "2025-10-01",
+      "mudanca_metodologica": "2025-10-01"
+    },
+    {
+      "competencia": "2026-07-01",
+      "competencia_teste": "2026-07-01",
+      "competencia_peona": "2026-10-01",
+      "competencia_label": "07/2026",
+      "tipo": "OD",
+      "segmento": "OD",
+      "janela": "6m",
+      "janela_meses": 6,
+      "peona_estimada": 2763063.32,
+      "peona_real": 3259238.47,
+      "diferenca": -496175.15,
+      "variacao_mensal": -0.15223652843,
+      "variacao_media": 7.98170397926e-05,
+      "status_mensal_ans": "dentro",
+      "status_media_ans": "dentro",
+      "status": "consistente",
+      "status_mensal_exibicao": "Consistente",
+      "status_media_exibicao": "Consistente",
+      "resultado_consolidado": "Consistente",
       "data_inclusao": "2026-10-01T12:15:19",
       "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
       "bloqueado": true,
-      "fingerprint": "2e4a311816041162b46c89755cbc0d2d60907c364958f11d6f590324ac7899d8"
+      "fingerprint": "640cd00d28bf68e79f9ca68db34aa9e888c118db838270cde8ea43e5355aa546",
+      "janela_bloco": "6m",
+      "peona": 2763063.32,
+      "runoff_puro": 3259238.47,
+      "diferenca_pct": -0.15223652843,
+      "media_completa": true,
+      "status_mensal_rotulo": "Dentro do parâmetro ANS",
+      "status_media_rotulo": "Dentro do parâmetro ANS",
+      "status_rotulo": "Consistente",
+      "status_mensagem": "Os dois critérios ANS estão dentro dos limites.",
+      "pendente": false,
+      "periodo_resumo": false,
+      "regime": "atual_6m",
+      "fonte_regra": "peona_input",
+      "fonte_arquivo": "PEONA_INPUT.xlsx",
+      "fonte_aba": "Teste Consistência",
+      "fonte": "PEONA_INPUT.xlsx / Teste Consistência · bloco 6m",
+      "fonte_detalhe": "PEONA_INPUT · Teste Consistência · metodologia 6 meses.",
+      "ans_mensal_inf": -0.2453,
+      "ans_mensal_sup": 0.3094,
+      "ans_media_inf": -0.1078,
+      "ans_media_sup": 0.1362,
+      "mudanca_metodologica": "2025-10-01"
+    },
+    {
+      "competencia": "2026-08-01",
+      "competencia_teste": "2026-08-01",
+      "competencia_peona": "2026-11-01",
+      "competencia_label": "08/2026",
+      "tipo": "MH",
+      "segmento": "MH",
+      "janela": "12m",
+      "janela_meses": 12,
+      "peona_estimada": 292349621.856,
+      "peona_real": 201268882.63,
+      "diferenca": 91080739.2258,
+      "variacao_mensal": 0.452532642084,
+      "variacao_media": 0.126385001203,
+      "status_mensal_ans": "fora",
+      "status_media_ans": "dentro",
+      "status": "nao_consistente",
+      "status_mensal_exibicao": "Não consistente",
+      "status_media_exibicao": "Consistente",
+      "resultado_consolidado": "Não consistente",
+      "data_inclusao": "2026-10-19T13:19:18",
+      "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
+      "bloqueado": true,
+      "fingerprint": "73a18683e0bea895d71a03e5bb2d10c98621734697a9a9b7905e9d14cf022317",
+      "janela_bloco": "12m",
+      "peona": 292349621.856,
+      "runoff_puro": 201268882.63,
+      "diferenca_pct": 0.452532642084,
+      "media_completa": true,
+      "status_mensal_rotulo": "Fora do parâmetro ANS",
+      "status_media_rotulo": "Dentro do parâmetro ANS",
+      "status_rotulo": "Não consistente",
+      "status_mensagem": "Um ou mais critérios ANS estão fora dos limites.",
+      "pendente": false,
+      "periodo_resumo": false,
+      "regime": "atual_12m",
+      "fonte_regra": "peona_input",
+      "fonte_arquivo": "PEONA_INPUT.xlsx",
+      "fonte_aba": "Teste Consistência",
+      "fonte": "PEONA_INPUT.xlsx / Teste Consistência · bloco 12m",
+      "fonte_detalhe": "PEONA_INPUT · Teste Consistência · metodologia 12 meses.",
+      "ans_mensal_inf": -0.2453,
+      "ans_mensal_sup": 0.3094,
+      "ans_media_inf": -0.1078,
+      "ans_media_sup": 0.1362,
+      "mudanca_metodologica": "2025-10-01"
+    },
+    {
+      "competencia": "2026-08-01",
+      "competencia_teste": "2026-08-01",
+      "competencia_peona": "2026-11-01",
+      "competencia_label": "08/2026",
+      "tipo": "MH",
+      "segmento": "MH",
+      "janela": "6m",
+      "janela_meses": 6,
+      "peona_estimada": 296458183.722,
+      "peona_real": 201268882.63,
+      "diferenca": 95189301.0917,
+      "variacao_mensal": 0.472945941011,
+      "variacao_media": 0.174524118536,
+      "status_mensal_ans": "fora",
+      "status_media_ans": "fora",
+      "status": "nao_consistente",
+      "status_mensal_exibicao": "Não consistente",
+      "status_media_exibicao": "Não consistente",
+      "resultado_consolidado": "Não consistente",
+      "data_inclusao": "2026-10-19T13:19:18",
+      "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
+      "bloqueado": true,
+      "fingerprint": "087fdde36352613f03bd1998d9467aefe9b49a9727e383801022381de28fddf4",
+      "janela_bloco": "6m",
+      "peona": 296458183.722,
+      "runoff_puro": 201268882.63,
+      "diferenca_pct": 0.472945941011,
+      "media_completa": true,
+      "status_mensal_rotulo": "Fora do parâmetro ANS",
+      "status_media_rotulo": "Fora do parâmetro ANS",
+      "status_rotulo": "Não consistente",
+      "status_mensagem": "Um ou mais critérios ANS estão fora dos limites.",
+      "pendente": false,
+      "periodo_resumo": false,
+      "regime": "atual_6m",
+      "fonte_regra": "peona_input",
+      "fonte_arquivo": "PEONA_INPUT.xlsx",
+      "fonte_aba": "Teste Consistência",
+      "fonte": "PEONA_INPUT.xlsx / Teste Consistência · bloco 6m",
+      "fonte_detalhe": "PEONA_INPUT · Teste Consistência · metodologia 6 meses.",
+      "ans_mensal_inf": -0.2453,
+      "ans_mensal_sup": 0.3094,
+      "ans_media_inf": -0.1078,
+      "ans_media_sup": 0.1362,
+      "mudanca_metodologica": "2025-10-01"
+    },
+    {
+      "competencia": "2026-08-01",
+      "competencia_teste": "2026-08-01",
+      "competencia_peona": "2026-11-01",
+      "competencia_label": "08/2026",
+      "tipo": "OD",
+      "segmento": "OD",
+      "janela": "12m",
+      "janela_meses": 12,
+      "peona_estimada": 2911829.015,
+      "peona_real": 2426983.73,
+      "diferenca": 484845.285,
+      "variacao_mensal": 0.199772779276,
+      "variacao_media": 0.240539282295,
+      "status_mensal_ans": "dentro",
+      "status_media_ans": "fora",
+      "status": "nao_consistente",
+      "status_mensal_exibicao": "Consistente",
+      "status_media_exibicao": "Não consistente",
+      "resultado_consolidado": "Não consistente",
+      "data_inclusao": "2026-10-19T13:19:18",
+      "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
+      "bloqueado": true,
+      "fingerprint": "bc0ba2b00fc15ec232d46917bc455ce2df453cacc51b74ad1f47255cc16a715e",
+      "janela_bloco": "12m",
+      "peona": 2911829.015,
+      "runoff_puro": 2426983.73,
+      "diferenca_pct": 0.199772779276,
+      "media_completa": true,
+      "status_mensal_rotulo": "Dentro do parâmetro ANS",
+      "status_media_rotulo": "Fora do parâmetro ANS",
+      "status_rotulo": "Não consistente",
+      "status_mensagem": "Um ou mais critérios ANS estão fora dos limites.",
+      "pendente": false,
+      "periodo_resumo": false,
+      "regime": "atual_12m",
+      "fonte_regra": "peona_input",
+      "fonte_arquivo": "PEONA_INPUT.xlsx",
+      "fonte_aba": "Teste Consistência",
+      "fonte": "PEONA_INPUT.xlsx / Teste Consistência · bloco 12m",
+      "fonte_detalhe": "PEONA_INPUT · Teste Consistência · metodologia 12 meses.",
+      "ans_mensal_inf": -0.2453,
+      "ans_mensal_sup": 0.3094,
+      "ans_media_inf": -0.1078,
+      "ans_media_sup": 0.1362,
+      "mudanca_metodologica": "2025-10-01"
+    },
+    {
+      "competencia": "2026-08-01",
+      "competencia_teste": "2026-08-01",
+      "competencia_peona": "2026-11-01",
+      "competencia_label": "08/2026",
+      "tipo": "OD",
+      "segmento": "OD",
+      "janela": "6m",
+      "janela_meses": 6,
+      "peona_estimada": 2923454.29833,
+      "peona_real": 2426983.73,
+      "diferenca": 496470.568333,
+      "variacao_mensal": 0.204562792159,
+      "variacao_media": 0.00770523351953,
+      "status_mensal_ans": "dentro",
+      "status_media_ans": "dentro",
+      "status": "consistente",
+      "status_mensal_exibicao": "Consistente",
+      "status_media_exibicao": "Consistente",
+      "resultado_consolidado": "Consistente",
+      "data_inclusao": "2026-10-19T13:19:18",
+      "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
+      "bloqueado": true,
+      "fingerprint": "6c39d4349d236778247a58e24984793eefab367c12c4c2225c65be627b824331",
+      "janela_bloco": "6m",
+      "peona": 2923454.29833,
+      "runoff_puro": 2426983.73,
+      "diferenca_pct": 0.204562792159,
+      "media_completa": true,
+      "status_mensal_rotulo": "Dentro do parâmetro ANS",
+      "status_media_rotulo": "Dentro do parâmetro ANS",
+      "status_rotulo": "Consistente",
+      "status_mensagem": "Os dois critérios ANS estão dentro dos limites.",
+      "pendente": false,
+      "periodo_resumo": false,
+      "regime": "atual_6m",
+      "fonte_regra": "peona_input",
+      "fonte_arquivo": "PEONA_INPUT.xlsx",
+      "fonte_aba": "Teste Consistência",
+      "fonte": "PEONA_INPUT.xlsx / Teste Consistência · bloco 6m",
+      "fonte_detalhe": "PEONA_INPUT · Teste Consistência · metodologia 6 meses.",
+      "ans_mensal_inf": -0.2453,
+      "ans_mensal_sup": 0.3094,
+      "ans_media_inf": -0.1078,
+      "ans_media_sup": 0.1362,
+      "mudanca_metodologica": "2025-10-01"
     }
   ],
   "consistencia_meta": {
@@ -5888,9 +6069,9 @@ window.PEONA_DATA = {
     },
     "arquivo_acompanhamento": "Acompanhamento das Provisões.xlsx",
     "arquivo_input": "PEONA_INPUT.xlsx",
-    "n_historico_mh_od": 14,
-    "n_atual_mh_od": 22,
-    "n_atual_12m_mh_od": 22,
+    "n_historico_mh_od": 12,
+    "n_atual_mh_od": 24,
+    "n_atual_12m_mh_od": 24,
     "n_acompanhamento": 9,
     "defasagem_teste_meses": 3,
     "fonte_consistencia": "historico_imutavel",
@@ -5898,40 +6079,33 @@ window.PEONA_DATA = {
     "arquivo_historico_json": "historico_consistencia.json",
     "versao_metodologia": "PEONA_hibrida_12m_ate_set2025_6m_desde_out2025_v1",
     "relatorio_processamento": {
-      "peona_processada": "2026-08-01",
-      "competencia_teste": "2026-05-01",
+      "peona_processada": "2026-09-01",
+      "competencia_teste": "2026-06-01",
       "janelas": [
         "6m",
         "12m"
       ],
-      "novos_incluidos": 4,
-      "segmentos_incluidos": [
-        "MH",
-        "OD"
-      ],
-      "registros_historicos_preservados": 52,
+      "novos_incluidos": 0,
+      "segmentos_incluidos": [],
+      "registros_historicos_preservados": 60,
       "registros_historicos_alterados": 0,
       "registros_historicos_excluidos": 0,
       "duplicidades_encontradas": 4,
-      "total_historico": 56,
+      "total_historico": 60,
       "seed": {
         "acao": "ja_existia",
-        "n_registros": 52,
+        "n_registros": 60,
         "mensagem": "Histórico já existe — carga inicial não sobrescrita."
       },
       "mensagens": [
-        "MH 2026-07-01 (6m): janela complementar incluida no historico.",
-        "OD 2026-07-01 (6m): janela complementar incluida no historico.",
-        "MH 2026-07-01 (12m): janela complementar incluida no historico.",
-        "OD 2026-07-01 (12m): janela complementar incluida no historico.",
-        "MH 2026-05-01 (6m): Teste ja existente - historico preservado.",
-        "MH 2026-05-01 (12m): Teste ja existente - historico preservado.",
-        "OD 2026-05-01 (6m): Teste ja existente - historico preservado.",
-        "OD 2026-05-01 (12m): Teste ja existente - historico preservado."
+        "MH 2026-06-01 (6m): Teste ja existente - historico preservado.",
+        "MH 2026-06-01 (12m): Teste ja existente - historico preservado.",
+        "OD 2026-06-01 (6m): Teste ja existente - historico preservado.",
+        "OD 2026-06-01 (12m): Teste ja existente - historico preservado."
       ],
       "erros": []
     },
-    "n_historico_bloqueado": 56,
+    "n_historico_bloqueado": 60,
     "imutavel": true
   },
   "consistencia_acompanhamento": [
@@ -6316,17 +6490,6 @@ window.PEONA_DATA = {
   ],
   "triangulo": [
     {
-      "comp_aviso": "2023-09-01",
-      "j0": 82637291.54,
-      "j1": 69764528.65,
-      "j2": 11480884.65,
-      "j3": 4280767.68,
-      "j4": 1351846.42,
-      "j5": 435223.17,
-      "total": 169950542.11,
-      "tipo": "MH"
-    },
-    {
       "comp_aviso": "2023-10-01",
       "j0": 84032464.34,
       "j1": 63907303.89,
@@ -6702,25 +6865,25 @@ window.PEONA_DATA = {
     },
     {
       "comp_aviso": "2026-08-01",
-      "j0": 1925223.99,
-      "j1": 138171338.13,
-      "j2": 64958813.86,
-      "j3": 10953155.73,
-      "j4": 1887598.48,
-      "j5": 2411604.36,
-      "total": 220307734.55,
+      "j0": 1823813.3,
+      "j1": 141111567.06,
+      "j2": 67901929.09,
+      "j3": 11610881.4,
+      "j4": 2252669.72,
+      "j5": 2554609.53,
+      "total": 227255470.1,
       "tipo": "MH"
     },
     {
-      "comp_aviso": "2023-09-01",
-      "j0": 1429890.25,
-      "j1": 810471.13,
-      "j2": 106500.14,
-      "j3": 73832.17,
-      "j4": 38226.77,
-      "j5": 40223.25,
-      "total": 2499143.71,
-      "tipo": "OD"
+      "comp_aviso": "2026-09-01",
+      "j0": 3771410.41,
+      "j1": 127908202.43,
+      "j2": 64535757.3799999,
+      "j3": 5979051.31,
+      "j4": 1331011.95,
+      "j5": 1514859.56,
+      "total": 205040293.04,
+      "tipo": "MH"
     },
     {
       "comp_aviso": "2023-10-01",
@@ -7098,13 +7261,24 @@ window.PEONA_DATA = {
     },
     {
       "comp_aviso": "2026-08-01",
-      "j0": 89891.1900000012,
-      "j1": 2272959.90999972,
-      "j2": 629704.869999994,
-      "j3": 106021.549999996,
-      "j4": 71806.2000000015,
-      "j5": 178745.94,
-      "total": 3349129.65999971,
+      "j0": 89891.1900000018,
+      "j1": 2036235.85999988,
+      "j2": 437918.06000001,
+      "j3": 102958.050000001,
+      "j4": 23955.14,
+      "j5": 7003.790000001,
+      "total": 2697962.08999989,
+      "tipo": "OD"
+    },
+    {
+      "comp_aviso": "2026-09-01",
+      "j0": 114364.47,
+      "j1": 1963380.37000011,
+      "j2": 360879.009999977,
+      "j3": 72527.4400000079,
+      "j4": 23478.5699999997,
+      "j5": 6718.3399999998,
+      "total": 2541348.20000009,
       "tipo": "OD"
     }
   ],
@@ -7133,44 +7307,6 @@ window.PEONA_DATA = {
           "5+"
         ],
         "linhas": [
-          {
-            "competencia": "2023-09-01",
-            "competencia_label": "09/2023",
-            "lags": [
-              {
-                "col": "0",
-                "valor": 82637291.54,
-                "vazio": false
-              },
-              {
-                "col": "1",
-                "valor": 69764528.65,
-                "vazio": false
-              },
-              {
-                "col": "2",
-                "valor": 11480884.65,
-                "vazio": false
-              },
-              {
-                "col": "3",
-                "valor": 4280767.68,
-                "vazio": false
-              },
-              {
-                "col": "4",
-                "valor": 1351846.42,
-                "vazio": false
-              },
-              {
-                "col": "5+",
-                "valor": 435223.17000000004,
-                "vazio": false
-              }
-            ],
-            "total": 169950542.10999998,
-            "linha_planilha": 6
-          },
           {
             "competencia": "2023-10-01",
             "competencia_label": "10/2023",
@@ -7207,7 +7343,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 168080369.79999998,
-            "linha_planilha": 7
+            "linha_planilha": 6
           },
           {
             "competencia": "2023-11-01",
@@ -7245,7 +7381,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 171499507.14,
-            "linha_planilha": 8
+            "linha_planilha": 7
           },
           {
             "competencia": "2023-12-01",
@@ -7283,7 +7419,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 166694810.45000002,
-            "linha_planilha": 9
+            "linha_planilha": 8
           },
           {
             "competencia": "2024-01-01",
@@ -7321,7 +7457,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 181475770.86194384,
-            "linha_planilha": 10
+            "linha_planilha": 9
           },
           {
             "competencia": "2024-02-01",
@@ -7359,7 +7495,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 191632293.64520502,
-            "linha_planilha": 11
+            "linha_planilha": 10
           },
           {
             "competencia": "2024-03-01",
@@ -7397,7 +7533,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 198577421.5930596,
-            "linha_planilha": 12
+            "linha_planilha": 11
           },
           {
             "competencia": "2024-04-01",
@@ -7435,7 +7571,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 209947814.86323157,
-            "linha_planilha": 13
+            "linha_planilha": 12
           },
           {
             "competencia": "2024-05-01",
@@ -7473,7 +7609,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 209605564.7466614,
-            "linha_planilha": 14
+            "linha_planilha": 13
           },
           {
             "competencia": "2024-06-01",
@@ -7511,7 +7647,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 206100863.36665547,
-            "linha_planilha": 15
+            "linha_planilha": 14
           },
           {
             "competencia": "2024-07-01",
@@ -7549,7 +7685,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 204148757.02429974,
-            "linha_planilha": 16
+            "linha_planilha": 15
           },
           {
             "competencia": "2024-08-01",
@@ -7587,7 +7723,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 212349541.24405065,
-            "linha_planilha": 17
+            "linha_planilha": 16
           },
           {
             "competencia": "2024-09-01",
@@ -7625,7 +7761,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 173359363.28173882,
-            "linha_planilha": 18
+            "linha_planilha": 17
           },
           {
             "competencia": "2024-10-01",
@@ -7663,7 +7799,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 167313224.35510805,
-            "linha_planilha": 19
+            "linha_planilha": 18
           },
           {
             "competencia": "2024-11-01",
@@ -7701,7 +7837,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 184957494.29993632,
-            "linha_planilha": 20
+            "linha_planilha": 19
           },
           {
             "competencia": "2024-12-01",
@@ -7739,7 +7875,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 159169036.92169738,
-            "linha_planilha": 21
+            "linha_planilha": 20
           },
           {
             "competencia": "2025-01-01",
@@ -7777,7 +7913,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 182801826.71194842,
-            "linha_planilha": 22
+            "linha_planilha": 21
           },
           {
             "competencia": "2025-02-01",
@@ -7815,7 +7951,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 193679437.69493085,
-            "linha_planilha": 23
+            "linha_planilha": 22
           },
           {
             "competencia": "2025-03-01",
@@ -7853,7 +7989,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 168321011.90569565,
-            "linha_planilha": 24
+            "linha_planilha": 23
           },
           {
             "competencia": "2025-04-01",
@@ -7891,7 +8027,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 156535377.7404358,
-            "linha_planilha": 25
+            "linha_planilha": 24
           },
           {
             "competencia": "2025-05-01",
@@ -7929,7 +8065,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 178985710.3477455,
-            "linha_planilha": 26
+            "linha_planilha": 25
           },
           {
             "competencia": "2025-06-01",
@@ -7967,7 +8103,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 193843005.27611285,
-            "linha_planilha": 27
+            "linha_planilha": 26
           },
           {
             "competencia": "2025-07-01",
@@ -8005,7 +8141,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 189032438.76677218,
-            "linha_planilha": 28
+            "linha_planilha": 27
           },
           {
             "competencia": "2025-08-01",
@@ -8043,7 +8179,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 181409607.70000002,
-            "linha_planilha": 29
+            "linha_planilha": 28
           },
           {
             "competencia": "2025-09-01",
@@ -8081,7 +8217,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 182587853.45000008,
-            "linha_planilha": 30
+            "linha_planilha": 29
           },
           {
             "competencia": "2025-10-01",
@@ -8119,7 +8255,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 193284998.4499995,
-            "linha_planilha": 31
+            "linha_planilha": 30
           },
           {
             "competencia": "2025-11-01",
@@ -8157,7 +8293,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 195245037.47999963,
-            "linha_planilha": 32
+            "linha_planilha": 31
           },
           {
             "competencia": "2025-12-01",
@@ -8195,7 +8331,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 189845131.49000007,
-            "linha_planilha": 33
+            "linha_planilha": 32
           },
           {
             "competencia": "2026-01-01",
@@ -8233,7 +8369,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 181529066.0299998,
-            "linha_planilha": 34
+            "linha_planilha": 33
           },
           {
             "competencia": "2026-02-01",
@@ -8271,7 +8407,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 180581610.85000002,
-            "linha_planilha": 35
+            "linha_planilha": 34
           },
           {
             "competencia": "2026-03-01",
@@ -8309,7 +8445,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 180736875.44999972,
-            "linha_planilha": 36
+            "linha_planilha": 35
           },
           {
             "competencia": "2026-04-01",
@@ -8347,7 +8483,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 203642772.90000007,
-            "linha_planilha": 37
+            "linha_planilha": 36
           },
           {
             "competencia": "2026-05-01",
@@ -8385,7 +8521,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 196856213.99000013,
-            "linha_planilha": 38
+            "linha_planilha": 37
           },
           {
             "competencia": "2026-06-01",
@@ -8423,7 +8559,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 201972307.04999995,
-            "linha_planilha": 39
+            "linha_planilha": 38
           },
           {
             "competencia": "2026-07-01",
@@ -8461,7 +8597,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 208556329.80000022,
-            "linha_planilha": 40
+            "linha_planilha": 39
           },
           {
             "competencia": "2026-08-01",
@@ -8469,36 +8605,74 @@ window.PEONA_DATA = {
             "lags": [
               {
                 "col": "0",
-                "valor": 1925223.9899999993,
+                "valor": 1823813.2999999986,
                 "vazio": false
               },
               {
                 "col": "1",
-                "valor": 138171338.1300001,
+                "valor": 141111567.06000006,
                 "vazio": false
               },
               {
                 "col": "2",
-                "valor": 64958813.860000014,
+                "valor": 67901929.08999999,
                 "vazio": false
               },
               {
                 "col": "3",
-                "valor": 10953155.729999987,
+                "valor": 11610881.399999997,
                 "vazio": false
               },
               {
                 "col": "4",
-                "valor": 1887598.4799999995,
+                "valor": 2252669.720000002,
                 "vazio": false
               },
               {
                 "col": "5+",
-                "valor": 2411604.3600000017,
+                "valor": 2554609.530000002,
                 "vazio": false
               }
             ],
-            "total": 220307734.55000013,
+            "total": 227255470.10000005,
+            "linha_planilha": 40
+          },
+          {
+            "competencia": "2026-09-01",
+            "competencia_label": "09/2026",
+            "lags": [
+              {
+                "col": "0",
+                "valor": 3771410.4099999997,
+                "vazio": false
+              },
+              {
+                "col": "1",
+                "valor": 127908202.42999998,
+                "vazio": false
+              },
+              {
+                "col": "2",
+                "valor": 64535757.37999994,
+                "vazio": false
+              },
+              {
+                "col": "3",
+                "valor": 5979051.310000003,
+                "vazio": false
+              },
+              {
+                "col": "4",
+                "valor": 1331011.95,
+                "vazio": false
+              },
+              {
+                "col": "5+",
+                "valor": 1514859.56,
+                "vazio": false
+              }
+            ],
+            "total": 205040293.0399999,
             "linha_planilha": 41
           }
         ]
@@ -8513,44 +8687,6 @@ window.PEONA_DATA = {
           "5+"
         ],
         "linhas": [
-          {
-            "competencia": "2023-09-01",
-            "competencia_label": "09/2023",
-            "lags": [
-              {
-                "col": "0",
-                "valor": 82637291.54,
-                "vazio": false
-              },
-              {
-                "col": "1",
-                "valor": 63907303.89,
-                "vazio": false
-              },
-              {
-                "col": "2",
-                "valor": 13547682.81,
-                "vazio": false
-              },
-              {
-                "col": "3",
-                "valor": 3345635.55,
-                "vazio": false
-              },
-              {
-                "col": "4",
-                "valor": 879563.17,
-                "vazio": false
-              },
-              {
-                "col": "5+",
-                "valor": 292048.9723207147,
-                "vazio": false
-              }
-            ],
-            "total": 164609525.9323207,
-            "linha_planilha": 6
-          },
           {
             "competencia": "2023-10-01",
             "competencia_label": "10/2023",
@@ -8587,7 +8723,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 170789343.3765696,
-            "linha_planilha": 7
+            "linha_planilha": 6
           },
           {
             "competencia": "2023-11-01",
@@ -8625,7 +8761,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 172849419.3101528,
-            "linha_planilha": 8
+            "linha_planilha": 7
           },
           {
             "competencia": "2023-12-01",
@@ -8663,7 +8799,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 151552104.90278095,
-            "linha_planilha": 9
+            "linha_planilha": 8
           },
           {
             "competencia": "2024-01-01",
@@ -8701,7 +8837,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 199637668.55560014,
-            "linha_planilha": 10
+            "linha_planilha": 9
           },
           {
             "competencia": "2024-02-01",
@@ -8739,7 +8875,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 188934573.02237818,
-            "linha_planilha": 11
+            "linha_planilha": 10
           },
           {
             "competencia": "2024-03-01",
@@ -8777,7 +8913,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 201004142.68082026,
-            "linha_planilha": 12
+            "linha_planilha": 11
           },
           {
             "competencia": "2024-04-01",
@@ -8815,7 +8951,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 219729982.48436317,
-            "linha_planilha": 13
+            "linha_planilha": 12
           },
           {
             "competencia": "2024-05-01",
@@ -8853,7 +8989,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 222391007.904482,
-            "linha_planilha": 14
+            "linha_planilha": 13
           },
           {
             "competencia": "2024-06-01",
@@ -8891,7 +9027,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 276089823.810927,
-            "linha_planilha": 15
+            "linha_planilha": 14
           },
           {
             "competencia": "2024-07-01",
@@ -8924,12 +9060,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 2950304.5389724607,
+                "valor": 2951294.5389724607,
                 "vazio": false
               }
             ],
-            "total": 306619836.9591751,
-            "linha_planilha": 16
+            "total": 306620826.9591751,
+            "linha_planilha": 15
           },
           {
             "competencia": "2024-08-01",
@@ -8962,12 +9098,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 7457108.406914812,
+                "valor": 7462248.5369148115,
                 "vazio": false
               }
             ],
-            "total": 181154787.47702473,
-            "linha_planilha": 17
+            "total": 181159927.60702476,
+            "linha_planilha": 16
           },
           {
             "competencia": "2024-09-01",
@@ -9000,12 +9136,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 3304935.7579440023,
+                "valor": 3306275.7579440023,
                 "vazio": false
               }
             ],
-            "total": 179209646.34063265,
-            "linha_planilha": 18
+            "total": 179210986.34063265,
+            "linha_planilha": 17
           },
           {
             "competencia": "2024-10-01",
@@ -9038,12 +9174,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 5366331.7180908965,
+                "valor": 5385836.888090896,
                 "vazio": false
               }
             ],
-            "total": 192319071.70875475,
-            "linha_planilha": 19
+            "total": 192338576.87875476,
+            "linha_planilha": 18
           },
           {
             "competencia": "2024-11-01",
@@ -9076,12 +9212,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 4087645.383544919,
+                "valor": 4105716.9035449196,
                 "vazio": false
               }
             ],
-            "total": 170726264.33563623,
-            "linha_planilha": 20
+            "total": 170744335.85563624,
+            "linha_planilha": 19
           },
           {
             "competencia": "2024-12-01",
@@ -9114,12 +9250,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 2427841.06434528,
+                "valor": 2427982.62434528,
                 "vazio": false
               }
             ],
-            "total": 154659317.69355938,
-            "linha_planilha": 21
+            "total": 154659459.25355938,
+            "linha_planilha": 20
           },
           {
             "competencia": "2025-01-01",
@@ -9152,12 +9288,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 4183525.17628196,
+                "valor": 4183916.3762819604,
                 "vazio": false
               }
             ],
-            "total": 188644500.5451267,
-            "linha_planilha": 22
+            "total": 188644891.7451267,
+            "linha_planilha": 21
           },
           {
             "competencia": "2025-02-01",
@@ -9190,12 +9326,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 3563217.2091095494,
+                "valor": 3574507.2991095493,
                 "vazio": false
               }
             ],
-            "total": 170997973.65984586,
-            "linha_planilha": 23
+            "total": 171009263.74984586,
+            "linha_planilha": 22
           },
           {
             "competencia": "2025-03-01",
@@ -9228,12 +9364,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 2664594.7100000004,
+                "valor": 2665853.6800000006,
                 "vazio": false
               }
             ],
-            "total": 175083116.06795317,
-            "linha_planilha": 24
+            "total": 175084375.03795317,
+            "linha_planilha": 23
           },
           {
             "competencia": "2025-04-01",
@@ -9266,12 +9402,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 1844249.2699999998,
+                "valor": 1846998.9899999998,
                 "vazio": false
               }
             ],
-            "total": 174931376.3168134,
-            "linha_planilha": 25
+            "total": 174934126.0368134,
+            "linha_planilha": 24
           },
           {
             "competencia": "2025-05-01",
@@ -9304,12 +9440,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 2216505.9599999986,
+                "valor": 2223000.4299999983,
                 "vazio": false
               }
             ],
-            "total": 184671144.6048813,
-            "linha_planilha": 26
+            "total": 184677639.0748813,
+            "linha_planilha": 25
           },
           {
             "competencia": "2025-06-01",
@@ -9342,12 +9478,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 2507263.8299999963,
+                "valor": 2512633.329999997,
                 "vazio": false
               }
             ],
-            "total": 174778059.93608627,
-            "linha_planilha": 27
+            "total": 174783429.43608627,
+            "linha_planilha": 26
           },
           {
             "competencia": "2025-07-01",
@@ -9380,12 +9516,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 1523459.9299999997,
+                "valor": 1526031.8499999996,
                 "vazio": false
               }
             ],
-            "total": 184324057.99126804,
-            "linha_planilha": 28
+            "total": 184326629.91126803,
+            "linha_planilha": 27
           },
           {
             "competencia": "2025-08-01",
@@ -9418,12 +9554,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 790372.5699999996,
+                "valor": 813922.8199999996,
                 "vazio": false
               }
             ],
-            "total": 179265273.74999994,
-            "linha_planilha": 29
+            "total": 179288823.99999994,
+            "linha_planilha": 28
           },
           {
             "competencia": "2025-09-01",
@@ -9456,12 +9592,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 980607.9000000004,
+                "valor": 996088.7600000005,
                 "vazio": false
               }
             ],
-            "total": 191828449.94999954,
-            "linha_planilha": 30
+            "total": 191843930.80999953,
+            "linha_planilha": 29
           },
           {
             "competencia": "2025-10-01",
@@ -9494,12 +9630,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 1208058.4599999976,
+                "valor": 1205702.5099999977,
                 "vazio": false
               }
             ],
-            "total": 199151055.30999967,
-            "linha_planilha": 31
+            "total": 199148699.35999966,
+            "linha_planilha": 30
           },
           {
             "competencia": "2025-11-01",
@@ -9532,12 +9668,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 1288499.6199999996,
+                "valor": 1314222.5099999993,
                 "vazio": false
               }
             ],
-            "total": 178569058.99,
-            "linha_planilha": 32
+            "total": 178594781.88,
+            "linha_planilha": 31
           },
           {
             "competencia": "2025-12-01",
@@ -9570,12 +9706,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 1563808.3499999999,
+                "valor": 1597018.16,
                 "vazio": false
               }
             ],
-            "total": 177355741.66999984,
-            "linha_planilha": 33
+            "total": 177388951.47999984,
+            "linha_planilha": 32
           },
           {
             "competencia": "2026-01-01",
@@ -9608,12 +9744,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 1315466.0699999996,
+                "valor": 1336795.6299999997,
                 "vazio": false
               }
             ],
-            "total": 187391471.17,
-            "linha_planilha": 34
+            "total": 187412800.73,
+            "linha_planilha": 33
           },
           {
             "competencia": "2026-02-01",
@@ -9646,12 +9782,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 1604175.52,
+                "valor": 1817189.5500000003,
                 "vazio": false
               }
             ],
-            "total": 173372650.59999976,
-            "linha_planilha": 35
+            "total": 173585664.62999976,
+            "linha_planilha": 34
           },
           {
             "competencia": "2026-03-01",
@@ -9684,12 +9820,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 1173042.4300000016,
+                "valor": 1542810.4500000016,
                 "vazio": false
               }
             ],
-            "total": 209896990.94000018,
-            "linha_planilha": 36
+            "total": 210266758.96000016,
+            "linha_planilha": 35
           },
           {
             "competencia": "2026-04-01",
@@ -9717,17 +9853,17 @@ window.PEONA_DATA = {
               },
               {
                 "col": "4",
-                "valor": 1887598.4799999995,
+                "valor": 2252669.720000002,
                 "vazio": false
               },
               {
                 "col": "5+",
-                "valor": 0.0,
+                "valor": 882831.0100000001,
                 "vazio": false
               }
             ],
-            "total": 196898205.30000007,
-            "linha_planilha": 37
+            "total": 198146107.55000007,
+            "linha_planilha": 36
           },
           {
             "competencia": "2026-05-01",
@@ -9750,12 +9886,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "3",
-                "valor": 10953155.729999987,
+                "valor": 11610881.399999997,
                 "vazio": false
               },
               {
                 "col": "4",
-                "valor": 0.0,
+                "valor": 1331011.95,
                 "vazio": false
               },
               {
@@ -9764,8 +9900,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 198829655.77,
-            "linha_planilha": 38
+            "total": 200818393.39000002,
+            "linha_planilha": 37
           },
           {
             "competencia": "2026-06-01",
@@ -9783,12 +9919,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "2",
-                "valor": 64958813.860000014,
+                "valor": 67901929.08999999,
                 "vazio": false
               },
               {
                 "col": "3",
-                "valor": 0.0,
+                "valor": 5979051.310000003,
                 "vazio": false
               },
               {
@@ -9802,8 +9938,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 196397561.70000017,
-            "linha_planilha": 39
+            "total": 205319728.24000013,
+            "linha_planilha": 38
           },
           {
             "competencia": "2026-07-01",
@@ -9816,7 +9952,45 @@ window.PEONA_DATA = {
               },
               {
                 "col": "1",
-                "valor": 138171338.1300001,
+                "valor": 141111567.06000006,
+                "vazio": false
+              },
+              {
+                "col": "2",
+                "valor": 64535757.37999994,
+                "vazio": false
+              },
+              {
+                "col": "3",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "4",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "5+",
+                "valor": 0.0,
+                "vazio": false
+              }
+            ],
+            "total": 208515030.87,
+            "linha_planilha": 39
+          },
+          {
+            "competencia": "2026-08-01",
+            "competencia_label": "08/2026",
+            "lags": [
+              {
+                "col": "0",
+                "valor": 1823813.2999999986,
+                "vazio": false
+              },
+              {
+                "col": "1",
+                "valor": 127908202.42999998,
                 "vazio": false
               },
               {
@@ -9840,16 +10014,16 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 141039044.56000012,
+            "total": 129732015.72999997,
             "linha_planilha": 40
           },
           {
-            "competencia": "2026-08-01",
-            "competencia_label": "08/2026",
+            "competencia": "2026-09-01",
+            "competencia_label": "09/2026",
             "lags": [
               {
                 "col": "0",
-                "valor": 1925223.9899999993,
+                "valor": 3771410.4099999997,
                 "vazio": false
               },
               {
@@ -9878,7 +10052,7 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 1925223.9899999993,
+            "total": 3771410.4099999997,
             "linha_planilha": 41
           }
         ]
@@ -9904,37 +10078,6 @@ window.PEONA_DATA = {
           "5"
         ],
         "linhas": [
-          {
-            "competencia": "2024-08-01",
-            "proporcoes": [
-              {
-                "col": "0",
-                "valor": 0.0
-              },
-              {
-                "col": "1",
-                "valor": 0.39427254686846575
-              },
-              {
-                "col": "2",
-                "valor": 0.2177713563636476
-              },
-              {
-                "col": "3",
-                "valor": 0.07566439469979311
-              },
-              {
-                "col": "4",
-                "valor": 0.036477528007844956
-              },
-              {
-                "col": "5",
-                "valor": 0.02199923619060727
-              }
-            ],
-            "total": 0.7461850621303587,
-            "linha_planilha": 75
-          },
           {
             "competencia": "2024-09-01",
             "proporcoes": [
@@ -9964,7 +10107,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 0.9014474073620871,
-            "linha_planilha": 76
+            "linha_planilha": 75
           },
           {
             "competencia": "2024-10-01",
@@ -9995,7 +10138,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.0532918688530237,
-            "linha_planilha": 77
+            "linha_planilha": 76
           },
           {
             "competencia": "2024-11-01",
@@ -10026,7 +10169,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.2164565196152963,
-            "linha_planilha": 78
+            "linha_planilha": 77
           },
           {
             "competencia": "2024-12-01",
@@ -10057,7 +10200,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.3954912260804744,
-            "linha_planilha": 79
+            "linha_planilha": 78
           },
           {
             "competencia": "2025-01-01",
@@ -10088,7 +10231,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6207061854344722,
-            "linha_planilha": 80
+            "linha_planilha": 79
           },
           {
             "competencia": "2025-02-01",
@@ -10119,7 +10262,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6352392833102933,
-            "linha_planilha": 81
+            "linha_planilha": 80
           },
           {
             "competencia": "2025-03-01",
@@ -10150,7 +10293,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.619115204089079,
-            "linha_planilha": 82
+            "linha_planilha": 81
           },
           {
             "competencia": "2025-04-01",
@@ -10181,7 +10324,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6299719655010185,
-            "linha_planilha": 83
+            "linha_planilha": 82
           },
           {
             "competencia": "2025-05-01",
@@ -10212,7 +10355,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6335260248553574,
-            "linha_planilha": 84
+            "linha_planilha": 83
           },
           {
             "competencia": "2025-06-01",
@@ -10243,7 +10386,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6498711270373032,
-            "linha_planilha": 85
+            "linha_planilha": 84
           },
           {
             "competencia": "2025-07-01",
@@ -10274,7 +10417,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6076233707137058,
-            "linha_planilha": 86
+            "linha_planilha": 85
           },
           {
             "competencia": "2025-08-01",
@@ -10305,7 +10448,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6015992638602434,
-            "linha_planilha": 87
+            "linha_planilha": 86
           },
           {
             "competencia": "2025-09-01",
@@ -10336,7 +10479,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6035380862604607,
-            "linha_planilha": 88
+            "linha_planilha": 87
           },
           {
             "competencia": "2025-10-01",
@@ -10367,7 +10510,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5856714289658622,
-            "linha_planilha": 89
+            "linha_planilha": 88
           },
           {
             "competencia": "2025-11-01",
@@ -10398,7 +10541,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5691244772018669,
-            "linha_planilha": 90
+            "linha_planilha": 89
           },
           {
             "competencia": "2025-12-01",
@@ -10429,7 +10572,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5343286595941703,
-            "linha_planilha": 91
+            "linha_planilha": 90
           },
           {
             "competencia": "2026-01-01",
@@ -10460,7 +10603,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5095384938749608,
-            "linha_planilha": 92
+            "linha_planilha": 91
           },
           {
             "competencia": "2026-02-01",
@@ -10491,7 +10634,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.4936614914593216,
-            "linha_planilha": 93
+            "linha_planilha": 92
           },
           {
             "competencia": "2026-03-01",
@@ -10522,7 +10665,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.485359462472666,
-            "linha_planilha": 94
+            "linha_planilha": 93
           },
           {
             "competencia": "2026-04-01",
@@ -10553,7 +10696,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.474775629576242,
-            "linha_planilha": 95
+            "linha_planilha": 94
           },
           {
             "competencia": "2026-05-01",
@@ -10584,7 +10727,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.4650652014233425,
-            "linha_planilha": 96
+            "linha_planilha": 95
           },
           {
             "competencia": "2026-06-01",
@@ -10615,7 +10758,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.4567724974261633,
-            "linha_planilha": 97
+            "linha_planilha": 96
           },
           {
             "competencia": "2026-07-01",
@@ -10646,7 +10789,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.453698527085872,
-            "linha_planilha": 98
+            "linha_planilha": 97
           },
           {
             "competencia": "2026-08-01",
@@ -10657,41 +10800,62 @@ window.PEONA_DATA = {
               },
               {
                 "col": "1",
-                "valor": 0.6280540786922226
+                "valor": 0.626886481150173
               },
               {
                 "col": "2",
-                "valor": 0.584915717186603
+                "valor": 0.5864106809967613
               },
               {
                 "col": "3",
-                "valor": 0.15509034261923652
+                "valor": 0.15582507243965474
               },
               {
                 "col": "4",
-                "valor": 0.03206791631556974
+                "valor": 0.0330830642122204
               },
               {
                 "col": "5",
-                "valor": 0.05669448922855248
+                "valor": 0.05695792013189095
               }
             ],
-            "total": 1.4568225440421845,
+            "total": 1.4591632189307007,
+            "linha_planilha": 98
+          },
+          {
+            "competencia": "2026-09-01",
+            "proporcoes": [
+              {
+                "col": "0",
+                "valor": 0.0
+              },
+              {
+                "col": "1",
+                "valor": 0.6289502520919555
+              },
+              {
+                "col": "2",
+                "valor": 0.589017479352443
+              },
+              {
+                "col": "3",
+                "valor": 0.1397238876732935
+              },
+              {
+                "col": "4",
+                "valor": 0.033880450319290635
+              },
+              {
+                "col": "5",
+                "valor": 0.055598889057712104
+              }
+            ],
+            "total": 1.447170958494695,
             "linha_planilha": 99
           }
         ]
       },
       "peona_serie": [
-        {
-          "competencia": "2024-03-01",
-          "total_avisado": 198577421.5930596,
-          "media_nm": null,
-          "fator_peona": null,
-          "peona": 0.0,
-          "variacao_r": null,
-          "variacao_pct": null,
-          "linha_planilha": 104
-        },
         {
           "competencia": "2024-04-01",
           "total_avisado": 209947814.86323157,
@@ -10700,7 +10864,7 @@ window.PEONA_DATA = {
           "peona": 0.0,
           "variacao_r": null,
           "variacao_pct": null,
-          "linha_planilha": 105
+          "linha_planilha": 104
         },
         {
           "competencia": "2024-05-01",
@@ -10710,7 +10874,7 @@ window.PEONA_DATA = {
           "peona": 0.0,
           "variacao_r": null,
           "variacao_pct": null,
-          "linha_planilha": 106
+          "linha_planilha": 105
         },
         {
           "competencia": "2024-06-01",
@@ -10720,7 +10884,7 @@ window.PEONA_DATA = {
           "peona": 0.0,
           "variacao_r": null,
           "variacao_pct": null,
-          "linha_planilha": 107
+          "linha_planilha": 106
         },
         {
           "competencia": "2024-07-01",
@@ -10730,17 +10894,17 @@ window.PEONA_DATA = {
           "peona": 0.0,
           "variacao_r": null,
           "variacao_pct": null,
-          "linha_planilha": 108
+          "linha_planilha": 107
         },
         {
           "competencia": "2024-08-01",
           "total_avisado": 212349541.24405065,
-          "media_nm": 206788327.13965976,
-          "fator_peona": 0.7461850621303587,
-          "peona": 154302360.73453996,
+          "media_nm": null,
+          "fator_peona": null,
+          "peona": 0.0,
           "variacao_r": null,
           "variacao_pct": null,
-          "linha_planilha": 109
+          "linha_planilha": 108
         },
         {
           "competencia": "2024-09-01",
@@ -10748,9 +10912,9 @@ window.PEONA_DATA = {
           "media_nm": 202585317.42110625,
           "fator_peona": 0.9014474073620871,
           "peona": 182620009.15888166,
-          "variacao_r": 28317648.42434171,
-          "variacao_pct": 0.1835205131634965,
-          "linha_planilha": 110
+          "variacao_r": null,
+          "variacao_pct": null,
+          "linha_planilha": 109
         },
         {
           "competencia": "2024-10-01",
@@ -10760,7 +10924,7 @@ window.PEONA_DATA = {
           "peona": 205897023.00297925,
           "variacao_r": 23277013.844097584,
           "variacao_pct": 0.12746146466264974,
-          "linha_planilha": 111
+          "linha_planilha": 110
         },
         {
           "competencia": "2024-11-01",
@@ -10770,7 +10934,7 @@ window.PEONA_DATA = {
           "peona": 232795158.2259738,
           "variacao_r": 26898135.222994566,
           "variacao_pct": 0.13063877675689062,
-          "linha_planilha": 112
+          "linha_planilha": 111
         },
         {
           "competencia": "2024-12-01",
@@ -10780,7 +10944,7 @@ window.PEONA_DATA = {
           "peona": 256141813.8175968,
           "variacao_r": 23346655.59162298,
           "variacao_pct": 0.10028840706798725,
-          "linha_planilha": 113
+          "linha_planilha": 112
         },
         {
           "competencia": "2025-01-01",
@@ -10790,7 +10954,7 @@ window.PEONA_DATA = {
           "peona": 291713738.99053276,
           "variacao_r": 35571925.17293596,
           "variacao_pct": 0.138875900981428,
-          "linha_planilha": 114
+          "linha_planilha": 113
         },
         {
           "competencia": "2025-02-01",
@@ -10800,7 +10964,7 @@ window.PEONA_DATA = {
           "peona": 289241228.8870201,
           "variacao_r": -2472510.103512645,
           "variacao_pct": -0.008475809579859717,
-          "linha_planilha": 115
+          "linha_planilha": 114
         },
         {
           "competencia": "2025-03-01",
@@ -10810,7 +10974,7 @@ window.PEONA_DATA = {
           "peona": 285029588.83832246,
           "variacao_r": -4211640.04869765,
           "variacao_pct": -0.014560994865440713,
-          "linha_planilha": 116
+          "linha_planilha": 115
         },
         {
           "competencia": "2025-04-01",
@@ -10820,7 +10984,7 @@ window.PEONA_DATA = {
           "peona": 284012885.48883885,
           "variacao_r": -1016703.3494836092,
           "variacao_pct": -0.003567009844933411,
-          "linha_planilha": 117
+          "linha_planilha": 116
         },
         {
           "competencia": "2025-05-01",
@@ -10830,7 +10994,7 @@ window.PEONA_DATA = {
           "peona": 283006315.0332696,
           "variacao_r": -1006570.4555692673,
           "variacao_pct": -0.0035441013665163945,
-          "linha_planilha": 118
+          "linha_planilha": 117
         },
         {
           "competencia": "2025-06-01",
@@ -10840,7 +11004,7 @@ window.PEONA_DATA = {
           "peona": 295372679.8273908,
           "variacao_r": 12366364.794121206,
           "variacao_pct": 0.04369642703085064,
-          "linha_planilha": 119
+          "linha_planilha": 118
         },
         {
           "competencia": "2025-07-01",
@@ -10850,7 +11014,7 @@ window.PEONA_DATA = {
           "peona": 289478572.91340303,
           "variacao_r": -5894106.913987756,
           "variacao_pct": -0.01995481409259703,
-          "linha_planilha": 120
+          "linha_planilha": 119
         },
         {
           "competencia": "2025-08-01",
@@ -10860,7 +11024,7 @@ window.PEONA_DATA = {
           "peona": 285118609.9884561,
           "variacao_r": -4359962.924946964,
           "variacao_pct": -0.015061435743125795,
-          "linha_planilha": 121
+          "linha_planilha": 120
         },
         {
           "competencia": "2025-09-01",
@@ -10870,7 +11034,7 @@ window.PEONA_DATA = {
           "peona": 289276665.4276232,
           "variacao_r": 4158055.439167142,
           "variacao_pct": 0.014583598872537573,
-          "linha_planilha": 122
+          "linha_planilha": 121
         },
         {
           "competencia": "2025-10-01",
@@ -10880,7 +11044,7 @@ window.PEONA_DATA = {
           "peona": 295765675.6024236,
           "variacao_r": 6489010.174800396,
           "variacao_pct": 0.022431847951538186,
-          "linha_planilha": 123
+          "linha_planilha": 122
         },
         {
           "competencia": "2025-11-01",
@@ -10890,7 +11054,7 @@ window.PEONA_DATA = {
           "peona": 296931424.4004847,
           "variacao_r": 1165748.7980610728,
           "variacao_pct": 0.003941460738088098,
-          "linha_planilha": 124
+          "linha_planilha": 123
         },
         {
           "competencia": "2025-12-01",
@@ -10900,7 +11064,7 @@ window.PEONA_DATA = {
           "peona": 289324536.7374801,
           "variacao_r": -7606887.663004577,
           "variacao_pct": -0.025618331499817404,
-          "linha_planilha": 125
+          "linha_planilha": 124
         },
         {
           "competencia": "2026-01-01",
@@ -10910,7 +11074,7 @@ window.PEONA_DATA = {
           "peona": 282762145.2216665,
           "variacao_r": -6562391.515813589,
           "variacao_pct": -0.022681766260868486,
-          "linha_planilha": 126
+          "linha_planilha": 125
         },
         {
           "competencia": "2026-02-01",
@@ -10920,7 +11084,7 @@ window.PEONA_DATA = {
           "peona": 279581989.0666665,
           "variacao_r": -3180156.155000031,
           "variacao_pct": -0.011246753530275377,
-          "linha_planilha": 127
+          "linha_planilha": 126
         },
         {
           "competencia": "2026-03-01",
@@ -10930,7 +11094,7 @@ window.PEONA_DATA = {
           "peona": 277569796.0533331,
           "variacao_r": -2012193.0133333802,
           "variacao_pct": -0.007197148214199034,
-          "linha_planilha": 128
+          "linha_planilha": 127
         },
         {
           "competencia": "2026-04-01",
@@ -10940,7 +11104,7 @@ window.PEONA_DATA = {
           "peona": 278137889.2916665,
           "variacao_r": 568093.2383334041,
           "variacao_pct": 0.002046668068395485,
-          "linha_planilha": 129
+          "linha_planilha": 128
         },
         {
           "competencia": "2026-05-01",
@@ -10950,7 +11114,7 @@ window.PEONA_DATA = {
           "peona": 276699947.21666664,
           "variacao_r": -1437942.0749998689,
           "variacao_pct": -0.005169889218120782,
-          "linha_planilha": 130
+          "linha_planilha": 129
         },
         {
           "competencia": "2026-06-01",
@@ -10960,7 +11124,7 @@ window.PEONA_DATA = {
           "peona": 278078166.00499994,
           "variacao_r": 1378218.7883332968,
           "variacao_pct": 0.0049809145328607585,
-          "linha_planilha": 131
+          "linha_planilha": 130
         },
         {
           "competencia": "2026-07-01",
@@ -10970,270 +11134,280 @@ window.PEONA_DATA = {
           "peona": 284039635.56666666,
           "variacao_r": 5961469.561666727,
           "variacao_pct": 0.021438107303827447,
-          "linha_planilha": 132
+          "linha_planilha": 131
         },
         {
           "competencia": "2026-08-01",
-          "total_avisado": 220307734.55000013,
-          "media_nm": 202012038.9566667,
-          "fator_peona": 1.4568225440421845,
-          "peona": 294295692.5200001,
-          "variacao_r": 10256056.953333437,
-          "variacao_pct": 0.03610783731950762,
+          "total_avisado": 227255470.10000005,
+          "media_nm": 203169994.8816667,
+          "fator_peona": 1.4591632189307007,
+          "peona": 296458183.72166675,
+          "variacao_r": 12418548.15500009,
+          "variacao_pct": 0.04372118042689621,
+          "linha_planilha": 132
+        },
+        {
+          "competencia": "2026-09-01",
+          "total_avisado": 205040293.0399999,
+          "media_nm": 207220564.48000005,
+          "fator_peona": 1.447170958494695,
+          "peona": 299883582.9183334,
+          "variacao_r": 3425399.196666658,
+          "variacao_pct": 0.011554409305437163,
           "linha_planilha": 133
         }
       ],
       "runoff_aux": [
         {
-          "competencia": "2023-09-01",
-          "runoff_puro": 111240217.99000002,
-          "avisado_mes": 169950542.10999998,
-          "ocorrido_mes": 164609525.9323207,
-          "linha_planilha": 6
-        },
-        {
           "competencia": "2023-10-01",
           "runoff_puro": 113878485.08000001,
           "avisado_mes": 168080369.79999998,
           "ocorrido_mes": 170789343.3765696,
-          "linha_planilha": 7
+          "linha_planilha": 6
         },
         {
           "competencia": "2023-11-01",
           "runoff_puro": 115207387.73,
           "avisado_mes": 171499507.14,
           "ocorrido_mes": 172849419.3101528,
-          "linha_planilha": 8
+          "linha_planilha": 7
         },
         {
           "competencia": "2023-12-01",
           "runoff_puro": 100304876.39000002,
           "avisado_mes": 166694810.45000002,
           "ocorrido_mes": 151552104.90278095,
-          "linha_planilha": 9
+          "linha_planilha": 8
         },
         {
           "competencia": "2024-01-01",
           "runoff_puro": 118127553.54816307,
           "avisado_mes": 181475770.86194384,
           "ocorrido_mes": 199637668.55560014,
-          "linha_planilha": 10
+          "linha_planilha": 9
         },
         {
           "competencia": "2024-02-01",
           "runoff_puro": 115054033.2656789,
           "avisado_mes": 191632293.64520502,
           "ocorrido_mes": 188934573.02237818,
-          "linha_planilha": 11
+          "linha_planilha": 10
         },
         {
           "competencia": "2024-03-01",
           "runoff_puro": 117667583.93391341,
           "avisado_mes": 198577421.5930596,
           "ocorrido_mes": 201004142.68082026,
-          "linha_planilha": 12
+          "linha_planilha": 11
         },
         {
           "competencia": "2024-04-01",
           "runoff_puro": 127662281.62573265,
           "avisado_mes": 209947814.86323157,
           "ocorrido_mes": 219729982.48436317,
-          "linha_planilha": 13
+          "linha_planilha": 12
         },
         {
           "competencia": "2024-05-01",
           "runoff_puro": 139732102.70972607,
           "avisado_mes": 209605564.7466614,
           "ocorrido_mes": 222391007.904482,
-          "linha_planilha": 14
+          "linha_planilha": 13
         },
         {
           "competencia": "2024-06-01",
           "runoff_puro": 208214036.46459478,
           "avisado_mes": 206100863.36665547,
           "ocorrido_mes": 276089823.810927,
-          "linha_planilha": 15
+          "linha_planilha": 14
         },
         {
           "competencia": "2024-07-01",
           "runoff_puro": 309070828.5518033,
           "avisado_mes": 204148757.02429974,
-          "ocorrido_mes": 306619836.9591751,
-          "linha_planilha": 16
+          "ocorrido_mes": 306620826.9591751,
+          "linha_planilha": 15
         },
         {
           "competencia": "2024-08-01",
           "runoff_puro": 278461418.7751765,
           "avisado_mes": 212349541.24405065,
-          "ocorrido_mes": 181154787.47702473,
-          "linha_planilha": 17
+          "ocorrido_mes": 181159927.60702476,
+          "linha_planilha": 16
         },
         {
           "competencia": "2024-09-01",
           "runoff_puro": 283082370.13855106,
           "avisado_mes": 173359363.28173882,
-          "ocorrido_mes": 179209646.34063265,
-          "linha_planilha": 18
+          "ocorrido_mes": 179210986.34063265,
+          "linha_planilha": 17
         },
         {
           "competencia": "2024-10-01",
           "runoff_puro": 304294666.8858174,
           "avisado_mes": 167313224.35510805,
-          "ocorrido_mes": 192319071.70875475,
-          "linha_planilha": 19
+          "ocorrido_mes": 192338576.87875476,
+          "linha_planilha": 18
         },
         {
           "competencia": "2024-11-01",
           "runoff_puro": 289172800.0558623,
           "avisado_mes": 184957494.29993632,
-          "ocorrido_mes": 170726264.33563623,
-          "linha_planilha": 20
+          "ocorrido_mes": 170744335.85563624,
+          "linha_planilha": 19
         },
         {
           "competencia": "2024-12-01",
           "runoff_puro": 282672290.254606,
           "avisado_mes": 159169036.92169738,
-          "ocorrido_mes": 154659317.69355938,
-          "linha_planilha": 21
+          "ocorrido_mes": 154659459.25355938,
+          "linha_planilha": 20
         },
         {
           "competencia": "2025-01-01",
           "runoff_puro": 293006910.6533184,
           "avisado_mes": 182801826.71194842,
-          "ocorrido_mes": 188644500.5451267,
-          "linha_planilha": 22
+          "ocorrido_mes": 188644891.7451267,
+          "linha_planilha": 21
         },
         {
           "competencia": "2025-02-01",
           "runoff_puro": 271190946.8897599,
           "avisado_mes": 193679437.69493085,
-          "ocorrido_mes": 170997973.65984586,
-          "linha_planilha": 23
+          "ocorrido_mes": 171009263.74984586,
+          "linha_planilha": 22
         },
         {
           "competencia": "2025-03-01",
           "runoff_puro": 278040854.8420174,
           "avisado_mes": 168321011.90569565,
-          "ocorrido_mes": 175083116.06795317,
-          "linha_planilha": 24
+          "ocorrido_mes": 175084375.03795317,
+          "linha_planilha": 23
         },
         {
           "competencia": "2025-04-01",
           "runoff_puro": 297494470.8583949,
           "avisado_mes": 156535377.7404358,
-          "ocorrido_mes": 174931376.3168134,
-          "linha_planilha": 25
+          "ocorrido_mes": 174934126.0368134,
+          "linha_planilha": 24
         },
         {
           "competencia": "2025-05-01",
           "runoff_puro": 302555254.11553067,
           "avisado_mes": 178985710.3477455,
-          "ocorrido_mes": 184671144.6048813,
-          "linha_planilha": 26
+          "ocorrido_mes": 184677639.0748813,
+          "linha_planilha": 25
         },
         {
           "competencia": "2025-06-01",
           "runoff_puro": 283423492.59550405,
           "avisado_mes": 193843005.27611285,
-          "ocorrido_mes": 174778059.93608627,
-          "linha_planilha": 27
+          "ocorrido_mes": 174783429.43608627,
+          "linha_planilha": 26
         },
         {
           "competencia": "2025-07-01",
           "runoff_puro": 278864823.31,
           "avisado_mes": 189032438.76677218,
-          "ocorrido_mes": 184324057.99126804,
-          "linha_planilha": 28
+          "ocorrido_mes": 184326629.91126803,
+          "linha_planilha": 27
         },
         {
           "competencia": "2025-08-01",
           "runoff_puro": 276433861.38,
           "avisado_mes": 181409607.70000002,
-          "ocorrido_mes": 179265273.74999994,
-          "linha_planilha": 29
+          "ocorrido_mes": 179288823.99999994,
+          "linha_planilha": 28
         },
         {
           "competencia": "2025-09-01",
           "runoff_puro": 286140905.2499994,
           "avisado_mes": 182587853.45000008,
-          "ocorrido_mes": 191828449.94999954,
-          "linha_planilha": 30
+          "ocorrido_mes": 191843930.80999953,
+          "linha_planilha": 29
         },
         {
           "competencia": "2025-10-01",
           "runoff_puro": 292374851.8099996,
           "avisado_mes": 193284998.4499995,
-          "ocorrido_mes": 199151055.30999967,
-          "linha_planilha": 31
+          "ocorrido_mes": 199148699.35999966,
+          "linha_planilha": 30
         },
         {
           "competencia": "2025-11-01",
           "runoff_puro": 276770756.02000004,
           "avisado_mes": 195245037.47999963,
-          "ocorrido_mes": 178569058.99,
-          "linha_planilha": 32
+          "ocorrido_mes": 178594781.88,
+          "linha_planilha": 31
         },
         {
           "competencia": "2025-12-01",
           "runoff_puro": 265077251.12999982,
           "avisado_mes": 189845131.49000007,
-          "ocorrido_mes": 177355741.66999984,
-          "linha_planilha": 33
+          "ocorrido_mes": 177388951.47999984,
+          "linha_planilha": 32
         },
         {
           "competencia": "2026-01-01",
           "runoff_puro": 270960478.47999996,
           "avisado_mes": 181529066.0299998,
-          "ocorrido_mes": 187391471.17,
-          "linha_planilha": 34
+          "ocorrido_mes": 187412800.73,
+          "linha_planilha": 33
         },
         {
           "competencia": "2026-02-01",
           "runoff_puro": 265846989.54999968,
           "avisado_mes": 180581610.85000002,
-          "ocorrido_mes": 173372650.59999976,
-          "linha_planilha": 35
+          "ocorrido_mes": 173585664.62999976,
+          "linha_planilha": 34
         },
         {
           "competencia": "2026-03-01",
-          "runoff_puro": 296245666.97,
+          "runoff_puro": 296388672.14000005,
           "avisado_mes": 180736875.44999972,
-          "ocorrido_mes": 209896990.94000018,
-          "linha_planilha": 36
+          "ocorrido_mes": 210266758.96000016,
+          "linha_planilha": 35
         },
         {
           "competencia": "2026-04-01",
-          "runoff_puro": 289501099.3700001,
+          "runoff_puro": 291524035.34000015,
           "avisado_mes": 203642772.90000007,
-          "ocorrido_mes": 196898205.30000007,
-          "linha_planilha": 37
+          "ocorrido_mes": 198146107.55000007,
+          "linha_planilha": 36
         },
         {
           "competencia": "2026-05-01",
-          "runoff_puro": 291474541.15000004,
+          "runoff_puro": 295486214.74000007,
           "avisado_mes": 196856213.99000013,
-          "ocorrido_mes": 198829655.77,
-          "linha_planilha": 38
+          "ocorrido_mes": 200818393.39000002,
+          "linha_planilha": 37
         },
         {
           "competencia": "2026-06-01",
-          "runoff_puro": 285899795.80000025,
+          "runoff_puro": 298833635.93000025,
           "avisado_mes": 201972307.04999995,
-          "ocorrido_mes": 196397561.70000017,
-          "linha_planilha": 39
+          "ocorrido_mes": 205319728.24000013,
+          "linha_planilha": 38
         },
         {
           "competencia": "2026-07-01",
-          "runoff_puro": 218382510.56000012,
+          "runoff_puro": 298792337.0,
           "avisado_mes": 208556329.80000022,
-          "ocorrido_mes": 141039044.56000012,
-          "linha_planilha": 40
+          "ocorrido_mes": 208515030.87,
+          "linha_planilha": 39
         },
         {
           "competencia": "2026-08-01",
+          "runoff_puro": 201268882.6299999,
+          "avisado_mes": 227255470.10000005,
+          "ocorrido_mes": 129732015.72999997,
+          "linha_planilha": 40
+        },
+        {
+          "competencia": "2026-09-01",
           "runoff_puro": 0.0,
-          "avisado_mes": 220307734.55000013,
-          "ocorrido_mes": 1925223.9899999993,
+          "avisado_mes": 205040293.0399999,
+          "ocorrido_mes": 3771410.4099999997,
           "linha_planilha": 41
         }
       ],
@@ -11288,74 +11462,6 @@ window.PEONA_DATA = {
           "11+"
         ],
         "linhas": [
-          {
-            "competencia": "2023-09-01",
-            "competencia_label": "09/2023",
-            "lags": [
-              {
-                "col": "0",
-                "valor": 82637291.54,
-                "vazio": false
-              },
-              {
-                "col": "1",
-                "valor": 69764528.65,
-                "vazio": false
-              },
-              {
-                "col": "2",
-                "valor": 11480884.65,
-                "vazio": false
-              },
-              {
-                "col": "3",
-                "valor": 4280767.68,
-                "vazio": false
-              },
-              {
-                "col": "4",
-                "valor": 1351846.42,
-                "vazio": false
-              },
-              {
-                "col": "5",
-                "valor": 405656.65,
-                "vazio": false
-              },
-              {
-                "col": "6",
-                "valor": 29505.13,
-                "vazio": false
-              },
-              {
-                "col": "7",
-                "valor": 61.39,
-                "vazio": false
-              },
-              {
-                "col": "8",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "9",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "10",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "11+",
-                "valor": 0.0,
-                "vazio": false
-              }
-            ],
-            "total": 169950542.10999998,
-            "linha_planilha": 6
-          },
           {
             "competencia": "2023-10-01",
             "competencia_label": "10/2023",
@@ -11422,7 +11528,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 168080369.79999998,
-            "linha_planilha": 7
+            "linha_planilha": 6
           },
           {
             "competencia": "2023-11-01",
@@ -11490,7 +11596,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 171499507.14,
-            "linha_planilha": 8
+            "linha_planilha": 7
           },
           {
             "competencia": "2023-12-01",
@@ -11558,7 +11664,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 166694810.45000002,
-            "linha_planilha": 9
+            "linha_planilha": 8
           },
           {
             "competencia": "2024-01-01",
@@ -11626,7 +11732,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 181475770.86194384,
-            "linha_planilha": 10
+            "linha_planilha": 9
           },
           {
             "competencia": "2024-02-01",
@@ -11694,7 +11800,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 191632293.64520505,
-            "linha_planilha": 11
+            "linha_planilha": 10
           },
           {
             "competencia": "2024-03-01",
@@ -11762,7 +11868,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 198577421.5930596,
-            "linha_planilha": 12
+            "linha_planilha": 11
           },
           {
             "competencia": "2024-04-01",
@@ -11830,7 +11936,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 209947814.86323157,
-            "linha_planilha": 13
+            "linha_planilha": 12
           },
           {
             "competencia": "2024-05-01",
@@ -11898,7 +12004,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 209605564.7466614,
-            "linha_planilha": 14
+            "linha_planilha": 13
           },
           {
             "competencia": "2024-06-01",
@@ -11966,7 +12072,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 206100863.36665547,
-            "linha_planilha": 15
+            "linha_planilha": 14
           },
           {
             "competencia": "2024-07-01",
@@ -12034,7 +12140,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 204148757.02429974,
-            "linha_planilha": 16
+            "linha_planilha": 15
           },
           {
             "competencia": "2024-08-01",
@@ -12102,7 +12208,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 212349541.24405068,
-            "linha_planilha": 17
+            "linha_planilha": 16
           },
           {
             "competencia": "2024-09-01",
@@ -12170,7 +12276,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 173359363.28173885,
-            "linha_planilha": 18
+            "linha_planilha": 17
           },
           {
             "competencia": "2024-10-01",
@@ -12238,7 +12344,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 167313224.35510802,
-            "linha_planilha": 19
+            "linha_planilha": 18
           },
           {
             "competencia": "2024-11-01",
@@ -12306,7 +12412,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 184957494.29993632,
-            "linha_planilha": 20
+            "linha_planilha": 19
           },
           {
             "competencia": "2024-12-01",
@@ -12374,7 +12480,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 159169036.92169735,
-            "linha_planilha": 21
+            "linha_planilha": 20
           },
           {
             "competencia": "2025-01-01",
@@ -12442,7 +12548,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 182801826.71194842,
-            "linha_planilha": 22
+            "linha_planilha": 21
           },
           {
             "competencia": "2025-02-01",
@@ -12510,7 +12616,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 193679437.69493088,
-            "linha_planilha": 23
+            "linha_planilha": 22
           },
           {
             "competencia": "2025-03-01",
@@ -12578,7 +12684,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 168321011.90569565,
-            "linha_planilha": 24
+            "linha_planilha": 23
           },
           {
             "competencia": "2025-04-01",
@@ -12646,7 +12752,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 156535377.74043584,
-            "linha_planilha": 25
+            "linha_planilha": 24
           },
           {
             "competencia": "2025-05-01",
@@ -12714,7 +12820,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 178985710.34774545,
-            "linha_planilha": 26
+            "linha_planilha": 25
           },
           {
             "competencia": "2025-06-01",
@@ -12782,7 +12888,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 193843005.27611285,
-            "linha_planilha": 27
+            "linha_planilha": 26
           },
           {
             "competencia": "2025-07-01",
@@ -12850,7 +12956,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 189032438.76677215,
-            "linha_planilha": 28
+            "linha_planilha": 27
           },
           {
             "competencia": "2025-08-01",
@@ -12918,7 +13024,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 181409607.7,
-            "linha_planilha": 29
+            "linha_planilha": 28
           },
           {
             "competencia": "2025-09-01",
@@ -12986,7 +13092,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 182587853.45000008,
-            "linha_planilha": 30
+            "linha_planilha": 29
           },
           {
             "competencia": "2025-10-01",
@@ -13054,7 +13160,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 193284998.4499995,
-            "linha_planilha": 31
+            "linha_planilha": 30
           },
           {
             "competencia": "2025-11-01",
@@ -13122,7 +13228,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 195245037.47999963,
-            "linha_planilha": 32
+            "linha_planilha": 31
           },
           {
             "competencia": "2025-12-01",
@@ -13190,7 +13296,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 189845131.4900001,
-            "linha_planilha": 33
+            "linha_planilha": 32
           },
           {
             "competencia": "2026-01-01",
@@ -13258,7 +13364,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 181529066.0299998,
-            "linha_planilha": 34
+            "linha_planilha": 33
           },
           {
             "competencia": "2026-02-01",
@@ -13326,7 +13432,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 180581610.85,
-            "linha_planilha": 35
+            "linha_planilha": 34
           },
           {
             "competencia": "2026-03-01",
@@ -13394,7 +13500,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 180736875.44999975,
-            "linha_planilha": 36
+            "linha_planilha": 35
           },
           {
             "competencia": "2026-04-01",
@@ -13462,7 +13568,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 203642772.9000001,
-            "linha_planilha": 37
+            "linha_planilha": 36
           },
           {
             "competencia": "2026-05-01",
@@ -13530,7 +13636,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 196856213.99000013,
-            "linha_planilha": 38
+            "linha_planilha": 37
           },
           {
             "competencia": "2026-06-01",
@@ -13598,7 +13704,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 201972307.04999995,
-            "linha_planilha": 39
+            "linha_planilha": 38
           },
           {
             "competencia": "2026-07-01",
@@ -13666,7 +13772,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 208556329.80000022,
-            "linha_planilha": 40
+            "linha_planilha": 39
           },
           {
             "competencia": "2026-08-01",
@@ -13674,66 +13780,134 @@ window.PEONA_DATA = {
             "lags": [
               {
                 "col": "0",
-                "valor": 1925223.9899999993,
+                "valor": 1823813.2999999986,
                 "vazio": false
               },
               {
                 "col": "1",
-                "valor": 138171338.1300001,
+                "valor": 141111567.06000006,
                 "vazio": false
               },
               {
                 "col": "2",
-                "valor": 64958813.860000014,
+                "valor": 67901929.08999999,
                 "vazio": false
               },
               {
                 "col": "3",
-                "valor": 10953155.729999987,
+                "valor": 11610881.399999997,
                 "vazio": false
               },
               {
                 "col": "4",
-                "valor": 1887598.4799999995,
+                "valor": 2252669.720000002,
                 "vazio": false
               },
               {
                 "col": "5",
-                "valor": 1173042.4300000016,
+                "valor": 1306454.3700000017,
                 "vazio": false
               },
               {
                 "col": "6",
-                "valor": 148878.74999999988,
+                "valor": 172171.58000000002,
                 "vazio": false
               },
               {
                 "col": "7",
-                "valor": 59564.579999999914,
+                "valor": 61854.889999999876,
                 "vazio": false
               },
               {
                 "col": "8",
-                "valor": 20533.469999999983,
+                "valor": 19863.519999999986,
                 "vazio": false
               },
               {
                 "col": "9",
-                "valor": 99979.43000000008,
+                "valor": 100340.95000000004,
                 "vazio": false
               },
               {
                 "col": "10",
-                "valor": 97518.17999999998,
+                "valor": 92372.06999999999,
                 "vazio": false
               },
               {
                 "col": "11+",
-                "valor": 812087.5200000003,
+                "valor": 801552.1500000004,
                 "vazio": false
               }
             ],
-            "total": 220307734.55000016,
+            "total": 227255470.10000005,
+            "linha_planilha": 40
+          },
+          {
+            "competencia": "2026-09-01",
+            "competencia_label": "09/2026",
+            "lags": [
+              {
+                "col": "0",
+                "valor": 3771410.4099999997,
+                "vazio": false
+              },
+              {
+                "col": "1",
+                "valor": 127908202.42999998,
+                "vazio": false
+              },
+              {
+                "col": "2",
+                "valor": 64535757.37999994,
+                "vazio": false
+              },
+              {
+                "col": "3",
+                "valor": 5979051.310000003,
+                "vazio": false
+              },
+              {
+                "col": "4",
+                "valor": 1331011.95,
+                "vazio": false
+              },
+              {
+                "col": "5",
+                "valor": 882831.0100000001,
+                "vazio": false
+              },
+              {
+                "col": "6",
+                "valor": 236356.0799999999,
+                "vazio": false
+              },
+              {
+                "col": "7",
+                "valor": 189721.20000000007,
+                "vazio": false
+              },
+              {
+                "col": "8",
+                "valor": 19039.250000000007,
+                "vazio": false
+              },
+              {
+                "col": "9",
+                "valor": 33879.75999999998,
+                "vazio": false
+              },
+              {
+                "col": "10",
+                "valor": 25361.36999999998,
+                "vazio": false
+              },
+              {
+                "col": "11+",
+                "valor": 127670.88999999998,
+                "vazio": false
+              }
+            ],
+            "total": 205040293.03999987,
             "linha_planilha": 41
           }
         ]
@@ -13754,74 +13928,6 @@ window.PEONA_DATA = {
           "11+"
         ],
         "linhas": [
-          {
-            "competencia": "2023-09-01",
-            "competencia_label": "09/2023",
-            "lags": [
-              {
-                "col": "0",
-                "valor": 82637291.54,
-                "vazio": false
-              },
-              {
-                "col": "1",
-                "valor": 63907303.89,
-                "vazio": false
-              },
-              {
-                "col": "2",
-                "valor": 13547682.81,
-                "vazio": false
-              },
-              {
-                "col": "3",
-                "valor": 3345635.55,
-                "vazio": false
-              },
-              {
-                "col": "4",
-                "valor": 879563.17,
-                "vazio": false
-              },
-              {
-                "col": "5",
-                "valor": 220322.05,
-                "vazio": false
-              },
-              {
-                "col": "6",
-                "valor": 60114.73,
-                "vazio": false
-              },
-              {
-                "col": "7",
-                "valor": 1989.27,
-                "vazio": false
-              },
-              {
-                "col": "8",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "9",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "10",
-                "valor": 5085.96186,
-                "vazio": false
-              },
-              {
-                "col": "11+",
-                "valor": 4536.960460714719,
-                "vazio": false
-              }
-            ],
-            "total": 164609525.93232074,
-            "linha_planilha": 6
-          },
           {
             "competencia": "2023-10-01",
             "competencia_label": "10/2023",
@@ -13888,7 +13994,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 170789343.3765696,
-            "linha_planilha": 7
+            "linha_planilha": 6
           },
           {
             "competencia": "2023-11-01",
@@ -13956,7 +14062,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 172849419.31015277,
-            "linha_planilha": 8
+            "linha_planilha": 7
           },
           {
             "competencia": "2023-12-01",
@@ -14024,7 +14130,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 151552104.90278095,
-            "linha_planilha": 9
+            "linha_planilha": 8
           },
           {
             "competencia": "2024-01-01",
@@ -14092,7 +14198,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 199637668.5556001,
-            "linha_planilha": 10
+            "linha_planilha": 9
           },
           {
             "competencia": "2024-02-01",
@@ -14160,7 +14266,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 188934573.02237818,
-            "linha_planilha": 11
+            "linha_planilha": 10
           },
           {
             "competencia": "2024-03-01",
@@ -14228,7 +14334,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 201004142.68082026,
-            "linha_planilha": 12
+            "linha_planilha": 11
           },
           {
             "competencia": "2024-04-01",
@@ -14296,7 +14402,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 219729982.48436317,
-            "linha_planilha": 13
+            "linha_planilha": 12
           },
           {
             "competencia": "2024-05-01",
@@ -14364,7 +14470,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 222391007.904482,
-            "linha_planilha": 14
+            "linha_planilha": 13
           },
           {
             "competencia": "2024-06-01",
@@ -14432,7 +14538,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 276089823.810927,
-            "linha_planilha": 15
+            "linha_planilha": 14
           },
           {
             "competencia": "2024-07-01",
@@ -14495,12 +14601,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 164477.9651602621,
+                "valor": 165467.9651602621,
                 "vazio": false
               }
             ],
-            "total": 306619836.9591751,
-            "linha_planilha": 16
+            "total": 306620826.9591751,
+            "linha_planilha": 15
           },
           {
             "competencia": "2024-08-01",
@@ -14563,12 +14669,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 247739.06335512293,
+                "valor": 252879.19335512293,
                 "vazio": false
               }
             ],
-            "total": 181154787.47702473,
-            "linha_planilha": 17
+            "total": 181159927.60702473,
+            "linha_planilha": 16
           },
           {
             "competencia": "2024-09-01",
@@ -14631,12 +14737,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 492845.33000000013,
+                "valor": 494185.33000000013,
                 "vazio": false
               }
             ],
-            "total": 179209646.34063268,
-            "linha_planilha": 18
+            "total": 179210986.34063268,
+            "linha_planilha": 17
           },
           {
             "competencia": "2024-10-01",
@@ -14699,12 +14805,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 373853.19000000006,
+                "valor": 393358.36000000004,
                 "vazio": false
               }
             ],
-            "total": 192319071.70875472,
-            "linha_planilha": 19
+            "total": 192338576.87875473,
+            "linha_planilha": 18
           },
           {
             "competencia": "2024-11-01",
@@ -14767,12 +14873,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 388406.22000000003,
+                "valor": 406477.74,
                 "vazio": false
               }
             ],
-            "total": 170726264.3356362,
-            "linha_planilha": 20
+            "total": 170744335.8556362,
+            "linha_planilha": 19
           },
           {
             "competencia": "2024-12-01",
@@ -14835,12 +14941,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 618775.4999999997,
+                "valor": 618917.0599999997,
                 "vazio": false
               }
             ],
-            "total": 154659317.69355938,
-            "linha_planilha": 21
+            "total": 154659459.25355938,
+            "linha_planilha": 20
           },
           {
             "competencia": "2025-01-01",
@@ -14903,12 +15009,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 754080.5899999996,
+                "valor": 754471.7899999996,
                 "vazio": false
               }
             ],
-            "total": 188644500.54512668,
-            "linha_planilha": 22
+            "total": 188644891.74512666,
+            "linha_planilha": 21
           },
           {
             "competencia": "2025-02-01",
@@ -14971,12 +15077,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 655641.49,
+                "valor": 666931.58,
                 "vazio": false
               }
             ],
-            "total": 170997973.6598459,
-            "linha_planilha": 23
+            "total": 171009263.7498459,
+            "linha_planilha": 22
           },
           {
             "competencia": "2025-03-01",
@@ -15039,12 +15145,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 344301.92000000004,
+                "valor": 345560.89,
                 "vazio": false
               }
             ],
-            "total": 175083116.06795317,
-            "linha_planilha": 24
+            "total": 175084375.03795317,
+            "linha_planilha": 23
           },
           {
             "competencia": "2025-04-01",
@@ -15107,12 +15213,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 407601.6800000001,
+                "valor": 410351.40000000014,
                 "vazio": false
               }
             ],
-            "total": 174931376.3168134,
-            "linha_planilha": 25
+            "total": 174934126.0368134,
+            "linha_planilha": 24
           },
           {
             "competencia": "2025-05-01",
@@ -15175,12 +15281,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 242281.79999999996,
+                "valor": 248776.26999999996,
                 "vazio": false
               }
             ],
-            "total": 184671144.6048813,
-            "linha_planilha": 26
+            "total": 184677639.0748813,
+            "linha_planilha": 25
           },
           {
             "competencia": "2025-06-01",
@@ -15243,12 +15349,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 86726.12999999998,
+                "valor": 92095.62999999996,
                 "vazio": false
               }
             ],
-            "total": 174778059.9360863,
-            "linha_planilha": 27
+            "total": 174783429.4360863,
+            "linha_planilha": 26
           },
           {
             "competencia": "2025-07-01",
@@ -15311,12 +15417,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 70696.54000000004,
+                "valor": 73268.45999999998,
                 "vazio": false
               }
             ],
-            "total": 184324057.99126804,
-            "linha_planilha": 28
+            "total": 184326629.91126806,
+            "linha_planilha": 27
           },
           {
             "competencia": "2025-08-01",
@@ -15379,12 +15485,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 161313.77,
+                "valor": 184864.02,
                 "vazio": false
               }
             ],
-            "total": 179265273.74999994,
-            "linha_planilha": 29
+            "total": 179288823.99999994,
+            "linha_planilha": 28
           },
           {
             "competencia": "2025-09-01",
@@ -15447,12 +15553,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 357787.36000000016,
+                "valor": 373268.2200000003,
                 "vazio": false
               }
             ],
-            "total": 191828449.94999957,
-            "linha_planilha": 30
+            "total": 191843930.80999956,
+            "linha_planilha": 29
           },
           {
             "competencia": "2025-10-01",
@@ -15510,17 +15616,17 @@ window.PEONA_DATA = {
               },
               {
                 "col": "10",
-                "valor": 97518.17999999998,
+                "valor": 92372.06999999999,
                 "vazio": false
               },
               {
                 "col": "11+",
-                "valor": 0.0,
+                "valor": 2790.1600000000035,
                 "vazio": false
               }
             ],
-            "total": 199151055.30999967,
-            "linha_planilha": 31
+            "total": 199148699.35999966,
+            "linha_planilha": 30
           },
           {
             "competencia": "2025-11-01",
@@ -15573,12 +15679,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "9",
-                "valor": 99979.43000000008,
+                "valor": 100340.95000000004,
                 "vazio": false
               },
               {
                 "col": "10",
-                "valor": 0.0,
+                "valor": 25361.36999999998,
                 "vazio": false
               },
               {
@@ -15587,8 +15693,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 178569058.98999998,
-            "linha_planilha": 32
+            "total": 178594781.87999997,
+            "linha_planilha": 31
           },
           {
             "competencia": "2025-12-01",
@@ -15636,12 +15742,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "8",
-                "valor": 20533.469999999983,
+                "valor": 19863.519999999986,
                 "vazio": false
               },
               {
                 "col": "9",
-                "valor": 0.0,
+                "valor": 33879.75999999998,
                 "vazio": false
               },
               {
@@ -15655,8 +15761,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 177355741.66999984,
-            "linha_planilha": 33
+            "total": 177388951.47999984,
+            "linha_planilha": 32
           },
           {
             "competencia": "2026-01-01",
@@ -15699,12 +15805,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "7",
-                "valor": 59564.579999999914,
+                "valor": 61854.889999999876,
                 "vazio": false
               },
               {
                 "col": "8",
-                "valor": 0.0,
+                "valor": 19039.250000000007,
                 "vazio": false
               },
               {
@@ -15723,8 +15829,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 187391471.17000002,
-            "linha_planilha": 34
+            "total": 187412800.73,
+            "linha_planilha": 33
           },
           {
             "competencia": "2026-02-01",
@@ -15762,12 +15868,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "6",
-                "valor": 148878.74999999988,
+                "valor": 172171.58000000002,
                 "vazio": false
               },
               {
                 "col": "7",
-                "valor": 0.0,
+                "valor": 189721.20000000007,
                 "vazio": false
               },
               {
@@ -15791,8 +15897,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 173372650.59999976,
-            "linha_planilha": 35
+            "total": 173585664.62999976,
+            "linha_planilha": 34
           },
           {
             "competencia": "2026-03-01",
@@ -15825,12 +15931,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5",
-                "valor": 1173042.4300000016,
+                "valor": 1306454.3700000017,
                 "vazio": false
               },
               {
                 "col": "6",
-                "valor": 0.0,
+                "valor": 236356.0799999999,
                 "vazio": false
               },
               {
@@ -15859,8 +15965,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 209896990.94000018,
-            "linha_planilha": 36
+            "total": 210266758.9600002,
+            "linha_planilha": 35
           },
           {
             "competencia": "2026-04-01",
@@ -15888,12 +15994,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "4",
-                "valor": 1887598.4799999995,
+                "valor": 2252669.720000002,
                 "vazio": false
               },
               {
                 "col": "5",
-                "valor": 0.0,
+                "valor": 882831.0100000001,
                 "vazio": false
               },
               {
@@ -15927,8 +16033,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 196898205.30000007,
-            "linha_planilha": 37
+            "total": 198146107.55000007,
+            "linha_planilha": 36
           },
           {
             "competencia": "2026-05-01",
@@ -15951,12 +16057,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "3",
-                "valor": 10953155.729999987,
+                "valor": 11610881.399999997,
                 "vazio": false
               },
               {
                 "col": "4",
-                "valor": 0.0,
+                "valor": 1331011.95,
                 "vazio": false
               },
               {
@@ -15995,8 +16101,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 198829655.77,
-            "linha_planilha": 38
+            "total": 200818393.39000002,
+            "linha_planilha": 37
           },
           {
             "competencia": "2026-06-01",
@@ -16014,12 +16120,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "2",
-                "valor": 64958813.860000014,
+                "valor": 67901929.08999999,
                 "vazio": false
               },
               {
                 "col": "3",
-                "valor": 0.0,
+                "valor": 5979051.310000003,
                 "vazio": false
               },
               {
@@ -16063,8 +16169,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 196397561.70000017,
-            "linha_planilha": 39
+            "total": 205319728.24000013,
+            "linha_planilha": 38
           },
           {
             "competencia": "2026-07-01",
@@ -16077,7 +16183,75 @@ window.PEONA_DATA = {
               },
               {
                 "col": "1",
-                "valor": 138171338.1300001,
+                "valor": 141111567.06000006,
+                "vazio": false
+              },
+              {
+                "col": "2",
+                "valor": 64535757.37999994,
+                "vazio": false
+              },
+              {
+                "col": "3",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "4",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "5",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "6",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "7",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "8",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "9",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "10",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "11+",
+                "valor": 0.0,
+                "vazio": false
+              }
+            ],
+            "total": 208515030.87,
+            "linha_planilha": 39
+          },
+          {
+            "competencia": "2026-08-01",
+            "competencia_label": "08/2026",
+            "lags": [
+              {
+                "col": "0",
+                "valor": 1823813.2999999986,
+                "vazio": false
+              },
+              {
+                "col": "1",
+                "valor": 127908202.42999998,
                 "vazio": false
               },
               {
@@ -16131,16 +16305,16 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 141039044.56000012,
+            "total": 129732015.72999997,
             "linha_planilha": 40
           },
           {
-            "competencia": "2026-08-01",
-            "competencia_label": "08/2026",
+            "competencia": "2026-09-01",
+            "competencia_label": "09/2026",
             "lags": [
               {
                 "col": "0",
-                "valor": 1925223.9899999993,
+                "valor": 3771410.4099999997,
                 "vazio": false
               },
               {
@@ -16199,7 +16373,7 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 1925223.9899999993,
+            "total": 3771410.4099999997,
             "linha_planilha": 41
           }
         ]
@@ -16237,61 +16411,6 @@ window.PEONA_DATA = {
           "11"
         ],
         "linhas": [
-          {
-            "competencia": "2024-08-01",
-            "proporcoes": [
-              {
-                "col": "0",
-                "valor": 0.0
-              },
-              {
-                "col": "1",
-                "valor": 0.38689824914217225
-              },
-              {
-                "col": "2",
-                "valor": 0.1844786543452301
-              },
-              {
-                "col": "3",
-                "valor": 0.07408517614389472
-              },
-              {
-                "col": "4",
-                "valor": 0.03283439701713002
-              },
-              {
-                "col": "5",
-                "valor": 0.015504401308679513
-              },
-              {
-                "col": "6",
-                "valor": 0.0030138218012291033
-              },
-              {
-                "col": "7",
-                "valor": 0.0010442441791296123
-              },
-              {
-                "col": "8",
-                "valor": 0.0002229813150152956
-              },
-              {
-                "col": "9",
-                "valor": 0.0002635384140692806
-              },
-              {
-                "col": "10",
-                "valor": 0.0001501369044705103
-              },
-              {
-                "col": "11",
-                "valor": 0.0010433183950094421
-              }
-            ],
-            "total": 0.6995389189660298,
-            "linha_planilha": 75
-          },
           {
             "competencia": "2024-09-01",
             "proporcoes": [
@@ -16345,7 +16464,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 0.7715683849989129,
-            "linha_planilha": 76
+            "linha_planilha": 75
           },
           {
             "competencia": "2024-10-01",
@@ -16400,7 +16519,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 0.8351748155757239,
-            "linha_planilha": 77
+            "linha_planilha": 76
           },
           {
             "competencia": "2024-11-01",
@@ -16455,7 +16574,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 0.9072513289222924,
-            "linha_planilha": 78
+            "linha_planilha": 77
           },
           {
             "competencia": "2024-12-01",
@@ -16510,7 +16629,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 0.9725195570931194,
-            "linha_planilha": 79
+            "linha_planilha": 78
           },
           {
             "competencia": "2025-01-01",
@@ -16565,7 +16684,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.0788384508047026,
-            "linha_planilha": 80
+            "linha_planilha": 79
           },
           {
             "competencia": "2025-02-01",
@@ -16620,7 +16739,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.15986408932067,
-            "linha_planilha": 81
+            "linha_planilha": 80
           },
           {
             "competencia": "2025-03-01",
@@ -16675,7 +16794,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.2390860457611366,
-            "linha_planilha": 82
+            "linha_planilha": 81
           },
           {
             "competencia": "2025-04-01",
@@ -16730,7 +16849,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.3302590385144555,
-            "linha_planilha": 83
+            "linha_planilha": 82
           },
           {
             "competencia": "2025-05-01",
@@ -16785,7 +16904,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.4195561813387891,
-            "linha_planilha": 84
+            "linha_planilha": 83
           },
           {
             "competencia": "2025-06-01",
@@ -16840,7 +16959,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.533952678289151,
-            "linha_planilha": 85
+            "linha_planilha": 84
           },
           {
             "competencia": "2025-07-01",
@@ -16895,7 +17014,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6299165880698114,
-            "linha_planilha": 86
+            "linha_planilha": 85
           },
           {
             "competencia": "2025-08-01",
@@ -16950,7 +17069,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6364102069346638,
-            "linha_planilha": 87
+            "linha_planilha": 86
           },
           {
             "competencia": "2025-09-01",
@@ -17005,7 +17124,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6326396164698358,
-            "linha_planilha": 88
+            "linha_planilha": 87
           },
           {
             "competencia": "2025-10-01",
@@ -17060,7 +17179,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6286621659011808,
-            "linha_planilha": 89
+            "linha_planilha": 88
           },
           {
             "competencia": "2025-11-01",
@@ -17115,7 +17234,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.622086308242163,
-            "linha_planilha": 90
+            "linha_planilha": 89
           },
           {
             "competencia": "2025-12-01",
@@ -17170,7 +17289,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6129158441185412,
-            "linha_planilha": 91
+            "linha_planilha": 90
           },
           {
             "competencia": "2026-01-01",
@@ -17225,7 +17344,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5786835259539702,
-            "linha_planilha": 92
+            "linha_planilha": 91
           },
           {
             "competencia": "2026-02-01",
@@ -17280,7 +17399,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5687134441689778,
-            "linha_planilha": 93
+            "linha_planilha": 92
           },
           {
             "competencia": "2026-03-01",
@@ -17335,7 +17454,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5671035158637834,
-            "linha_planilha": 94
+            "linha_planilha": 93
           },
           {
             "competencia": "2026-04-01",
@@ -17390,7 +17509,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5549450080030665,
-            "linha_planilha": 95
+            "linha_planilha": 94
           },
           {
             "competencia": "2026-05-01",
@@ -17445,7 +17564,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5451990606034576,
-            "linha_planilha": 96
+            "linha_planilha": 95
           },
           {
             "competencia": "2026-06-01",
@@ -17500,7 +17619,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5166686837755785,
-            "linha_planilha": 97
+            "linha_planilha": 96
           },
           {
             "competencia": "2026-07-01",
@@ -17555,7 +17674,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.503428527406359,
-            "linha_planilha": 98
+            "linha_planilha": 97
           },
           {
             "competencia": "2026-08-01",
@@ -17566,74 +17685,119 @@ window.PEONA_DATA = {
               },
               {
                 "col": "1",
-                "valor": 0.6186303628434222
+                "valor": 0.6180506032661919
               },
               {
                 "col": "2",
-                "valor": 0.6011784115968478
+                "valor": 0.6019082721749759
               },
               {
                 "col": "3",
-                "valor": 0.1689113568496862
+                "valor": 0.16925277170532144
               },
               {
                 "col": "4",
-                "valor": 0.033785214318344574
+                "valor": 0.0343084872525842
               },
               {
                 "col": "5",
-                "valor": 0.024102289236410834
+                "valor": 0.024315604090238696
               },
               {
                 "col": "6",
-                "valor": 0.008467577427755581
+                "valor": 0.008502130482751492
               },
               {
                 "col": "7",
-                "valor": 0.0034652117972073957
+                "valor": 0.003461777602706583
               },
               {
                 "col": "8",
-                "valor": 0.0025006960641102043
+                "valor": 0.0024909894604571168
               },
               {
                 "col": "9",
-                "valor": 0.0033026984249669485
+                "valor": 0.0032942903089572414
               },
               {
                 "col": "10",
-                "valor": 0.005354200965085829
+                "valor": 0.005316345659111229
               },
               {
                 "col": "11",
-                "valor": 0.027117276263584636
+                "valor": 0.02698735287981995
               }
             ],
-            "total": 1.4968152957874226,
+            "total": 1.4978886248831156,
+            "linha_planilha": 98
+          },
+          {
+            "competencia": "2026-09-01",
+            "proporcoes": [
+              {
+                "col": "0",
+                "valor": 0.0
+              },
+              {
+                "col": "1",
+                "valor": 0.6205709738818854
+              },
+              {
+                "col": "2",
+                "valor": 0.6014857395472855
+              },
+              {
+                "col": "3",
+                "valor": 0.16059955870821263
+              },
+              {
+                "col": "4",
+                "valor": 0.03386580587939045
+              },
+              {
+                "col": "5",
+                "valor": 0.023997901792184934
+              },
+              {
+                "col": "6",
+                "valor": 0.008096916133848036
+              },
+              {
+                "col": "7",
+                "valor": 0.0037068593229895265
+              },
+              {
+                "col": "8",
+                "valor": 0.002279485904244798
+              },
+              {
+                "col": "9",
+                "valor": 0.002439586102307561
+              },
+              {
+                "col": "10",
+                "valor": 0.0033698433613360045
+              },
+              {
+                "col": "11",
+                "valor": 0.023978079480465764
+              }
+            ],
+            "total": 1.4843907501141507,
             "linha_planilha": 99
           }
         ]
       },
       "peona_serie": [
         {
-          "competencia": "2024-08-01",
-          "total_avisado": 212349541.24405068,
-          "media_nm": 190838604.73709226,
-          "fator_peona": 0.6995389189660298,
-          "peona": 133499031.25477098,
-          "variacao_r": null,
-          "variacao_pct": null,
-          "linha_planilha": 104
-        },
-        {
           "competencia": "2024-09-01",
           "total_avisado": 173359363.28173885,
           "media_nm": 191122673.16807052,
           "fator_peona": 0.7715683849989129,
           "peona": 147464212.27296323,
-          "variacao_r": 13965181.018192247,
-          "variacao_pct": 0.1046088566106591,
-          "linha_planilha": 105
+          "variacao_r": null,
+          "variacao_pct": null,
+          "linha_planilha": 104
         },
         {
           "competencia": "2024-10-01",
@@ -17643,7 +17807,7 @@ window.PEONA_DATA = {
           "peona": 159567451.6025279,
           "variacao_r": 12103239.32956466,
           "variacao_pct": 0.0820757737962956,
-          "linha_planilha": 106
+          "linha_planilha": 105
         },
         {
           "competencia": "2024-11-01",
@@ -17653,7 +17817,7 @@ window.PEONA_DATA = {
           "peona": 174355781.13650593,
           "variacao_r": 14788329.533978045,
           "variacao_pct": 0.09267760677669279,
-          "linha_planilha": 107
+          "linha_planilha": 106
         },
         {
           "competencia": "2024-12-01",
@@ -17663,7 +17827,7 @@ window.PEONA_DATA = {
           "peona": 186289131.6119754,
           "variacao_r": 11933350.47546947,
           "variacao_pct": 0.06844252824703667,
-          "linha_planilha": 108
+          "linha_planilha": 107
         },
         {
           "competencia": "2025-01-01",
@@ -17673,7 +17837,7 @@ window.PEONA_DATA = {
           "peona": 206774061.48427677,
           "variacao_r": 20484929.87230137,
           "variacao_pct": 0.10996309712243302,
-          "linha_planilha": 109
+          "linha_planilha": 108
         },
         {
           "competencia": "2025-02-01",
@@ -17683,7 +17847,7 @@ window.PEONA_DATA = {
           "peona": 222501594.47415712,
           "variacao_r": 15727532.989880353,
           "variacao_pct": 0.07606144057423903,
-          "linha_planilha": 110
+          "linha_planilha": 109
         },
         {
           "competencia": "2025-03-01",
@@ -17693,7 +17857,7 @@ window.PEONA_DATA = {
           "peona": 234574883.5013284,
           "variacao_r": 12073289.027171284,
           "variacao_pct": 0.0542615843077634,
-          "linha_planilha": 111
+          "linha_planilha": 110
         },
         {
           "competencia": "2025-04-01",
@@ -17703,7 +17867,7 @@ window.PEONA_DATA = {
           "peona": 245914069.16220272,
           "variacao_r": 11339185.660874307,
           "variacao_pct": 0.048339299977996575,
-          "linha_planilha": 112
+          "linha_planilha": 111
         },
         {
           "competencia": "2025-05-01",
@@ -17713,7 +17877,7 @@ window.PEONA_DATA = {
           "peona": 258799482.00485715,
           "variacao_r": 12885412.842654437,
           "variacao_pct": 0.05239803028168888,
-          "linha_planilha": 113
+          "linha_planilha": 112
         },
         {
           "competencia": "2025-06-01",
@@ -17723,7 +17887,7 @@ window.PEONA_DATA = {
           "peona": 278088208.5240495,
           "variacao_r": 19288726.519192368,
           "variacao_pct": 0.07453154994657352,
-          "linha_planilha": 114
+          "linha_planilha": 113
         },
         {
           "competencia": "2025-07-01",
@@ -17733,7 +17897,7 @@ window.PEONA_DATA = {
           "peona": 293432181.24816924,
           "variacao_r": 15343972.724119723,
           "variacao_pct": 0.05517663911590387,
-          "linha_planilha": 115
+          "linha_planilha": 114
         },
         {
           "competencia": "2025-08-01",
@@ -17743,7 +17907,7 @@ window.PEONA_DATA = {
           "peona": 290382018.75008786,
           "variacao_r": -3050162.498081386,
           "variacao_pct": -0.010394778395154014,
-          "linha_planilha": 116
+          "linha_planilha": 115
         },
         {
           "competencia": "2025-09-01",
@@ -17753,7 +17917,7 @@ window.PEONA_DATA = {
           "peona": 290968491.6585623,
           "variacao_r": 586472.9084744453,
           "variacao_pct": 0.002019659863922829,
-          "linha_planilha": 117
+          "linha_planilha": 116
         },
         {
           "competencia": "2025-10-01",
@@ -17763,7 +17927,7 @@ window.PEONA_DATA = {
           "peona": 293784568.8898309,
           "variacao_r": 2816077.2312685847,
           "variacao_pct": 0.009678289271860763,
-          "linha_planilha": 118
+          "linha_planilha": 117
         },
         {
           "competencia": "2025-11-01",
@@ -17773,7 +17937,7 @@ window.PEONA_DATA = {
           "peona": 293988996.4033528,
           "variacao_r": 204427.5135219097,
           "variacao_pct": 0.0006958415627287273,
-          "linha_planilha": 119
+          "linha_planilha": 118
         },
         {
           "competencia": "2025-12-01",
@@ -17783,7 +17947,7 @@ window.PEONA_DATA = {
           "peona": 296450093.0078833,
           "variacao_r": 2461096.6045305133,
           "variacao_pct": 0.00837139020384936,
-          "linha_planilha": 120
+          "linha_planilha": 119
         },
         {
           "competencia": "2026-01-01",
@@ -17793,7 +17957,7 @@ window.PEONA_DATA = {
           "peona": 289990833.88391536,
           "variacao_r": -6459259.123967946,
           "variacao_pct": -0.02178868982104243,
-          "linha_planilha": 121
+          "linha_planilha": 120
         },
         {
           "competencia": "2026-02-01",
@@ -17803,7 +17967,7 @@ window.PEONA_DATA = {
           "peona": 286447185.95536387,
           "variacao_r": -3543647.928551495,
           "variacao_pct": -0.012219861852495795,
-          "linha_planilha": 122
+          "linha_planilha": 121
         },
         {
           "competencia": "2026-03-01",
@@ -17813,7 +17977,7 @@ window.PEONA_DATA = {
           "peona": 287774624.88393134,
           "variacao_r": 1327438.9285674691,
           "variacao_pct": 0.004634148958874151,
-          "linha_planilha": 123
+          "linha_planilha": 122
         },
         {
           "competencia": "2026-04-01",
@@ -17823,7 +17987,7 @@ window.PEONA_DATA = {
           "peona": 291646018.0352644,
           "variacao_r": 3871393.151333034,
           "variacao_pct": 0.013452864903896522,
-          "linha_planilha": 124
+          "linha_planilha": 123
         },
         {
           "competencia": "2026-05-01",
@@ -17833,7 +17997,7 @@ window.PEONA_DATA = {
           "peona": 292119188.59118646,
           "variacao_r": 473170.555922091,
           "variacao_pct": 0.0016224139081675304,
-          "linha_planilha": 125
+          "linha_planilha": 124
         },
         {
           "competencia": "2026-06-01",
@@ -17843,7 +18007,7 @@ window.PEONA_DATA = {
           "peona": 287752988.4475305,
           "variacao_r": -4366200.143655956,
           "variacao_pct": -0.014946639297175213,
-          "linha_planilha": 126
+          "linha_planilha": 125
         },
         {
           "competencia": "2026-07-01",
@@ -17853,270 +18017,280 @@ window.PEONA_DATA = {
           "peona": 287687037.9574999,
           "variacao_r": -65950.49003058672,
           "variacao_pct": -0.00022919132964138722,
-          "linha_planilha": 127
+          "linha_planilha": 126
         },
         {
           "competencia": "2026-08-01",
-          "total_avisado": 220307734.55000016,
-          "media_nm": 194595494.29083326,
-          "fator_peona": 1.4968152957874226,
-          "peona": 291273512.3458333,
-          "variacao_r": 3586474.38833338,
-          "variacao_pct": 0.012466583179403523,
+          "total_avisado": 227255470.10000005,
+          "media_nm": 195174472.2533333,
+          "fator_peona": 1.4978886248831156,
+          "peona": 292349621.85583323,
+          "variacao_r": 4662583.898333311,
+          "variacao_pct": 0.01620713929774653,
+          "linha_planilha": 127
+        },
+        {
+          "competencia": "2026-09-01",
+          "total_avisado": 205040293.03999987,
+          "media_nm": 197045508.88583326,
+          "fator_peona": 1.4843907501141507,
+          "peona": 292492530.74166656,
+          "variacao_r": 142908.885833323,
+          "variacao_pct": 0.0004888287008073533,
           "linha_planilha": 128
         }
       ],
       "runoff_aux": [
         {
-          "competencia": "2023-09-01",
-          "runoff_puro": 111528425.95200562,
-          "avisado_mes": 169950542.10999998,
-          "ocorrido_mes": 164609525.93232074,
-          "linha_planilha": 6
-        },
-        {
           "competencia": "2023-10-01",
           "runoff_puro": 114305612.40909442,
           "avisado_mes": 168080369.79999998,
           "ocorrido_mes": 170789343.3765696,
-          "linha_planilha": 7
+          "linha_planilha": 6
         },
         {
           "competencia": "2023-11-01",
           "runoff_puro": 115659542.5862106,
           "avisado_mes": 171499507.14,
           "ocorrido_mes": 172849419.31015277,
-          "linha_planilha": 8
+          "linha_planilha": 7
         },
         {
           "competencia": "2023-12-01",
           "runoff_puro": 100516823.00634114,
           "avisado_mes": 166694810.45000002,
           "ocorrido_mes": 151552104.90278095,
-          "linha_planilha": 9
+          "linha_planilha": 8
         },
         {
           "competencia": "2024-01-01",
           "runoff_puro": 118666187.70212081,
           "avisado_mes": 181475770.86194384,
           "ocorrido_mes": 199637668.5556001,
-          "linha_planilha": 10
+          "linha_planilha": 9
         },
         {
           "competencia": "2024-02-01",
           "runoff_puro": 115950742.9460568,
           "avisado_mes": 191632293.64520505,
           "ocorrido_mes": 188934573.02237818,
-          "linha_planilha": 11
+          "linha_planilha": 10
         },
         {
           "competencia": "2024-03-01",
           "runoff_puro": 118339595.06864373,
           "avisado_mes": 198577421.5930596,
           "ocorrido_mes": 201004142.68082026,
-          "linha_planilha": 12
+          "linha_planilha": 11
         },
         {
           "competencia": "2024-04-01",
           "runoff_puro": 128018633.77762121,
           "avisado_mes": 209947814.86323157,
           "ocorrido_mes": 219729982.48436317,
-          "linha_planilha": 13
+          "linha_planilha": 12
         },
         {
           "competencia": "2024-05-01",
           "runoff_puro": 140166886.7618786,
           "avisado_mes": 209605564.7466614,
           "ocorrido_mes": 222391007.904482,
-          "linha_planilha": 14
+          "linha_planilha": 13
         },
         {
           "competencia": "2024-06-01",
           "runoff_puro": 209095009.37772676,
           "avisado_mes": 206100863.36665547,
           "ocorrido_mes": 276089823.810927,
-          "linha_planilha": 15
+          "linha_planilha": 14
         },
         {
           "competencia": "2024-07-01",
           "runoff_puro": 311579869.54344094,
           "avisado_mes": 204148757.02429974,
-          "ocorrido_mes": 306619836.9591751,
-          "linha_planilha": 16
+          "ocorrido_mes": 306620826.9591751,
+          "linha_planilha": 15
         },
         {
           "competencia": "2024-08-01",
           "runoff_puro": 280659604.8215643,
           "avisado_mes": 212349541.24405068,
-          "ocorrido_mes": 181154787.47702473,
-          "linha_planilha": 17
+          "ocorrido_mes": 181159927.60702473,
+          "linha_planilha": 16
         },
         {
           "competencia": "2024-09-01",
           "runoff_puro": 286843684.90045804,
           "avisado_mes": 173359363.28173885,
-          "ocorrido_mes": 179209646.34063268,
-          "linha_planilha": 18
+          "ocorrido_mes": 179210986.34063268,
+          "linha_planilha": 17
         },
         {
           "competencia": "2024-10-01",
           "runoff_puro": 312195134.84410477,
           "avisado_mes": 167313224.35510802,
-          "ocorrido_mes": 192319071.70875472,
-          "linha_planilha": 19
+          "ocorrido_mes": 192338576.87875473,
+          "linha_planilha": 18
         },
         {
           "competencia": "2024-11-01",
           "runoff_puro": 297575687.26980454,
           "avisado_mes": 184957494.29993632,
-          "ocorrido_mes": 170726264.3356362,
-          "linha_planilha": 20
+          "ocorrido_mes": 170744335.8556362,
+          "linha_planilha": 19
         },
         {
           "competencia": "2024-12-01",
           "runoff_puro": 292561203.1716666,
           "avisado_mes": 159169036.92169735,
-          "ocorrido_mes": 154659317.69355938,
-          "linha_planilha": 21
+          "ocorrido_mes": 154659459.25355938,
+          "linha_planilha": 20
         },
         {
           "competencia": "2025-01-01",
           "runoff_puro": 297700938.8548449,
           "avisado_mes": 182801826.71194842,
-          "ocorrido_mes": 188644500.54512668,
-          "linha_planilha": 22
+          "ocorrido_mes": 188644891.74512666,
+          "linha_planilha": 21
         },
         {
           "competencia": "2025-02-01",
           "runoff_puro": 274394705.1597598,
           "avisado_mes": 193679437.69493088,
-          "ocorrido_mes": 170997973.6598459,
-          "linha_planilha": 23
+          "ocorrido_mes": 171009263.7498459,
+          "linha_planilha": 22
         },
         {
           "competencia": "2025-03-01",
           "runoff_puro": 281021230.6520173,
           "avisado_mes": 168321011.90569565,
-          "ocorrido_mes": 175083116.06795317,
-          "linha_planilha": 24
+          "ocorrido_mes": 175084375.03795317,
+          "linha_planilha": 23
         },
         {
           "competencia": "2025-04-01",
           "runoff_puro": 299470349.1283947,
           "avisado_mes": 156535377.74043584,
-          "ocorrido_mes": 174931376.3168134,
-          "linha_planilha": 25
+          "ocorrido_mes": 174934126.0368134,
+          "linha_planilha": 24
         },
         {
           "competencia": "2025-05-01",
           "runoff_puro": 305547448.48553056,
           "avisado_mes": 178985710.34774545,
-          "ocorrido_mes": 184671144.6048813,
-          "linha_planilha": 26
+          "ocorrido_mes": 184677639.0748813,
+          "linha_planilha": 25
         },
         {
           "competencia": "2025-06-01",
           "runoff_puro": 287629627.9155039,
           "avisado_mes": 193843005.27611285,
-          "ocorrido_mes": 174778059.9360863,
-          "linha_planilha": 27
+          "ocorrido_mes": 174783429.4360863,
+          "linha_planilha": 26
         },
         {
           "competencia": "2025-07-01",
           "runoff_puro": 283131320.7499998,
           "avisado_mes": 189032438.76677215,
-          "ocorrido_mes": 184324057.99126804,
-          "linha_planilha": 28
+          "ocorrido_mes": 184326629.91126806,
+          "linha_planilha": 27
         },
         {
           "competencia": "2025-08-01",
           "runoff_puro": 282036521.37999994,
           "avisado_mes": 181409607.7,
-          "ocorrido_mes": 179265273.74999994,
-          "linha_planilha": 29
+          "ocorrido_mes": 179288823.99999994,
+          "linha_planilha": 28
         },
         {
           "competencia": "2025-09-01",
-          "runoff_puro": 291731418.0399993,
+          "runoff_puro": 291720882.6699993,
           "avisado_mes": 182587853.45000008,
-          "ocorrido_mes": 191828449.94999957,
-          "linha_planilha": 30
+          "ocorrido_mes": 191843930.80999956,
+          "linha_planilha": 29
         },
         {
           "competencia": "2025-10-01",
-          "runoff_puro": 297597474.89999944,
+          "runoff_puro": 297709464.3099994,
           "avisado_mes": 193284998.4499995,
-          "ocorrido_mes": 199151055.30999967,
-          "linha_planilha": 31
+          "ocorrido_mes": 199148699.35999966,
+          "linha_planilha": 30
         },
         {
           "competencia": "2025-11-01",
-          "runoff_puro": 280921496.40999997,
+          "runoff_puro": 281059208.7099999,
           "avisado_mes": 195245037.47999963,
-          "ocorrido_mes": 178569058.98999998,
-          "linha_planilha": 32
+          "ocorrido_mes": 178594781.87999997,
+          "linha_planilha": 31
         },
         {
           "competencia": "2025-12-01",
-          "runoff_puro": 268432106.58999985,
+          "runoff_puro": 268603028.6999998,
           "avisado_mes": 189845131.4900001,
-          "ocorrido_mes": 177355741.66999984,
-          "linha_planilha": 33
+          "ocorrido_mes": 177388951.47999984,
+          "linha_planilha": 32
         },
         {
           "competencia": "2026-01-01",
-          "runoff_puro": 274294511.7299999,
+          "runoff_puro": 274486763.3999998,
           "avisado_mes": 181529066.0299998,
-          "ocorrido_mes": 187391471.17000002,
-          "linha_planilha": 34
+          "ocorrido_mes": 187412800.73,
+          "linha_planilha": 33
         },
         {
           "competencia": "2026-02-01",
-          "runoff_puro": 267085551.47999978,
+          "runoff_puro": 267490817.1799997,
           "avisado_mes": 180581610.85,
-          "ocorrido_mes": 173372650.59999976,
-          "linha_planilha": 35
+          "ocorrido_mes": 173585664.62999976,
+          "linha_planilha": 34
         },
         {
           "competencia": "2026-03-01",
-          "runoff_puro": 296245666.96999997,
+          "runoff_puro": 297020700.6899998,
           "avisado_mes": 180736875.44999975,
-          "ocorrido_mes": 209896990.94000018,
-          "linha_planilha": 36
+          "ocorrido_mes": 210266758.9600002,
+          "linha_planilha": 35
         },
         {
           "competencia": "2026-04-01",
-          "runoff_puro": 289501099.37000006,
+          "runoff_puro": 291524035.3399999,
           "avisado_mes": 203642772.9000001,
-          "ocorrido_mes": 196898205.30000007,
-          "linha_planilha": 37
+          "ocorrido_mes": 198146107.55000007,
+          "linha_planilha": 36
         },
         {
           "competencia": "2026-05-01",
-          "runoff_puro": 291474541.15000004,
+          "runoff_puro": 295486214.7399999,
           "avisado_mes": 196856213.99000013,
-          "ocorrido_mes": 198829655.77,
-          "linha_planilha": 38
+          "ocorrido_mes": 200818393.39000002,
+          "linha_planilha": 37
         },
         {
           "competencia": "2026-06-01",
-          "runoff_puro": 285899795.80000025,
+          "runoff_puro": 298833635.93000007,
           "avisado_mes": 201972307.04999995,
-          "ocorrido_mes": 196397561.70000017,
-          "linha_planilha": 39
+          "ocorrido_mes": 205319728.24000013,
+          "linha_planilha": 38
         },
         {
           "competencia": "2026-07-01",
-          "runoff_puro": 218382510.56000015,
+          "runoff_puro": 298792336.99999994,
           "avisado_mes": 208556329.80000022,
-          "ocorrido_mes": 141039044.56000012,
-          "linha_planilha": 40
+          "ocorrido_mes": 208515030.87,
+          "linha_planilha": 39
         },
         {
           "competencia": "2026-08-01",
+          "runoff_puro": 201268882.62999988,
+          "avisado_mes": 227255470.10000005,
+          "ocorrido_mes": 129732015.72999997,
+          "linha_planilha": 40
+        },
+        {
+          "competencia": "2026-09-01",
           "runoff_puro": 0.0,
-          "avisado_mes": 220307734.55000016,
-          "ocorrido_mes": 1925223.9899999993,
+          "avisado_mes": 205040293.03999987,
+          "ocorrido_mes": 3771410.4099999997,
           "linha_planilha": 41
         }
       ],
@@ -18162,44 +18336,6 @@ window.PEONA_DATA = {
         ],
         "linhas": [
           {
-            "competencia": "2023-09-01",
-            "competencia_label": "09/2023",
-            "lags": [
-              {
-                "col": "0",
-                "valor": 1429890.25,
-                "vazio": false
-              },
-              {
-                "col": "1",
-                "valor": 810471.13,
-                "vazio": false
-              },
-              {
-                "col": "2",
-                "valor": 106500.14,
-                "vazio": false
-              },
-              {
-                "col": "3",
-                "valor": 73832.17,
-                "vazio": false
-              },
-              {
-                "col": "4",
-                "valor": 38226.77,
-                "vazio": false
-              },
-              {
-                "col": "5+",
-                "valor": 40223.25,
-                "vazio": false
-              }
-            ],
-            "total": 2499143.71,
-            "linha_planilha": 6
-          },
-          {
             "competencia": "2023-10-01",
             "competencia_label": "10/2023",
             "lags": [
@@ -18235,7 +18371,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2455577.88,
-            "linha_planilha": 7
+            "linha_planilha": 6
           },
           {
             "competencia": "2023-11-01",
@@ -18273,7 +18409,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2453520.0000000005,
-            "linha_planilha": 8
+            "linha_planilha": 7
           },
           {
             "competencia": "2023-12-01",
@@ -18311,7 +18447,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2453500.1400000006,
-            "linha_planilha": 9
+            "linha_planilha": 8
           },
           {
             "competencia": "2024-01-01",
@@ -18349,7 +18485,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2293145.048056159,
-            "linha_planilha": 10
+            "linha_planilha": 9
           },
           {
             "competencia": "2024-02-01",
@@ -18387,7 +18523,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2917516.4447950046,
-            "linha_planilha": 11
+            "linha_planilha": 10
           },
           {
             "competencia": "2024-03-01",
@@ -18425,7 +18561,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3116686.7269403827,
-            "linha_planilha": 12
+            "linha_planilha": 11
           },
           {
             "competencia": "2024-04-01",
@@ -18463,7 +18599,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3250382.756768446,
-            "linha_planilha": 13
+            "linha_planilha": 12
           },
           {
             "competencia": "2024-05-01",
@@ -18501,7 +18637,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3249086.523338633,
-            "linha_planilha": 14
+            "linha_planilha": 13
           },
           {
             "competencia": "2024-06-01",
@@ -18539,7 +18675,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3196760.658581219,
-            "linha_planilha": 15
+            "linha_planilha": 14
           },
           {
             "competencia": "2024-07-01",
@@ -18577,7 +18713,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3424135.537081914,
-            "linha_planilha": 16
+            "linha_planilha": 15
           },
           {
             "competencia": "2024-08-01",
@@ -18615,7 +18751,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3289049.6459494582,
-            "linha_planilha": 17
+            "linha_planilha": 16
           },
           {
             "competencia": "2024-09-01",
@@ -18653,7 +18789,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2685136.7282612454,
-            "linha_planilha": 18
+            "linha_planilha": 17
           },
           {
             "competencia": "2024-10-01",
@@ -18691,7 +18827,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2591489.0048920605,
-            "linha_planilha": 19
+            "linha_planilha": 18
           },
           {
             "competencia": "2024-11-01",
@@ -18729,7 +18865,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2864778.41006378,
-            "linha_planilha": 20
+            "linha_planilha": 19
           },
           {
             "competencia": "2024-12-01",
@@ -18767,7 +18903,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2465344.928302699,
-            "linha_planilha": 21
+            "linha_planilha": 20
           },
           {
             "competencia": "2025-01-01",
@@ -18805,7 +18941,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1713567.1380515257,
-            "linha_planilha": 22
+            "linha_planilha": 21
           },
           {
             "competencia": "2025-02-01",
@@ -18843,7 +18979,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2875375.1650691847,
-            "linha_planilha": 23
+            "linha_planilha": 22
           },
           {
             "competencia": "2025-03-01",
@@ -18881,7 +19017,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1868924.8743043584,
-            "linha_planilha": 24
+            "linha_planilha": 23
           },
           {
             "competencia": "2025-04-01",
@@ -18919,7 +19055,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1738065.009564203,
-            "linha_planilha": 25
+            "linha_planilha": 24
           },
           {
             "competencia": "2025-05-01",
@@ -18957,7 +19093,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1987338.6122544894,
-            "linha_planilha": 26
+            "linha_planilha": 25
           },
           {
             "competencia": "2025-06-01",
@@ -18995,7 +19131,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3002404.7339025764,
-            "linha_planilha": 27
+            "linha_planilha": 26
           },
           {
             "competencia": "2025-07-01",
@@ -19033,7 +19169,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2927894.6031922903,
-            "linha_planilha": 28
+            "linha_planilha": 27
           },
           {
             "competencia": "2025-08-01",
@@ -19071,7 +19207,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2240252.0799999996,
-            "linha_planilha": 29
+            "linha_planilha": 28
           },
           {
             "competencia": "2025-09-01",
@@ -19109,7 +19245,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2324084.1899999995,
-            "linha_planilha": 30
+            "linha_planilha": 29
           },
           {
             "competencia": "2025-10-01",
@@ -19147,7 +19283,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2343600.729999996,
-            "linha_planilha": 31
+            "linha_planilha": 30
           },
           {
             "competencia": "2025-11-01",
@@ -19185,7 +19321,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2531309.209999993,
-            "linha_planilha": 32
+            "linha_planilha": 31
           },
           {
             "competencia": "2025-12-01",
@@ -19223,7 +19359,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2316562.3699999996,
-            "linha_planilha": 33
+            "linha_planilha": 32
           },
           {
             "competencia": "2026-01-01",
@@ -19261,7 +19397,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1800756.0399999989,
-            "linha_planilha": 34
+            "linha_planilha": 33
           },
           {
             "competencia": "2026-02-01",
@@ -19299,7 +19435,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2070419.770000001,
-            "linha_planilha": 35
+            "linha_planilha": 34
           },
           {
             "competencia": "2026-03-01",
@@ -19337,7 +19473,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1935481.4399999955,
-            "linha_planilha": 36
+            "linha_planilha": 35
           },
           {
             "competencia": "2026-04-01",
@@ -19375,7 +19511,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2479996.680000003,
-            "linha_planilha": 37
+            "linha_planilha": 36
           },
           {
             "competencia": "2026-05-01",
@@ -19413,7 +19549,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2385821.8400000012,
-            "linha_planilha": 38
+            "linha_planilha": 37
           },
           {
             "competencia": "2026-06-01",
@@ -19451,7 +19587,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2320703.8200000003,
-            "linha_planilha": 39
+            "linha_planilha": 38
           },
           {
             "competencia": "2026-07-01",
@@ -19489,7 +19625,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2333640.2499999995,
-            "linha_planilha": 40
+            "linha_planilha": 39
           },
           {
             "competencia": "2026-08-01",
@@ -19497,36 +19633,74 @@ window.PEONA_DATA = {
             "lags": [
               {
                 "col": "0",
-                "valor": 89891.19000000117,
+                "valor": 89891.19000000176,
                 "vazio": false
               },
               {
                 "col": "1",
-                "valor": 2272959.9099997184,
+                "valor": 2036235.8599998807,
                 "vazio": false
               },
               {
                 "col": "2",
-                "valor": 629704.8699999936,
+                "valor": 437918.0600000103,
                 "vazio": false
               },
               {
                 "col": "3",
-                "valor": 106021.54999999562,
+                "valor": 102958.05000000051,
                 "vazio": false
               },
               {
                 "col": "4",
-                "valor": 71806.20000000153,
+                "valor": 23955.140000000043,
                 "vazio": false
               },
               {
                 "col": "5+",
-                "valor": 178745.94000000032,
+                "valor": 7003.790000001012,
                 "vazio": false
               }
             ],
-            "total": 3349129.659999711,
+            "total": 2697962.089999894,
+            "linha_planilha": 40
+          },
+          {
+            "competencia": "2026-09-01",
+            "competencia_label": "09/2026",
+            "lags": [
+              {
+                "col": "0",
+                "valor": 114364.4699999995,
+                "vazio": false
+              },
+              {
+                "col": "1",
+                "valor": 1963380.370000109,
+                "vazio": false
+              },
+              {
+                "col": "2",
+                "valor": 360879.00999997696,
+                "vazio": false
+              },
+              {
+                "col": "3",
+                "valor": 72527.44000000786,
+                "vazio": false
+              },
+              {
+                "col": "4",
+                "valor": 23478.5699999997,
+                "vazio": false
+              },
+              {
+                "col": "5+",
+                "valor": 6718.339999999771,
+                "vazio": false
+              }
+            ],
+            "total": 2541348.200000093,
             "linha_planilha": 41
           }
         ]
@@ -19541,44 +19715,6 @@ window.PEONA_DATA = {
           "5+"
         ],
         "linhas": [
-          {
-            "competencia": "2023-09-01",
-            "competencia_label": "09/2023",
-            "lags": [
-              {
-                "col": "0",
-                "valor": 1429890.25,
-                "vazio": false
-              },
-              {
-                "col": "1",
-                "valor": 693813.95,
-                "vazio": false
-              },
-              {
-                "col": "2",
-                "valor": 144249.74,
-                "vazio": false
-              },
-              {
-                "col": "3",
-                "valor": 65960.65,
-                "vazio": false
-              },
-              {
-                "col": "4",
-                "valor": 46286.52,
-                "vazio": false
-              },
-              {
-                "col": "5+",
-                "valor": 33545.88953928529,
-                "vazio": false
-              }
-            ],
-            "total": 2413746.9995392854,
-            "linha_planilha": 6
-          },
           {
             "competencia": "2023-10-01",
             "competencia_label": "10/2023",
@@ -19615,7 +19751,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2480223.0023354026,
-            "linha_planilha": 7
+            "linha_planilha": 6
           },
           {
             "competencia": "2023-11-01",
@@ -19653,7 +19789,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2522785.8588305484,
-            "linha_planilha": 8
+            "linha_planilha": 7
           },
           {
             "competencia": "2023-12-01",
@@ -19691,7 +19827,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1847951.240834049,
-            "linha_planilha": 9
+            "linha_planilha": 8
           },
           {
             "competencia": "2024-01-01",
@@ -19729,7 +19865,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3105502.459209818,
-            "linha_planilha": 10
+            "linha_planilha": 9
           },
           {
             "competencia": "2024-02-01",
@@ -19767,7 +19903,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2932770.505388486,
-            "linha_planilha": 11
+            "linha_planilha": 10
           },
           {
             "competencia": "2024-03-01",
@@ -19805,7 +19941,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3123194.887159766,
-            "linha_planilha": 12
+            "linha_planilha": 11
           },
           {
             "competencia": "2024-04-01",
@@ -19843,7 +19979,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3406038.3447651565,
-            "linha_planilha": 13
+            "linha_planilha": 12
           },
           {
             "competencia": "2024-05-01",
@@ -19881,7 +20017,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3405598.621987996,
-            "linha_planilha": 14
+            "linha_planilha": 13
           },
           {
             "competencia": "2024-06-01",
@@ -19919,7 +20055,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 4170039.171569735,
-            "linha_planilha": 15
+            "linha_planilha": 14
           },
           {
             "competencia": "2024-07-01",
@@ -19957,7 +20093,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 5100310.761913286,
-            "linha_planilha": 16
+            "linha_planilha": 15
           },
           {
             "competencia": "2024-08-01",
@@ -19995,7 +20131,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2765578.7529753423,
-            "linha_planilha": 17
+            "linha_planilha": 16
           },
           {
             "competencia": "2024-09-01",
@@ -20033,7 +20169,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2719033.19936741,
-            "linha_planilha": 18
+            "linha_planilha": 17
           },
           {
             "competencia": "2024-10-01",
@@ -20071,7 +20207,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2834637.1612453316,
-            "linha_planilha": 19
+            "linha_planilha": 18
           },
           {
             "competencia": "2024-11-01",
@@ -20109,7 +20245,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2205296.6243638387,
-            "linha_planilha": 20
+            "linha_planilha": 19
           },
           {
             "competencia": "2024-12-01",
@@ -20147,7 +20283,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1800263.5664406188,
-            "linha_planilha": 21
+            "linha_planilha": 20
           },
           {
             "competencia": "2025-01-01",
@@ -20185,7 +20321,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2513340.1548732007,
-            "linha_planilha": 22
+            "linha_planilha": 21
           },
           {
             "competencia": "2025-02-01",
@@ -20223,7 +20359,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1920478.3301538709,
-            "linha_planilha": 23
+            "linha_planilha": 22
           },
           {
             "competencia": "2025-03-01",
@@ -20261,7 +20397,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2002161.8320464275,
-            "linha_planilha": 24
+            "linha_planilha": 23
           },
           {
             "competencia": "2025-04-01",
@@ -20299,7 +20435,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2259032.08318612,
-            "linha_planilha": 25
+            "linha_planilha": 24
           },
           {
             "competencia": "2025-05-01",
@@ -20337,7 +20473,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2798459.5251380126,
-            "linha_planilha": 26
+            "linha_planilha": 25
           },
           {
             "competencia": "2025-06-01",
@@ -20375,7 +20511,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2187451.133875691,
-            "linha_planilha": 27
+            "linha_planilha": 26
           },
           {
             "competencia": "2025-07-01",
@@ -20413,7 +20549,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2339601.978731992,
-            "linha_planilha": 28
+            "linha_planilha": 27
           },
           {
             "competencia": "2025-08-01",
@@ -20451,7 +20587,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2182863.8799999985,
-            "linha_planilha": 29
+            "linha_planilha": 28
           },
           {
             "competencia": "2025-09-01",
@@ -20484,12 +20620,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 4113.839999999999,
+                "valor": 4236.360000000018,
                 "vazio": false
               }
             ],
-            "total": 2383708.3299999954,
-            "linha_planilha": 30
+            "total": 2383830.8499999954,
+            "linha_planilha": 29
           },
           {
             "competencia": "2025-10-01",
@@ -20527,7 +20663,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2324412.1399999945,
-            "linha_planilha": 31
+            "linha_planilha": 30
           },
           {
             "competencia": "2025-11-01",
@@ -20565,7 +20701,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2099353.1499999994,
-            "linha_planilha": 32
+            "linha_planilha": 31
           },
           {
             "competencia": "2025-12-01",
@@ -20603,7 +20739,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1760040.9499999993,
-            "linha_planilha": 33
+            "linha_planilha": 32
           },
           {
             "competencia": "2026-01-01",
@@ -20636,12 +20772,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 6652.949999999996,
+                "valor": 5517.489999999975,
                 "vazio": false
               }
             ],
-            "total": 2171849.810000001,
-            "linha_planilha": 34
+            "total": 2170714.3500000006,
+            "linha_planilha": 33
           },
           {
             "competencia": "2026-02-01",
@@ -20674,12 +20810,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 33379.20000000001,
+                "valor": 9586.960000000006,
                 "vazio": false
               }
             ],
-            "total": 2051398.4899999963,
-            "linha_planilha": 35
+            "total": 2027606.2499999963,
+            "linha_planilha": 34
           },
           {
             "competencia": "2026-03-01",
@@ -20712,12 +20848,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5+",
-                "valor": 152435.2000000003,
+                "valor": 6305.93000000103,
                 "vazio": false
               }
             ],
-            "total": 2740593.310000003,
-            "linha_planilha": 36
+            "total": 2594464.0400000038,
+            "linha_planilha": 35
           },
           {
             "competencia": "2026-04-01",
@@ -20745,17 +20881,17 @@ window.PEONA_DATA = {
               },
               {
                 "col": "4",
-                "valor": 71806.20000000153,
+                "valor": 23955.140000000043,
                 "vazio": false
               },
               {
                 "col": "5+",
-                "valor": 0.0,
+                "valor": 5910.639999999741,
                 "vazio": false
               }
             ],
-            "total": 2303843.1000000024,
-            "linha_planilha": 37
+            "total": 2261902.6800000006,
+            "linha_planilha": 36
           },
           {
             "competencia": "2026-05-01",
@@ -20778,12 +20914,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "3",
-                "valor": 106021.54999999562,
+                "valor": 102958.05000000051,
                 "vazio": false
               },
               {
                 "col": "4",
-                "valor": 0.0,
+                "valor": 23478.5699999997,
                 "vazio": false
               },
               {
@@ -20792,8 +20928,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 2319361.1599999964,
-            "linha_planilha": 38
+            "total": 2339776.230000001,
+            "linha_planilha": 37
           },
           {
             "competencia": "2026-06-01",
@@ -20811,12 +20947,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "2",
-                "valor": 629704.8699999936,
+                "valor": 437918.0600000103,
                 "vazio": false
               },
               {
                 "col": "3",
-                "valor": 0.0,
+                "valor": 72527.44000000786,
                 "vazio": false
               },
               {
@@ -20830,8 +20966,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 2461852.059999993,
-            "linha_planilha": 39
+            "total": 2342592.6900000176,
+            "linha_planilha": 38
           },
           {
             "competencia": "2026-07-01",
@@ -20844,7 +20980,45 @@ window.PEONA_DATA = {
               },
               {
                 "col": "1",
-                "valor": 2272959.9099997184,
+                "valor": 2036235.8599998807,
+                "vazio": false
+              },
+              {
+                "col": "2",
+                "valor": 360879.00999997696,
+                "vazio": false
+              },
+              {
+                "col": "3",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "4",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "5+",
+                "valor": 0.0,
+                "vazio": false
+              }
+            ],
+            "total": 2498314.4799998575,
+            "linha_planilha": 39
+          },
+          {
+            "competencia": "2026-08-01",
+            "competencia_label": "08/2026",
+            "lags": [
+              {
+                "col": "0",
+                "valor": 89891.19000000176,
+                "vazio": false
+              },
+              {
+                "col": "1",
+                "valor": 1963380.370000109,
                 "vazio": false
               },
               {
@@ -20868,16 +21042,16 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 2374159.5199997183,
+            "total": 2053271.5600001109,
             "linha_planilha": 40
           },
           {
-            "competencia": "2026-08-01",
-            "competencia_label": "08/2026",
+            "competencia": "2026-09-01",
+            "competencia_label": "09/2026",
             "lags": [
               {
                 "col": "0",
-                "valor": 89891.19000000117,
+                "valor": 114364.4699999995,
                 "vazio": false
               },
               {
@@ -20906,7 +21080,7 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 89891.19000000117,
+            "total": 114364.4699999995,
             "linha_planilha": 41
           }
         ]
@@ -20932,37 +21106,6 @@ window.PEONA_DATA = {
           "5"
         ],
         "linhas": [
-          {
-            "competencia": "2024-08-01",
-            "proporcoes": [
-              {
-                "col": "0",
-                "valor": 0.0
-              },
-              {
-                "col": "1",
-                "valor": 0.38297387703481234
-              },
-              {
-                "col": "2",
-                "valor": 0.21094929426389106
-              },
-              {
-                "col": "3",
-                "valor": 0.07538654948965537
-              },
-              {
-                "col": "4",
-                "valor": 0.03827576585017319
-              },
-              {
-                "col": "5",
-                "valor": 0.03760549861567804
-              }
-            ],
-            "total": 0.7451909852542101,
-            "linha_planilha": 75
-          },
           {
             "competencia": "2024-09-01",
             "proporcoes": [
@@ -20992,7 +21135,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 0.8902441001119317,
-            "linha_planilha": 76
+            "linha_planilha": 75
           },
           {
             "competencia": "2024-10-01",
@@ -21023,7 +21166,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.0391665549553213,
-            "linha_planilha": 77
+            "linha_planilha": 76
           },
           {
             "competencia": "2024-11-01",
@@ -21054,7 +21197,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.1990658014145543,
-            "linha_planilha": 78
+            "linha_planilha": 77
           },
           {
             "competencia": "2024-12-01",
@@ -21085,7 +21228,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.3736746139207503,
-            "linha_planilha": 79
+            "linha_planilha": 78
           },
           {
             "competencia": "2025-01-01",
@@ -21116,7 +21259,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.601588135495078,
-            "linha_planilha": 80
+            "linha_planilha": 79
           },
           {
             "competencia": "2025-02-01",
@@ -21147,7 +21290,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.617196552102331,
-            "linha_planilha": 81
+            "linha_planilha": 80
           },
           {
             "competencia": "2025-03-01",
@@ -21178,7 +21321,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.604188748061801,
-            "linha_planilha": 82
+            "linha_planilha": 81
           },
           {
             "competencia": "2025-04-01",
@@ -21209,7 +21352,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.617008604316834,
-            "linha_planilha": 83
+            "linha_planilha": 82
           },
           {
             "competencia": "2025-05-01",
@@ -21240,7 +21383,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6221091835132093,
-            "linha_planilha": 84
+            "linha_planilha": 83
           },
           {
             "competencia": "2025-06-01",
@@ -21271,7 +21414,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6431983405933577,
-            "linha_planilha": 85
+            "linha_planilha": 84
           },
           {
             "competencia": "2025-07-01",
@@ -21302,7 +21445,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6131250140937186,
-            "linha_planilha": 86
+            "linha_planilha": 85
           },
           {
             "competencia": "2025-08-01",
@@ -21333,7 +21476,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5807363432461963,
-            "linha_planilha": 87
+            "linha_planilha": 86
           },
           {
             "competencia": "2025-09-01",
@@ -21364,7 +21507,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5519930176681045,
-            "linha_planilha": 88
+            "linha_planilha": 87
           },
           {
             "competencia": "2025-10-01",
@@ -21395,7 +21538,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5137839471394012,
-            "linha_planilha": 89
+            "linha_planilha": 88
           },
           {
             "competencia": "2025-11-01",
@@ -21426,7 +21569,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.4723664351512231,
-            "linha_planilha": 90
+            "linha_planilha": 89
           },
           {
             "competencia": "2025-12-01",
@@ -21457,7 +21600,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.3960740025411216,
-            "linha_planilha": 91
+            "linha_planilha": 90
           },
           {
             "competencia": "2026-01-01",
@@ -21488,7 +21631,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.324915432741839,
-            "linha_planilha": 92
+            "linha_planilha": 91
           },
           {
             "competencia": "2026-02-01",
@@ -21519,7 +21662,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.2926248153235835,
-            "linha_planilha": 93
+            "linha_planilha": 92
           },
           {
             "competencia": "2026-03-01",
@@ -21550,7 +21693,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.2665154908642107,
-            "linha_planilha": 94
+            "linha_planilha": 93
           },
           {
             "competencia": "2026-04-01",
@@ -21581,7 +21724,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.248381238249999,
-            "linha_planilha": 95
+            "linha_planilha": 94
           },
           {
             "competencia": "2026-05-01",
@@ -21612,7 +21755,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.2402552880640012,
-            "linha_planilha": 96
+            "linha_planilha": 95
           },
           {
             "competencia": "2026-06-01",
@@ -21643,7 +21786,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.2260276270067318,
-            "linha_planilha": 97
+            "linha_planilha": 96
           },
           {
             "competencia": "2026-07-01",
@@ -21674,7 +21817,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.2256618159674808,
-            "linha_planilha": 98
+            "linha_planilha": 97
           },
           {
             "competencia": "2026-08-01",
@@ -21685,50 +21828,71 @@ window.PEONA_DATA = {
               },
               {
                 "col": "1",
-                "valor": 0.7334807054385936
+                "valor": 0.7505007352854016
               },
               {
                 "col": "2",
-                "valor": 0.33361705916087425
+                "valor": 0.321865071090452
               },
               {
                 "col": "3",
-                "valor": 0.1099198484269447
+                "valor": 0.11432761137202073
               },
               {
                 "col": "4",
-                "valor": 0.04692170069909522
+                "valor": 0.03555708105292419
               },
               {
                 "col": "5",
-                "valor": 0.07431281443654564
+                "valor": 0.017060927650006337
               }
             ],
-            "total": 1.2982521281620534,
+            "total": 1.239311426450805,
+            "linha_planilha": 98
+          },
+          {
+            "competencia": "2026-09-01",
+            "proporcoes": [
+              {
+                "col": "0",
+                "valor": 0.0
+              },
+              {
+                "col": "1",
+                "valor": 0.754548098739418
+              },
+              {
+                "col": "2",
+                "valor": 0.31511526040352594
+              },
+              {
+                "col": "3",
+                "valor": 0.1140468229242091
+              },
+              {
+                "col": "4",
+                "valor": 0.03678587198975898
+              },
+              {
+                "col": "5",
+                "valor": 0.017850004003666292
+              }
+            ],
+            "total": 1.238346058060578,
             "linha_planilha": 99
           }
         ]
       },
       "peona_serie": [
         {
-          "competencia": "2024-08-01",
-          "total_avisado": 3289049.6459494582,
-          "media_nm": 3254350.3081100085,
-          "fator_peona": 0.7451909852542101,
-          "peona": 2425112.5124628395,
-          "variacao_r": null,
-          "variacao_pct": null,
-          "linha_planilha": 104
-        },
-        {
           "competencia": "2024-09-01",
           "total_avisado": 2685136.7282612454,
           "media_nm": 3182425.3083301526,
           "fator_peona": 0.8902441001119317,
           "peona": 2833135.3547878135,
-          "variacao_r": 408022.842324974,
-          "variacao_pct": 0.1682490359635329,
-          "linha_planilha": 105
+          "variacao_r": null,
+          "variacao_pct": null,
+          "linha_planilha": 104
         },
         {
           "competencia": "2024-10-01",
@@ -21738,7 +21902,7 @@ window.PEONA_DATA = {
           "peona": 3192953.2190235755,
           "variacao_r": 359817.86423576204,
           "variacao_pct": 0.12700341465426046,
-          "linha_planilha": 106
+          "linha_planilha": 105
         },
         {
           "competencia": "2024-11-01",
@@ -21748,7 +21912,7 @@ window.PEONA_DATA = {
           "peona": 3607459.406029067,
           "variacao_r": 414506.18700549146,
           "variacao_pct": 0.12981906046598768,
-          "linha_planilha": 107
+          "linha_planilha": 106
         },
         {
           "competencia": "2024-12-01",
@@ -21758,7 +21922,7 @@ window.PEONA_DATA = {
           "peona": 3965325.66670889,
           "variacao_r": 357866.2606798229,
           "variacao_pct": 0.09920174294455797,
-          "linha_planilha": 108
+          "linha_planilha": 107
         },
         {
           "competencia": "2025-01-01",
@@ -21768,7 +21932,7 @@ window.PEONA_DATA = {
           "peona": 4166629.192800673,
           "variacao_r": 201303.5260917833,
           "variacao_pct": 0.05076595039389531,
-          "linha_planilha": 109
+          "linha_planilha": 108
         },
         {
           "competencia": "2025-02-01",
@@ -21778,7 +21942,7 @@ window.PEONA_DATA = {
           "peona": 4095736.6163132894,
           "variacao_r": -70892.5764873838,
           "variacao_pct": -0.017014371379597604,
-          "linha_planilha": 110
+          "linha_planilha": 109
         },
         {
           "competencia": "2025-03-01",
@@ -21788,7 +21952,7 @@ window.PEONA_DATA = {
           "peona": 3844566.5416776235,
           "variacao_r": -251170.07463566586,
           "variacao_pct": -0.0613247623480615,
-          "linha_planilha": 111
+          "linha_planilha": 110
         },
         {
           "competencia": "2025-04-01",
@@ -21798,7 +21962,7 @@ window.PEONA_DATA = {
           "peona": 3645291.36116125,
           "variacao_r": -199275.18051637337,
           "variacao_pct": -0.051832938344570145,
-          "linha_planilha": 112
+          "linha_planilha": 111
         },
         {
           "competencia": "2025-05-01",
@@ -21808,7 +21972,7 @@ window.PEONA_DATA = {
           "peona": 3419572.6217304543,
           "variacao_r": -225718.7394307959,
           "variacao_pct": -0.06192063049766494,
-          "linha_planilha": 113
+          "linha_planilha": 112
         },
         {
           "competencia": "2025-06-01",
@@ -21818,7 +21982,7 @@ window.PEONA_DATA = {
           "peona": 3611113.3592780833,
           "variacao_r": 191540.73754762905,
           "variacao_pct": 0.05601306324961186,
-          "linha_planilha": 114
+          "linha_planilha": 113
         },
         {
           "competencia": "2025-07-01",
@@ -21828,7 +21992,7 @@ window.PEONA_DATA = {
           "peona": 3871500.839926912,
           "variacao_r": 260387.48064882867,
           "variacao_pct": 0.07210725744175583,
-          "linha_planilha": 115
+          "linha_planilha": 114
         },
         {
           "competencia": "2025-08-01",
@@ -21838,7 +22002,7 @@ window.PEONA_DATA = {
           "peona": 3626440.9898738516,
           "variacao_r": -245059.85005306033,
           "variacao_pct": -0.0632984106643476,
-          "linha_planilha": 116
+          "linha_planilha": 115
         },
         {
           "competencia": "2025-09-01",
@@ -21848,7 +22012,7 @@ window.PEONA_DATA = {
           "peona": 3678233.599040063,
           "variacao_r": 51792.60916621145,
           "variacao_pct": 0.014281939044598513,
-          "linha_planilha": 117
+          "linha_planilha": 116
         },
         {
           "competencia": "2025-10-01",
@@ -21858,7 +22022,7 @@ window.PEONA_DATA = {
           "peona": 3740452.894239515,
           "variacao_r": 62219.29519945197,
           "variacao_pct": 0.01691553663576184,
-          "linha_planilha": 118
+          "linha_planilha": 117
         },
         {
           "competencia": "2025-11-01",
@@ -21868,7 +22032,7 @@ window.PEONA_DATA = {
           "peona": 3771600.497845068,
           "variacao_r": 31147.603605553042,
           "variacao_pct": 0.008327227874870946,
-          "linha_planilha": 119
+          "linha_planilha": 118
         },
         {
           "competencia": "2025-12-01",
@@ -21878,7 +22042,7 @@ window.PEONA_DATA = {
           "peona": 3416589.379180842,
           "variacao_r": -355011.118664226,
           "variacao_pct": -0.09412744506398918,
-          "linha_planilha": 120
+          "linha_planilha": 119
         },
         {
           "competencia": "2026-01-01",
@@ -21888,7 +22052,7 @@ window.PEONA_DATA = {
           "peona": 2993550.2799999975,
           "variacao_r": -423039.0991808446,
           "variacao_pct": -0.1238191225901053,
-          "linha_planilha": 121
+          "linha_planilha": 120
         },
         {
           "competencia": "2026-02-01",
@@ -21898,7 +22062,7 @@ window.PEONA_DATA = {
           "peona": 2884003.7299999967,
           "variacao_r": -109546.55000000075,
           "variacao_pct": -0.03659419076134607,
-          "linha_planilha": 122
+          "linha_planilha": 121
         },
         {
           "competencia": "2026-03-01",
@@ -21908,7 +22072,7 @@ window.PEONA_DATA = {
           "peona": 2743722.073333331,
           "variacao_r": -140281.6566666658,
           "variacao_pct": -0.04864128822283664,
-          "linha_planilha": 123
+          "linha_planilha": 122
         },
         {
           "competencia": "2026-04-01",
@@ -21918,7 +22082,7 @@ window.PEONA_DATA = {
           "peona": 2732815.8699999982,
           "variacao_r": -10906.203333332669,
           "variacao_pct": -0.003974966502377164,
-          "linha_planilha": 124
+          "linha_planilha": 123
         },
         {
           "competencia": "2026-05-01",
@@ -21928,7 +22092,7 @@ window.PEONA_DATA = {
           "peona": 2684953.873333333,
           "variacao_r": -47861.99666666519,
           "variacao_pct": -0.01751380222578447,
-          "linha_planilha": 125
+          "linha_planilha": 124
         },
         {
           "competencia": "2026-06-01",
@@ -21938,7 +22102,7 @@ window.PEONA_DATA = {
           "peona": 2654999.5233333334,
           "variacao_r": -29954.349999999627,
           "variacao_pct": -0.011156374155065762,
-          "linha_planilha": 126
+          "linha_planilha": 125
         },
         {
           "competencia": "2026-07-01",
@@ -21948,270 +22112,280 @@ window.PEONA_DATA = {
           "peona": 2763063.3200000008,
           "variacao_r": 108063.79666666733,
           "variacao_pct": 0.04070200228548204,
-          "linha_planilha": 127
+          "linha_planilha": 126
         },
         {
           "competencia": "2026-08-01",
-          "total_avisado": 3349129.659999711,
-          "media_nm": 2467462.2816666183,
-          "fator_peona": 1.2982521281620534,
-          "peona": 3203388.1583332834,
-          "variacao_r": 440324.8383332826,
-          "variacao_pct": 0.1593611102380681,
+          "total_avisado": 2697962.089999894,
+          "media_nm": 2358934.3533333153,
+          "fator_peona": 1.239311426450805,
+          "peona": 2923454.298333318,
+          "variacao_r": 160390.9783333172,
+          "variacao_pct": 0.05804824564545896,
+          "linha_planilha": 127
+        },
+        {
+          "competencia": "2026-09-01",
+          "total_avisado": 2541348.200000093,
+          "media_nm": 2459912.146666665,
+          "fator_peona": 1.238346058060578,
+          "peona": 3046222.5099999993,
+          "variacao_r": 122768.21166668134,
+          "variacao_pct": 0.041994229818017814,
           "linha_planilha": 128
         }
       ],
       "runoff_aux": [
         {
-          "competencia": "2023-09-01",
-          "runoff_puro": 1528267.9899999995,
-          "avisado_mes": 2499143.71,
-          "ocorrido_mes": 2413746.9995392854,
-          "linha_planilha": 6
-        },
-        {
           "competencia": "2023-10-01",
           "runoff_puro": 1560616.5699999998,
           "avisado_mes": 2455577.88,
           "ocorrido_mes": 2480223.0023354026,
-          "linha_planilha": 7
+          "linha_planilha": 6
         },
         {
           "competencia": "2023-11-01",
           "runoff_puro": 1625488.19,
           "avisado_mes": 2453520.0000000005,
           "ocorrido_mes": 2522785.8588305484,
-          "linha_planilha": 8
+          "linha_planilha": 7
         },
         {
           "competencia": "2023-12-01",
           "runoff_puro": 1027276.87,
           "avisado_mes": 2453500.1400000006,
           "ocorrido_mes": 1847951.240834049,
-          "linha_planilha": 9
+          "linha_planilha": 8
         },
         {
           "competencia": "2024-01-01",
           "runoff_puro": 1825530.907073611,
           "avisado_mes": 2293145.048056159,
           "ocorrido_mes": 3105502.459209818,
-          "linha_planilha": 10
+          "linha_planilha": 9
         },
         {
           "competencia": "2024-02-01",
           "runoff_puro": 1850275.7937761024,
           "avisado_mes": 2917516.4447950046,
           "ocorrido_mes": 2932770.505388486,
-          "linha_planilha": 11
+          "linha_planilha": 10
         },
         {
           "competencia": "2024-03-01",
           "runoff_puro": 1859177.9435215958,
           "avisado_mes": 3116686.7269403827,
           "ocorrido_mes": 3123194.887159766,
-          "linha_planilha": 12
+          "linha_planilha": 11
         },
         {
           "competencia": "2024-04-01",
           "runoff_puro": 2017729.1408307008,
           "avisado_mes": 3250382.756768446,
           "ocorrido_mes": 3406038.3447651565,
-          "linha_planilha": 13
+          "linha_planilha": 12
         },
         {
           "competencia": "2024-05-01",
           "runoff_puro": 2169139.5233073183,
           "avisado_mes": 3249086.523338633,
           "ocorrido_mes": 3405598.621987996,
-          "linha_planilha": 14
+          "linha_planilha": 13
         },
         {
           "competencia": "2024-06-01",
           "runoff_puro": 3126413.2056986457,
           "avisado_mes": 3196760.658581219,
           "ocorrido_mes": 4170039.171569735,
-          "linha_planilha": 15
+          "linha_planilha": 14
         },
         {
           "competencia": "2024-07-01",
           "runoff_puro": 4787150.908196724,
           "avisado_mes": 3424135.537081914,
           "ocorrido_mes": 5100310.761913286,
-          "linha_planilha": 16
+          "linha_planilha": 15
         },
         {
           "competencia": "2024-08-01",
           "runoff_puro": 4263867.30482364,
           "avisado_mes": 3289049.6459494582,
           "ocorrido_mes": 2765578.7529753423,
-          "linha_planilha": 17
+          "linha_planilha": 16
         },
         {
           "competencia": "2024-09-01",
           "runoff_puro": 4287213.031449081,
           "avisado_mes": 2685136.7282612454,
           "ocorrido_mes": 2719033.19936741,
-          "linha_planilha": 18
+          "linha_planilha": 17
         },
         {
           "competencia": "2024-10-01",
           "runoff_puro": 4478857.774182746,
           "avisado_mes": 2591489.0048920605,
           "ocorrido_mes": 2834637.1612453316,
-          "linha_planilha": 19
+          "linha_planilha": 18
         },
         {
           "competencia": "2024-11-01",
           "runoff_puro": 3811725.2341377917,
           "avisado_mes": 2864778.41006378,
           "ocorrido_mes": 2205296.6243638387,
-          "linha_planilha": 20
+          "linha_planilha": 19
         },
         {
           "competencia": "2024-12-01",
           "runoff_puro": 3127918.6953940904,
           "avisado_mes": 2465344.928302699,
           "ocorrido_mes": 1800263.5664406188,
-          "linha_planilha": 21
+          "linha_planilha": 20
         },
         {
           "competencia": "2025-01-01",
           "runoff_puro": 4010932.8766814955,
           "avisado_mes": 1713567.1380515257,
           "ocorrido_mes": 2513340.1548732007,
-          "linha_planilha": 22
+          "linha_planilha": 21
         },
         {
           "competencia": "2025-02-01",
           "runoff_puro": 3085491.7802396743,
           "avisado_mes": 2875375.1650691847,
           "ocorrido_mes": 1920478.3301538709,
-          "linha_planilha": 23
+          "linha_planilha": 22
         },
         {
           "competencia": "2025-03-01",
           "runoff_puro": 3223482.867981743,
           "avisado_mes": 1868924.8743043584,
           "ocorrido_mes": 2002161.8320464275,
-          "linha_planilha": 24
+          "linha_planilha": 23
         },
         {
           "competencia": "2025-04-01",
           "runoff_puro": 3750582.2316036597,
           "avisado_mes": 1738065.009564203,
           "ocorrido_mes": 2259032.08318612,
-          "linha_planilha": 25
+          "linha_planilha": 24
         },
         {
           "competencia": "2025-05-01",
           "runoff_puro": 4557665.864487184,
           "avisado_mes": 1987338.6122544894,
           "ocorrido_mes": 2798459.5251380126,
-          "linha_planilha": 26
+          "linha_planilha": 25
         },
         {
           "competencia": "2025-06-01",
           "runoff_puro": 3741544.1244602976,
           "avisado_mes": 3002404.7339025764,
           "ocorrido_mes": 2187451.133875691,
-          "linha_planilha": 27
+          "linha_planilha": 26
         },
         {
           "competencia": "2025-07-01",
           "runoff_puro": 3158250.5299999993,
           "avisado_mes": 2927894.6031922903,
           "ocorrido_mes": 2339601.978731992,
-          "linha_planilha": 28
+          "linha_planilha": 27
         },
         {
           "competencia": "2025-08-01",
           "runoff_puro": 3101289.349999998,
           "avisado_mes": 2240252.0799999996,
           "ocorrido_mes": 2182863.8799999985,
-          "linha_planilha": 29
+          "linha_planilha": 28
         },
         {
           "competencia": "2025-09-01",
           "runoff_puro": 3161307.3499999945,
           "avisado_mes": 2324084.1899999995,
-          "ocorrido_mes": 2383708.3299999954,
-          "linha_planilha": 30
+          "ocorrido_mes": 2383830.8499999954,
+          "linha_planilha": 29
         },
         {
           "competencia": "2025-10-01",
           "runoff_puro": 3140757.8099999935,
           "avisado_mes": 2343600.729999996,
           "ocorrido_mes": 2324412.1399999945,
-          "linha_planilha": 31
+          "linha_planilha": 30
         },
         {
           "competencia": "2025-11-01",
           "runoff_puro": 2709349.4,
           "avisado_mes": 2531309.209999993,
           "ocorrido_mes": 2099353.1499999994,
-          "linha_planilha": 32
+          "linha_planilha": 31
         },
         {
           "competencia": "2025-12-01",
           "runoff_puro": 2161828.6299999994,
           "avisado_mes": 2316562.3699999996,
           "ocorrido_mes": 1760040.9499999993,
-          "linha_planilha": 33
+          "linha_planilha": 32
         },
         {
           "competencia": "2026-01-01",
           "runoff_puro": 2531446.9800000014,
           "avisado_mes": 1800756.0399999989,
-          "ocorrido_mes": 2171849.810000001,
-          "linha_planilha": 34
+          "ocorrido_mes": 2170714.3500000006,
+          "linha_planilha": 33
         },
         {
           "competencia": "2026-02-01",
           "runoff_puro": 2488762.6099999966,
           "avisado_mes": 2070419.770000001,
-          "ocorrido_mes": 2051398.4899999963,
-          "linha_planilha": 35
+          "ocorrido_mes": 2027606.2499999963,
+          "linha_planilha": 34
         },
         {
           "competencia": "2026-03-01",
-          "runoff_puro": 3320185.2200000044,
+          "runoff_puro": 3148443.070000005,
           "avisado_mes": 1935481.4399999955,
-          "ocorrido_mes": 2740593.310000003,
-          "linha_planilha": 36
+          "ocorrido_mes": 2594464.0400000038,
+          "linha_planilha": 35
         },
         {
           "competencia": "2026-04-01",
-          "runoff_puro": 3144031.6400000034,
+          "runoff_puro": 2931156.7700000023,
           "avisado_mes": 2479996.680000003,
-          "ocorrido_mes": 2303843.1000000024,
-          "linha_planilha": 37
+          "ocorrido_mes": 2261902.6800000006,
+          "linha_planilha": 36
         },
         {
           "competencia": "2026-05-01",
-          "runoff_puro": 3077570.959999998,
+          "runoff_puro": 2885111.160000002,
           "avisado_mes": 2385821.8400000012,
-          "ocorrido_mes": 2319361.1599999964,
-          "linha_planilha": 38
+          "ocorrido_mes": 2339776.230000001,
+          "linha_planilha": 37
         },
         {
           "competencia": "2026-06-01",
-          "runoff_puro": 3218719.199999991,
+          "runoff_puro": 2907000.030000019,
           "avisado_mes": 2320703.8200000003,
-          "ocorrido_mes": 2461852.059999993,
-          "linha_planilha": 39
+          "ocorrido_mes": 2342592.6900000176,
+          "linha_planilha": 38
         },
         {
           "competencia": "2026-07-01",
-          "runoff_puro": 3259238.4699997096,
+          "runoff_puro": 3071674.2599998773,
           "avisado_mes": 2333640.2499999995,
-          "ocorrido_mes": 2374159.5199997183,
-          "linha_planilha": 40
+          "ocorrido_mes": 2498314.4799998575,
+          "linha_planilha": 39
         },
         {
           "competencia": "2026-08-01",
+          "runoff_puro": 2426983.7300000936,
+          "avisado_mes": 2697962.089999894,
+          "ocorrido_mes": 2053271.5600001109,
+          "linha_planilha": 40
+        },
+        {
+          "competencia": "2026-09-01",
           "runoff_puro": 0.0,
-          "avisado_mes": 3349129.659999711,
-          "ocorrido_mes": 89891.19000000117,
+          "avisado_mes": 2541348.200000093,
+          "ocorrido_mes": 114364.4699999995,
           "linha_planilha": 41
         }
       ],
@@ -22266,74 +22440,6 @@ window.PEONA_DATA = {
           "11+"
         ],
         "linhas": [
-          {
-            "competencia": "2023-09-01",
-            "competencia_label": "09/2023",
-            "lags": [
-              {
-                "col": "0",
-                "valor": 1429890.25,
-                "vazio": false
-              },
-              {
-                "col": "1",
-                "valor": 810471.13,
-                "vazio": false
-              },
-              {
-                "col": "2",
-                "valor": 106500.14,
-                "vazio": false
-              },
-              {
-                "col": "3",
-                "valor": 73832.17,
-                "vazio": false
-              },
-              {
-                "col": "4",
-                "valor": 38226.77,
-                "vazio": false
-              },
-              {
-                "col": "5",
-                "valor": 15603.85,
-                "vazio": false
-              },
-              {
-                "col": "6",
-                "valor": 22738.63,
-                "vazio": false
-              },
-              {
-                "col": "7",
-                "valor": 1880.77,
-                "vazio": false
-              },
-              {
-                "col": "8",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "9",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "10",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "11+",
-                "valor": 0.0,
-                "vazio": false
-              }
-            ],
-            "total": 2499143.71,
-            "linha_planilha": 6
-          },
           {
             "competencia": "2023-10-01",
             "competencia_label": "10/2023",
@@ -22400,7 +22506,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2455577.88,
-            "linha_planilha": 7
+            "linha_planilha": 6
           },
           {
             "competencia": "2023-11-01",
@@ -22468,7 +22574,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2453520.0000000005,
-            "linha_planilha": 8
+            "linha_planilha": 7
           },
           {
             "competencia": "2023-12-01",
@@ -22536,7 +22642,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2453500.1400000006,
-            "linha_planilha": 9
+            "linha_planilha": 8
           },
           {
             "competencia": "2024-01-01",
@@ -22604,7 +22710,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2293145.0480561596,
-            "linha_planilha": 10
+            "linha_planilha": 9
           },
           {
             "competencia": "2024-02-01",
@@ -22672,7 +22778,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2917516.444795005,
-            "linha_planilha": 11
+            "linha_planilha": 10
           },
           {
             "competencia": "2024-03-01",
@@ -22740,7 +22846,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3116686.7269403827,
-            "linha_planilha": 12
+            "linha_planilha": 11
           },
           {
             "competencia": "2024-04-01",
@@ -22808,7 +22914,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3250382.756768446,
-            "linha_planilha": 13
+            "linha_planilha": 12
           },
           {
             "competencia": "2024-05-01",
@@ -22876,7 +22982,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3249086.5233386336,
-            "linha_planilha": 14
+            "linha_planilha": 13
           },
           {
             "competencia": "2024-06-01",
@@ -22944,7 +23050,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3196760.658581219,
-            "linha_planilha": 15
+            "linha_planilha": 14
           },
           {
             "competencia": "2024-07-01",
@@ -23012,7 +23118,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3424135.537081914,
-            "linha_planilha": 16
+            "linha_planilha": 15
           },
           {
             "competencia": "2024-08-01",
@@ -23080,7 +23186,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3289049.6459494587,
-            "linha_planilha": 17
+            "linha_planilha": 16
           },
           {
             "competencia": "2024-09-01",
@@ -23148,7 +23254,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2685136.728261246,
-            "linha_planilha": 18
+            "linha_planilha": 17
           },
           {
             "competencia": "2024-10-01",
@@ -23216,7 +23322,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2591489.0048920605,
-            "linha_planilha": 19
+            "linha_planilha": 18
           },
           {
             "competencia": "2024-11-01",
@@ -23284,7 +23390,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2864778.41006378,
-            "linha_planilha": 20
+            "linha_planilha": 19
           },
           {
             "competencia": "2024-12-01",
@@ -23352,7 +23458,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2465344.9283026983,
-            "linha_planilha": 21
+            "linha_planilha": 20
           },
           {
             "competencia": "2025-01-01",
@@ -23420,7 +23526,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1713567.1380515255,
-            "linha_planilha": 22
+            "linha_planilha": 21
           },
           {
             "competencia": "2025-02-01",
@@ -23488,7 +23594,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2875375.165069185,
-            "linha_planilha": 23
+            "linha_planilha": 22
           },
           {
             "competencia": "2025-03-01",
@@ -23556,7 +23662,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1868924.8743043588,
-            "linha_planilha": 24
+            "linha_planilha": 23
           },
           {
             "competencia": "2025-04-01",
@@ -23624,7 +23730,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1738065.009564203,
-            "linha_planilha": 25
+            "linha_planilha": 24
           },
           {
             "competencia": "2025-05-01",
@@ -23692,7 +23798,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1987338.6122544894,
-            "linha_planilha": 26
+            "linha_planilha": 25
           },
           {
             "competencia": "2025-06-01",
@@ -23760,7 +23866,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3002404.7339025764,
-            "linha_planilha": 27
+            "linha_planilha": 26
           },
           {
             "competencia": "2025-07-01",
@@ -23828,7 +23934,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2927894.60319229,
-            "linha_planilha": 28
+            "linha_planilha": 27
           },
           {
             "competencia": "2025-08-01",
@@ -23896,7 +24002,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2240252.08,
-            "linha_planilha": 29
+            "linha_planilha": 28
           },
           {
             "competencia": "2025-09-01",
@@ -23964,7 +24070,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2324084.1900000004,
-            "linha_planilha": 30
+            "linha_planilha": 29
           },
           {
             "competencia": "2025-10-01",
@@ -24032,7 +24138,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2343600.7299999963,
-            "linha_planilha": 31
+            "linha_planilha": 30
           },
           {
             "competencia": "2025-11-01",
@@ -24100,7 +24206,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2531309.2099999934,
-            "linha_planilha": 32
+            "linha_planilha": 31
           },
           {
             "competencia": "2025-12-01",
@@ -24168,7 +24274,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2316562.3699999996,
-            "linha_planilha": 33
+            "linha_planilha": 32
           },
           {
             "competencia": "2026-01-01",
@@ -24236,7 +24342,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1800756.0399999989,
-            "linha_planilha": 34
+            "linha_planilha": 33
           },
           {
             "competencia": "2026-02-01",
@@ -24304,7 +24410,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2070419.770000001,
-            "linha_planilha": 35
+            "linha_planilha": 34
           },
           {
             "competencia": "2026-03-01",
@@ -24372,7 +24478,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1935481.4399999955,
-            "linha_planilha": 36
+            "linha_planilha": 35
           },
           {
             "competencia": "2026-04-01",
@@ -24440,7 +24546,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2479996.680000003,
-            "linha_planilha": 37
+            "linha_planilha": 36
           },
           {
             "competencia": "2026-05-01",
@@ -24508,7 +24614,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2385821.8400000012,
-            "linha_planilha": 38
+            "linha_planilha": 37
           },
           {
             "competencia": "2026-06-01",
@@ -24576,7 +24682,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2320703.8200000008,
-            "linha_planilha": 39
+            "linha_planilha": 38
           },
           {
             "competencia": "2026-07-01",
@@ -24644,7 +24750,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2333640.2499999995,
-            "linha_planilha": 40
+            "linha_planilha": 39
           },
           {
             "competencia": "2026-08-01",
@@ -24652,42 +24758,42 @@ window.PEONA_DATA = {
             "lags": [
               {
                 "col": "0",
-                "valor": 89891.19000000117,
+                "valor": 89891.19000000176,
                 "vazio": false
               },
               {
                 "col": "1",
-                "valor": 2272959.9099997184,
+                "valor": 2036235.8599998807,
                 "vazio": false
               },
               {
                 "col": "2",
-                "valor": 629704.8699999936,
+                "valor": 437918.0600000103,
                 "vazio": false
               },
               {
                 "col": "3",
-                "valor": 106021.54999999562,
+                "valor": 102958.05000000051,
                 "vazio": false
               },
               {
                 "col": "4",
-                "valor": 71806.20000000153,
+                "valor": 23955.140000000043,
                 "vazio": false
               },
               {
                 "col": "5",
-                "valor": 152435.2000000003,
+                "valor": 5755.070000001011,
                 "vazio": false
               },
               {
                 "col": "6",
-                "valor": 25072.490000000013,
+                "valor": 1023.4099999999971,
                 "vazio": false
               },
               {
                 "col": "7",
-                "valor": 1238.2499999999964,
+                "valor": 102.78999999997541,
                 "vazio": false
               },
               {
@@ -24707,11 +24813,79 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
+                "valor": 122.52000000001863,
+                "vazio": false
+              }
+            ],
+            "total": 2697962.0899998946,
+            "linha_planilha": 40
+          },
+          {
+            "competencia": "2026-09-01",
+            "competencia_label": "09/2026",
+            "lags": [
+              {
+                "col": "0",
+                "valor": 114364.4699999995,
+                "vazio": false
+              },
+              {
+                "col": "1",
+                "valor": 1963380.370000109,
+                "vazio": false
+              },
+              {
+                "col": "2",
+                "valor": 360879.00999997696,
+                "vazio": false
+              },
+              {
+                "col": "3",
+                "valor": 72527.44000000786,
+                "vazio": false
+              },
+              {
+                "col": "4",
+                "valor": 23478.5699999997,
+                "vazio": false
+              },
+              {
+                "col": "5",
+                "valor": 5910.639999999741,
+                "vazio": false
+              },
+              {
+                "col": "6",
+                "valor": 550.8600000000188,
+                "vazio": false
+              },
+              {
+                "col": "7",
+                "valor": 256.84000000001106,
+                "vazio": false
+              },
+              {
+                "col": "8",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "9",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "10",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "11+",
                 "valor": 0.0,
                 "vazio": false
               }
             ],
-            "total": 3349129.659999711,
+            "total": 2541348.2000000924,
             "linha_planilha": 41
           }
         ]
@@ -24732,74 +24906,6 @@ window.PEONA_DATA = {
           "11+"
         ],
         "linhas": [
-          {
-            "competencia": "2023-09-01",
-            "competencia_label": "09/2023",
-            "lags": [
-              {
-                "col": "0",
-                "valor": 1429890.25,
-                "vazio": false
-              },
-              {
-                "col": "1",
-                "valor": 693813.95,
-                "vazio": false
-              },
-              {
-                "col": "2",
-                "valor": 144249.74,
-                "vazio": false
-              },
-              {
-                "col": "3",
-                "valor": 65960.65,
-                "vazio": false
-              },
-              {
-                "col": "4",
-                "valor": 46286.52,
-                "vazio": false
-              },
-              {
-                "col": "5",
-                "valor": 17199.31,
-                "vazio": false
-              },
-              {
-                "col": "6",
-                "valor": 15586.49,
-                "vazio": false
-              },
-              {
-                "col": "7",
-                "valor": 750.1,
-                "vazio": false
-              },
-              {
-                "col": "8",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "9",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "10",
-                "valor": 0.0,
-                "vazio": false
-              },
-              {
-                "col": "11+",
-                "valor": 9.989539285280284,
-                "vazio": false
-              }
-            ],
-            "total": 2413746.999539286,
-            "linha_planilha": 6
-          },
           {
             "competencia": "2023-10-01",
             "competencia_label": "10/2023",
@@ -24866,7 +24972,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2480223.002335402,
-            "linha_planilha": 7
+            "linha_planilha": 6
           },
           {
             "competencia": "2023-11-01",
@@ -24934,7 +25040,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2522785.858830549,
-            "linha_planilha": 8
+            "linha_planilha": 7
           },
           {
             "competencia": "2023-12-01",
@@ -25002,7 +25108,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1847951.2408340492,
-            "linha_planilha": 9
+            "linha_planilha": 8
           },
           {
             "competencia": "2024-01-01",
@@ -25070,7 +25176,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3105502.4592098184,
-            "linha_planilha": 10
+            "linha_planilha": 9
           },
           {
             "competencia": "2024-02-01",
@@ -25138,7 +25244,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2932770.505388486,
-            "linha_planilha": 11
+            "linha_planilha": 10
           },
           {
             "competencia": "2024-03-01",
@@ -25206,7 +25312,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3123194.8871597666,
-            "linha_planilha": 12
+            "linha_planilha": 11
           },
           {
             "competencia": "2024-04-01",
@@ -25274,7 +25380,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3406038.3447651565,
-            "linha_planilha": 13
+            "linha_planilha": 12
           },
           {
             "competencia": "2024-05-01",
@@ -25342,7 +25448,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 3405598.621987996,
-            "linha_planilha": 14
+            "linha_planilha": 13
           },
           {
             "competencia": "2024-06-01",
@@ -25410,7 +25516,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 4170039.171569735,
-            "linha_planilha": 15
+            "linha_planilha": 14
           },
           {
             "competencia": "2024-07-01",
@@ -25478,7 +25584,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 5100310.761913286,
-            "linha_planilha": 16
+            "linha_planilha": 15
           },
           {
             "competencia": "2024-08-01",
@@ -25546,7 +25652,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2765578.7529753423,
-            "linha_planilha": 17
+            "linha_planilha": 16
           },
           {
             "competencia": "2024-09-01",
@@ -25614,7 +25720,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2719033.1993674096,
-            "linha_planilha": 18
+            "linha_planilha": 17
           },
           {
             "competencia": "2024-10-01",
@@ -25682,7 +25788,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2834637.161245331,
-            "linha_planilha": 19
+            "linha_planilha": 18
           },
           {
             "competencia": "2024-11-01",
@@ -25750,7 +25856,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2205296.624363838,
-            "linha_planilha": 20
+            "linha_planilha": 19
           },
           {
             "competencia": "2024-12-01",
@@ -25818,7 +25924,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1800263.5664406188,
-            "linha_planilha": 21
+            "linha_planilha": 20
           },
           {
             "competencia": "2025-01-01",
@@ -25886,7 +25992,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2513340.154873201,
-            "linha_planilha": 22
+            "linha_planilha": 21
           },
           {
             "competencia": "2025-02-01",
@@ -25954,7 +26060,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1920478.3301538709,
-            "linha_planilha": 23
+            "linha_planilha": 22
           },
           {
             "competencia": "2025-03-01",
@@ -26022,7 +26128,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2002161.8320464275,
-            "linha_planilha": 24
+            "linha_planilha": 23
           },
           {
             "competencia": "2025-04-01",
@@ -26090,7 +26196,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2259032.08318612,
-            "linha_planilha": 25
+            "linha_planilha": 24
           },
           {
             "competencia": "2025-05-01",
@@ -26158,7 +26264,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2798459.525138013,
-            "linha_planilha": 26
+            "linha_planilha": 25
           },
           {
             "competencia": "2025-06-01",
@@ -26226,7 +26332,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2187451.133875691,
-            "linha_planilha": 27
+            "linha_planilha": 26
           },
           {
             "competencia": "2025-07-01",
@@ -26294,7 +26400,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2339601.9787319917,
-            "linha_planilha": 28
+            "linha_planilha": 27
           },
           {
             "competencia": "2025-08-01",
@@ -26362,7 +26468,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2182863.8799999985,
-            "linha_planilha": 29
+            "linha_planilha": 28
           },
           {
             "competencia": "2025-09-01",
@@ -26425,12 +26531,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "11+",
-                "valor": 0.0,
+                "valor": 122.52000000001863,
                 "vazio": false
               }
             ],
-            "total": 2383708.3299999954,
-            "linha_planilha": 30
+            "total": 2383830.8499999954,
+            "linha_planilha": 29
           },
           {
             "competencia": "2025-10-01",
@@ -26498,7 +26604,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2324412.1399999945,
-            "linha_planilha": 31
+            "linha_planilha": 30
           },
           {
             "competencia": "2025-11-01",
@@ -26566,7 +26672,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 2099353.1499999994,
-            "linha_planilha": 32
+            "linha_planilha": 31
           },
           {
             "competencia": "2025-12-01",
@@ -26634,7 +26740,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1760040.9499999993,
-            "linha_planilha": 33
+            "linha_planilha": 32
           },
           {
             "competencia": "2026-01-01",
@@ -26677,7 +26783,7 @@ window.PEONA_DATA = {
               },
               {
                 "col": "7",
-                "valor": 1238.2499999999964,
+                "valor": 102.78999999997541,
                 "vazio": false
               },
               {
@@ -26701,8 +26807,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 2171849.810000001,
-            "linha_planilha": 34
+            "total": 2170714.350000001,
+            "linha_planilha": 33
           },
           {
             "competencia": "2026-02-01",
@@ -26740,12 +26846,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "6",
-                "valor": 25072.490000000013,
+                "valor": 1023.4099999999971,
                 "vazio": false
               },
               {
                 "col": "7",
-                "valor": 0.0,
+                "valor": 256.84000000001106,
                 "vazio": false
               },
               {
@@ -26769,8 +26875,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 2051398.4899999963,
-            "linha_planilha": 35
+            "total": 2027606.2499999963,
+            "linha_planilha": 34
           },
           {
             "competencia": "2026-03-01",
@@ -26803,12 +26909,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "5",
-                "valor": 152435.2000000003,
+                "valor": 5755.070000001011,
                 "vazio": false
               },
               {
                 "col": "6",
-                "valor": 0.0,
+                "valor": 550.8600000000188,
                 "vazio": false
               },
               {
@@ -26837,8 +26943,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 2740593.310000003,
-            "linha_planilha": 36
+            "total": 2594464.0400000038,
+            "linha_planilha": 35
           },
           {
             "competencia": "2026-04-01",
@@ -26866,12 +26972,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "4",
-                "valor": 71806.20000000153,
+                "valor": 23955.140000000043,
                 "vazio": false
               },
               {
                 "col": "5",
-                "valor": 0.0,
+                "valor": 5910.639999999741,
                 "vazio": false
               },
               {
@@ -26905,8 +27011,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 2303843.1000000024,
-            "linha_planilha": 37
+            "total": 2261902.6800000006,
+            "linha_planilha": 36
           },
           {
             "competencia": "2026-05-01",
@@ -26929,12 +27035,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "3",
-                "valor": 106021.54999999562,
+                "valor": 102958.05000000051,
                 "vazio": false
               },
               {
                 "col": "4",
-                "valor": 0.0,
+                "valor": 23478.5699999997,
                 "vazio": false
               },
               {
@@ -26973,8 +27079,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 2319361.1599999964,
-            "linha_planilha": 38
+            "total": 2339776.230000001,
+            "linha_planilha": 37
           },
           {
             "competencia": "2026-06-01",
@@ -26992,12 +27098,12 @@ window.PEONA_DATA = {
               },
               {
                 "col": "2",
-                "valor": 629704.8699999936,
+                "valor": 437918.0600000103,
                 "vazio": false
               },
               {
                 "col": "3",
-                "valor": 0.0,
+                "valor": 72527.44000000786,
                 "vazio": false
               },
               {
@@ -27041,8 +27147,8 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 2461852.059999993,
-            "linha_planilha": 39
+            "total": 2342592.6900000176,
+            "linha_planilha": 38
           },
           {
             "competencia": "2026-07-01",
@@ -27055,7 +27161,75 @@ window.PEONA_DATA = {
               },
               {
                 "col": "1",
-                "valor": 2272959.9099997184,
+                "valor": 2036235.8599998807,
+                "vazio": false
+              },
+              {
+                "col": "2",
+                "valor": 360879.00999997696,
+                "vazio": false
+              },
+              {
+                "col": "3",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "4",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "5",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "6",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "7",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "8",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "9",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "10",
+                "valor": 0.0,
+                "vazio": false
+              },
+              {
+                "col": "11+",
+                "valor": 0.0,
+                "vazio": false
+              }
+            ],
+            "total": 2498314.4799998575,
+            "linha_planilha": 39
+          },
+          {
+            "competencia": "2026-08-01",
+            "competencia_label": "08/2026",
+            "lags": [
+              {
+                "col": "0",
+                "valor": 89891.19000000176,
+                "vazio": false
+              },
+              {
+                "col": "1",
+                "valor": 1963380.370000109,
                 "vazio": false
               },
               {
@@ -27109,16 +27283,16 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 2374159.5199997183,
+            "total": 2053271.5600001109,
             "linha_planilha": 40
           },
           {
-            "competencia": "2026-08-01",
-            "competencia_label": "08/2026",
+            "competencia": "2026-09-01",
+            "competencia_label": "09/2026",
             "lags": [
               {
                 "col": "0",
-                "valor": 89891.19000000117,
+                "valor": 114364.4699999995,
                 "vazio": false
               },
               {
@@ -27177,7 +27351,7 @@ window.PEONA_DATA = {
                 "vazio": false
               }
             ],
-            "total": 89891.19000000117,
+            "total": 114364.4699999995,
             "linha_planilha": 41
           }
         ]
@@ -27215,61 +27389,6 @@ window.PEONA_DATA = {
           "11"
         ],
         "linhas": [
-          {
-            "competencia": "2024-08-01",
-            "proporcoes": [
-              {
-                "col": "0",
-                "valor": 0.0
-              },
-              {
-                "col": "1",
-                "valor": 0.3441507411864628
-              },
-              {
-                "col": "2",
-                "valor": 0.16348061955304127
-              },
-              {
-                "col": "3",
-                "valor": 0.07856545413553997
-              },
-              {
-                "col": "4",
-                "valor": 0.047148198425172434
-              },
-              {
-                "col": "5",
-                "valor": 0.027150662449247805
-              },
-              {
-                "col": "6",
-                "valor": 0.02831440656645987
-              },
-              {
-                "col": "7",
-                "valor": 0.0050015831362721025
-              },
-              {
-                "col": "8",
-                "valor": 0.0007272197809836867
-              },
-              {
-                "col": "9",
-                "valor": 0.0002432409773287702
-              },
-              {
-                "col": "10",
-                "valor": 1.1422752942754488e-05
-              },
-              {
-                "col": "11",
-                "valor": 0.0002570274942482857
-              }
-            ],
-            "total": 0.6950505764576997,
-            "linha_planilha": 75
-          },
           {
             "competencia": "2024-09-01",
             "proporcoes": [
@@ -27323,7 +27442,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 0.7696223949280738,
-            "linha_planilha": 76
+            "linha_planilha": 75
           },
           {
             "competencia": "2024-10-01",
@@ -27378,7 +27497,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 0.8393977464942263,
-            "linha_planilha": 77
+            "linha_planilha": 76
           },
           {
             "competencia": "2024-11-01",
@@ -27433,7 +27552,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 0.9146940248325565,
-            "linha_planilha": 78
+            "linha_planilha": 77
           },
           {
             "competencia": "2024-12-01",
@@ -27488,7 +27607,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 0.9794946569971315,
-            "linha_planilha": 79
+            "linha_planilha": 78
           },
           {
             "competencia": "2025-01-01",
@@ -27543,7 +27662,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.053382784024968,
-            "linha_planilha": 80
+            "linha_planilha": 79
           },
           {
             "competencia": "2025-02-01",
@@ -27598,7 +27717,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.1314576142205675,
-            "linha_planilha": 81
+            "linha_planilha": 80
           },
           {
             "competencia": "2025-03-01",
@@ -27653,7 +27772,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.2012918196366367,
-            "linha_planilha": 82
+            "linha_planilha": 81
           },
           {
             "competencia": "2025-04-01",
@@ -27708,7 +27827,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.288858210816034,
-            "linha_planilha": 83
+            "linha_planilha": 82
           },
           {
             "competencia": "2025-05-01",
@@ -27763,7 +27882,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.378441247458321,
-            "linha_planilha": 84
+            "linha_planilha": 83
           },
           {
             "competencia": "2025-06-01",
@@ -27818,7 +27937,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.503874212336105,
-            "linha_planilha": 85
+            "linha_planilha": 84
           },
           {
             "competencia": "2025-07-01",
@@ -27873,7 +27992,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.623571877479395,
-            "linha_planilha": 86
+            "linha_planilha": 85
           },
           {
             "competencia": "2025-08-01",
@@ -27928,7 +28047,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.6178045292417391,
-            "linha_planilha": 87
+            "linha_planilha": 86
           },
           {
             "competencia": "2025-09-01",
@@ -27983,7 +28102,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5964621743110814,
-            "linha_planilha": 88
+            "linha_planilha": 87
           },
           {
             "competencia": "2025-10-01",
@@ -28038,7 +28157,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5812135133464416,
-            "linha_planilha": 89
+            "linha_planilha": 88
           },
           {
             "competencia": "2025-11-01",
@@ -28093,7 +28212,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5584057665934115,
-            "linha_planilha": 90
+            "linha_planilha": 89
           },
           {
             "competencia": "2025-12-01",
@@ -28148,7 +28267,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.5315535896878452,
-            "linha_planilha": 91
+            "linha_planilha": 90
           },
           {
             "competencia": "2026-01-01",
@@ -28203,7 +28322,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.4908849366662082,
-            "linha_planilha": 92
+            "linha_planilha": 91
           },
           {
             "competencia": "2026-02-01",
@@ -28258,7 +28377,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.4564179673941204,
-            "linha_planilha": 93
+            "linha_planilha": 92
           },
           {
             "competencia": "2026-03-01",
@@ -28313,7 +28432,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.433229955157417,
-            "linha_planilha": 94
+            "linha_planilha": 93
           },
           {
             "competencia": "2026-04-01",
@@ -28368,7 +28487,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.4052693538755952,
-            "linha_planilha": 95
+            "linha_planilha": 94
           },
           {
             "competencia": "2026-05-01",
@@ -28423,7 +28542,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.3836957557085927,
-            "linha_planilha": 96
+            "linha_planilha": 95
           },
           {
             "competencia": "2026-06-01",
@@ -28478,7 +28597,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.3247058727694259,
-            "linha_planilha": 97
+            "linha_planilha": 96
           },
           {
             "competencia": "2026-07-01",
@@ -28533,7 +28652,7 @@ window.PEONA_DATA = {
               }
             ],
             "total": 1.2804543703147704,
-            "linha_planilha": 98
+            "linha_planilha": 97
           },
           {
             "competencia": "2026-08-01",
@@ -28544,74 +28663,119 @@ window.PEONA_DATA = {
               },
               {
                 "col": "1",
-                "valor": 0.7233411467979015
+                "valor": 0.7318483860040187
               },
               {
                 "col": "2",
-                "valor": 0.35136294527862727
+                "valor": 0.34574291758258757
               },
               {
                 "col": "3",
-                "valor": 0.12905734408087408
+                "valor": 0.1317750832737322
               },
               {
                 "col": "4",
-                "valor": 0.03925351416132283
+                "valor": 0.03323167005831176
               },
               {
                 "col": "5",
-                "valor": 0.04180280932845567
+                "valor": 0.016161148532407733
               },
               {
                 "col": "6",
-                "valor": 0.009774227031361968
+                "valor": 0.0047659436115360995
               },
               {
                 "col": "7",
-                "valor": 0.0005893119012513966
+                "valor": 0.0003146428291731005
               },
               {
                 "col": "8",
-                "valor": 7.979992271431113e-05
+                "valor": 8.16867231213623e-05
               },
               {
                 "col": "9",
-                "valor": 5.848570133146073e-05
+                "valor": 5.9868545340895885e-05
               },
               {
                 "col": "10",
-                "valor": 0.00034441224956198197
+                "valor": 0.00035255558041448693
               },
               {
                 "col": "11",
-                "valor": 0.004271389048885905
+                "valor": 0.004421318579998319
               }
             ],
-            "total": 1.2999353855022882,
+            "total": 1.2687552213206421,
+            "linha_planilha": 98
+          },
+          {
+            "competencia": "2026-09-01",
+            "proporcoes": [
+              {
+                "col": "0",
+                "valor": 0.0
+              },
+              {
+                "col": "1",
+                "valor": 0.7415991116126093
+              },
+              {
+                "col": "2",
+                "valor": 0.3288641819743557
+              },
+              {
+                "col": "3",
+                "valor": 0.12449860348961853
+              },
+              {
+                "col": "4",
+                "valor": 0.03450822822578043
+              },
+              {
+                "col": "5",
+                "valor": 0.016720817332954205
+              },
+              {
+                "col": "6",
+                "valor": 0.004028185079806203
+              },
+              {
+                "col": "7",
+                "valor": 0.0003307508283485564
+              },
+              {
+                "col": "8",
+                "valor": 2.8247396427514187e-05
+              },
+              {
+                "col": "9",
+                "valor": 2.3591237272454743e-18
+              },
+              {
+                "col": "10",
+                "valor": 3.2765607322853814e-19
+              },
+              {
+                "col": "11",
+                "valor": 0.0038178092012474364
+              }
+            ],
+            "total": 1.254395935141148,
             "linha_planilha": 99
           }
         ]
       },
       "peona_serie": [
         {
-          "competencia": "2024-08-01",
-          "total_avisado": 3289049.6459494587,
-          "media_nm": 2883208.7559592687,
-          "fator_peona": 0.6950505764576997,
-          "peona": 2003975.907877377,
-          "variacao_r": null,
-          "variacao_pct": null,
-          "linha_planilha": 104
-        },
-        {
           "competencia": "2024-09-01",
           "total_avisado": 2685136.728261246,
           "media_nm": 2898708.174147706,
           "fator_peona": 0.7696223949280738,
           "peona": 2230910.7271851418,
-          "variacao_r": 226934.81930776476,
-          "variacao_pct": 0.113242289199043,
-          "linha_planilha": 105
+          "variacao_r": null,
+          "variacao_pct": null,
+          "linha_planilha": 104
         },
         {
           "competencia": "2024-10-01",
@@ -28621,7 +28785,7 @@ window.PEONA_DATA = {
           "peona": 2442676.066787135,
           "variacao_r": 211765.3396019931,
           "variacao_pct": 0.09492326923775596,
-          "linha_planilha": 106
+          "linha_planilha": 105
         },
         {
           "competencia": "2024-11-01",
@@ -28631,7 +28795,7 @@ window.PEONA_DATA = {
           "peona": 2693138.771975739,
           "variacao_r": 250462.70518860407,
           "variacao_pct": 0.10253619323254726,
-          "linha_planilha": 107
+          "linha_planilha": 106
         },
         {
           "competencia": "2024-12-01",
@@ -28641,7 +28805,7 @@ window.PEONA_DATA = {
           "peona": 2884898.464006305,
           "variacao_r": 191759.69203056628,
           "variacao_pct": 0.07120304903185048,
-          "linha_planilha": 108
+          "linha_planilha": 107
         },
         {
           "competencia": "2025-01-01",
@@ -28651,7 +28815,7 @@ window.PEONA_DATA = {
           "peona": 3051644.1758716307,
           "variacao_r": 166745.71186532546,
           "variacao_pct": 0.05779950800547873,
-          "linha_planilha": 109
+          "linha_planilha": 108
         },
         {
           "competencia": "2025-02-01",
@@ -28661,7 +28825,7 @@ window.PEONA_DATA = {
           "peona": 3273853.1101579596,
           "variacao_r": 222208.93428632896,
           "variacao_pct": 0.07281613500134232,
-          "linha_planilha": 110
+          "linha_planilha": 109
         },
         {
           "competencia": "2025-03-01",
@@ -28671,7 +28835,7 @@ window.PEONA_DATA = {
           "peona": 3351006.6713199536,
           "variacao_r": 77153.561161994,
           "variacao_pct": 0.023566592197617364,
-          "linha_planilha": 111
+          "linha_planilha": 110
         },
         {
           "competencia": "2025-04-01",
@@ -28681,7 +28845,7 @@ window.PEONA_DATA = {
           "peona": 3432843.086278956,
           "variacao_r": 81836.41495900229,
           "variacao_pct": 0.02442144196829288,
-          "linha_planilha": 112
+          "linha_planilha": 111
         },
         {
           "competencia": "2025-05-01",
@@ -28691,7 +28855,7 @@ window.PEONA_DATA = {
           "peona": 3526508.252791287,
           "variacao_r": 93665.166512331,
           "variacao_pct": 0.02728501249786497,
-          "linha_planilha": 113
+          "linha_planilha": 112
         },
         {
           "competencia": "2025-06-01",
@@ -28701,7 +28865,7 @@ window.PEONA_DATA = {
           "peona": 3823049.9909421788,
           "variacao_r": 296541.73815089185,
           "variacao_pct": 0.08408933621980741,
-          "linha_planilha": 114
+          "linha_planilha": 113
         },
         {
           "competencia": "2025-07-01",
@@ -28711,7 +28875,7 @@ window.PEONA_DATA = {
           "peona": 4060197.277662377,
           "variacao_r": 237147.2867201981,
           "variacao_pct": 0.062030914396113745,
-          "linha_planilha": 115
+          "linha_planilha": 114
         },
         {
           "competencia": "2025-08-01",
@@ -28721,7 +28885,7 @@ window.PEONA_DATA = {
           "peona": 3904378.616577134,
           "variacao_r": -155818.66108524287,
           "variacao_pct": -0.038377115797425976,
-          "linha_planilha": 116
+          "linha_planilha": 115
         },
         {
           "competencia": "2025-09-01",
@@ -28731,7 +28895,7 @@ window.PEONA_DATA = {
           "peona": 3804837.4906027024,
           "variacao_r": -99541.12597443163,
           "variacao_pct": -0.02549474212152525,
-          "linha_planilha": 117
+          "linha_planilha": 116
         },
         {
           "competencia": "2025-10-01",
@@ -28741,7 +28905,7 @@ window.PEONA_DATA = {
           "peona": 3735831.7693340415,
           "variacao_r": -69005.72126866085,
           "variacao_pct": -0.018136312375782948,
-          "linha_planilha": 118
+          "linha_planilha": 117
         },
         {
           "competencia": "2025-11-01",
@@ -28751,7 +28915,7 @@ window.PEONA_DATA = {
           "peona": 3638638.6749787694,
           "variacao_r": -97193.09435527213,
           "variacao_pct": -0.026016453726072863,
-          "linha_planilha": 119
+          "linha_planilha": 118
         },
         {
           "competencia": "2025-12-01",
@@ -28761,7 +28925,7 @@ window.PEONA_DATA = {
           "peona": 3556953.9179482036,
           "variacao_r": -81684.75703056576,
           "variacao_pct": -0.022449263124770802,
-          "linha_planilha": 120
+          "linha_planilha": 119
         },
         {
           "competencia": "2026-01-01",
@@ -28771,7 +28935,7 @@ window.PEONA_DATA = {
           "peona": 3473335.4619162106,
           "variacao_r": -83618.45603199303,
           "variacao_pct": -0.023508445136176448,
-          "linha_planilha": 121
+          "linha_planilha": 120
         },
         {
           "competencia": "2026-02-01",
@@ -28781,7 +28945,7 @@ window.PEONA_DATA = {
           "peona": 3295341.3238010313,
           "variacao_r": -177994.13811517926,
           "variacao_pct": -0.051245881679675476,
-          "linha_planilha": 122
+          "linha_planilha": 121
         },
         {
           "competencia": "2026-03-01",
@@ -28791,7 +28955,7 @@ window.PEONA_DATA = {
           "peona": 3250824.5694001303,
           "variacao_r": -44516.75440090103,
           "variacao_pct": -0.013508996497380354,
-          "linha_planilha": 123
+          "linha_planilha": 122
         },
         {
           "competencia": "2026-04-01",
@@ -28801,7 +28965,7 @@ window.PEONA_DATA = {
           "peona": 3274289.358900548,
           "variacao_r": 23464.789500417653,
           "variacao_pct": 0.007218103899327755,
-          "linha_planilha": 124
+          "linha_planilha": 123
         },
         {
           "competencia": "2026-05-01",
@@ -28811,7 +28975,7 @@ window.PEONA_DATA = {
           "peona": 3269970.99047834,
           "variacao_r": -4318.368422207888,
           "variacao_pct": -0.0013188719593365539,
-          "linha_planilha": 125
+          "linha_planilha": 124
         },
         {
           "competencia": "2026-06-01",
@@ -28821,7 +28985,7 @@ window.PEONA_DATA = {
           "peona": 3055310.7624665634,
           "variacao_r": -214660.2280117767,
           "variacao_pct": -0.06564591203923054,
-          "linha_planilha": 126
+          "linha_planilha": 125
         },
         {
           "competencia": "2026-07-01",
@@ -28831,270 +28995,280 @@ window.PEONA_DATA = {
           "peona": 2889839.159999999,
           "variacao_r": -165471.60246656416,
           "variacao_pct": -0.054158681499546835,
-          "linha_planilha": 127
+          "linha_planilha": 126
         },
         {
           "competencia": "2026-08-01",
-          "total_avisado": 3349129.659999711,
-          "media_nm": 2349292.1666666414,
-          "fator_peona": 1.2999353855022882,
-          "peona": 3053928.018333306,
-          "variacao_r": 164088.85833330685,
-          "variacao_pct": 0.05678131177837131,
+          "total_avisado": 2697962.0899998946,
+          "media_nm": 2295028.2024999904,
+          "fator_peona": 1.2687552213206421,
+          "peona": 2911829.014999991,
+          "variacao_r": 21989.8549999916,
+          "variacao_pct": 0.007609369858491144,
+          "linha_planilha": 127
+        },
+        {
+          "competencia": "2026-09-01",
+          "total_avisado": 2541348.2000000924,
+          "media_nm": 2313133.5366666648,
+          "fator_peona": 1.254395935141148,
+          "peona": 2901585.305833332,
+          "variacao_r": -10243.709166659042,
+          "variacao_pct": -0.0035179638343768582,
           "linha_planilha": 128
         }
       ],
       "runoff_aux": [
         {
-          "competencia": "2023-09-01",
-          "runoff_puro": 1547111.1333693874,
-          "avisado_mes": 2499143.71,
-          "ocorrido_mes": 2413746.999539286,
-          "linha_planilha": 6
-        },
-        {
           "competencia": "2023-10-01",
           "runoff_puro": 1572834.645185579,
           "avisado_mes": 2455577.88,
           "ocorrido_mes": 2480223.002335402,
-          "linha_planilha": 7
+          "linha_planilha": 6
         },
         {
           "competencia": "2023-11-01",
           "runoff_puro": 1642162.8570527483,
           "avisado_mes": 2453520.0000000005,
           "ocorrido_mes": 2522785.858830549,
-          "linha_planilha": 8
+          "linha_planilha": 7
         },
         {
           "competencia": "2023-12-01",
           "runoff_puro": 1036613.7405372163,
           "avisado_mes": 2453500.1400000006,
           "ocorrido_mes": 1847951.2408340492,
-          "linha_planilha": 9
+          "linha_planilha": 8
         },
         {
           "competencia": "2024-01-01",
           "runoff_puro": 1848839.8295675225,
           "avisado_mes": 2293145.0480561596,
           "ocorrido_mes": 3105502.4592098184,
-          "linha_planilha": 10
+          "linha_planilha": 9
         },
         {
           "competencia": "2024-02-01",
           "runoff_puro": 1864069.4233981925,
           "avisado_mes": 2917516.444795005,
           "ocorrido_mes": 2932770.505388486,
-          "linha_planilha": 11
+          "linha_planilha": 10
         },
         {
           "competencia": "2024-03-01",
           "runoff_puro": 1869466.88879125,
           "avisado_mes": 3116686.7269403827,
           "ocorrido_mes": 3123194.8871597666,
-          "linha_planilha": 12
+          "linha_planilha": 11
         },
         {
           "competencia": "2024-04-01",
           "runoff_puro": 2023067.5889421168,
           "avisado_mes": 3250382.756768446,
           "ocorrido_mes": 3406038.3447651565,
-          "linha_planilha": 13
+          "linha_planilha": 12
         },
         {
           "competencia": "2024-05-01",
           "runoff_puro": 2174790.3211547183,
           "avisado_mes": 3249086.5233386336,
           "ocorrido_mes": 3405598.621987996,
-          "linha_planilha": 14
+          "linha_planilha": 13
         },
         {
           "competencia": "2024-06-01",
           "runoff_puro": 3136479.2025666945,
           "avisado_mes": 3196760.658581219,
           "ocorrido_mes": 4170039.171569735,
-          "linha_planilha": 15
+          "linha_planilha": 14
         },
         {
           "competencia": "2024-07-01",
           "runoff_puro": 4812496.176559128,
           "avisado_mes": 3424135.537081914,
           "ocorrido_mes": 5100310.761913286,
-          "linha_planilha": 16
+          "linha_planilha": 15
         },
         {
           "competencia": "2024-08-01",
           "runoff_puro": 4295718.538435898,
           "avisado_mes": 3289049.6459494587,
           "ocorrido_mes": 2765578.7529753423,
-          "linha_planilha": 17
+          "linha_planilha": 16
         },
         {
           "competencia": "2024-09-01",
           "runoff_puro": 4335325.369542062,
           "avisado_mes": 2685136.728261246,
           "ocorrido_mes": 2719033.1993674096,
-          "linha_planilha": 18
+          "linha_planilha": 17
         },
         {
           "competencia": "2024-10-01",
           "runoff_puro": 4577983.8258953355,
           "avisado_mes": 2591489.0048920605,
           "ocorrido_mes": 2834637.161245331,
-          "linha_planilha": 19
+          "linha_planilha": 18
         },
         {
           "competencia": "2024-11-01",
           "runoff_puro": 3918502.040195393,
           "avisado_mes": 2864778.41006378,
           "ocorrido_mes": 2205296.624363838,
-          "linha_planilha": 20
+          "linha_planilha": 19
         },
         {
           "competencia": "2024-12-01",
           "runoff_puro": 3253420.6783333137,
           "avisado_mes": 2465344.9283026983,
           "ocorrido_mes": 1800263.5664406188,
-          "linha_planilha": 21
+          "linha_planilha": 20
         },
         {
           "competencia": "2025-01-01",
           "runoff_puro": 4052771.025154989,
           "avisado_mes": 1713567.1380515255,
           "ocorrido_mes": 2513340.154873201,
-          "linha_planilha": 22
+          "linha_planilha": 21
         },
         {
           "competencia": "2025-02-01",
           "runoff_puro": 3097828.690239675,
           "avisado_mes": 2875375.165069185,
           "ocorrido_mes": 1920478.3301538709,
-          "linha_planilha": 23
+          "linha_planilha": 22
         },
         {
           "competencia": "2025-03-01",
           "runoff_puro": 3231428.0779817444,
           "avisado_mes": 1868924.8743043588,
           "ocorrido_mes": 2002161.8320464275,
-          "linha_planilha": 24
+          "linha_planilha": 23
         },
         {
           "competencia": "2025-04-01",
           "runoff_puro": 3752076.651603661,
           "avisado_mes": 1738065.009564203,
           "ocorrido_mes": 2259032.08318612,
-          "linha_planilha": 25
+          "linha_planilha": 24
         },
         {
           "competencia": "2025-05-01",
           "runoff_puro": 4563197.5644871835,
           "avisado_mes": 1987338.6122544894,
           "ocorrido_mes": 2798459.525138013,
-          "linha_planilha": 26
+          "linha_planilha": 25
         },
         {
           "competencia": "2025-06-01",
           "runoff_puro": 3756723.6144602997,
           "avisado_mes": 3002404.7339025764,
           "ocorrido_mes": 2187451.133875691,
-          "linha_planilha": 27
+          "linha_planilha": 26
         },
         {
           "competencia": "2025-07-01",
           "runoff_puro": 3168430.990000001,
           "avisado_mes": 2927894.60319229,
           "ocorrido_mes": 2339601.9787319917,
-          "linha_planilha": 28
+          "linha_planilha": 27
         },
         {
           "competencia": "2025-08-01",
           "runoff_puro": 3111042.79,
           "avisado_mes": 2240252.08,
           "ocorrido_mes": 2182863.8799999985,
-          "linha_planilha": 29
+          "linha_planilha": 28
         },
         {
           "competencia": "2025-09-01",
-          "runoff_puro": 3170666.9299999955,
+          "runoff_puro": 3170789.4499999955,
           "avisado_mes": 2324084.1900000004,
-          "ocorrido_mes": 2383708.3299999954,
-          "linha_planilha": 30
+          "ocorrido_mes": 2383830.8499999954,
+          "linha_planilha": 29
         },
         {
           "competencia": "2025-10-01",
-          "runoff_puro": 3151478.339999994,
+          "runoff_puro": 3151600.859999994,
           "avisado_mes": 2343600.7299999963,
           "ocorrido_mes": 2324412.1399999945,
-          "linha_planilha": 31
+          "linha_planilha": 30
         },
         {
           "competencia": "2025-11-01",
-          "runoff_puro": 2719522.2799999993,
+          "runoff_puro": 2719644.7999999993,
           "avisado_mes": 2531309.2099999934,
           "ocorrido_mes": 2099353.1499999994,
-          "linha_planilha": 32
+          "linha_planilha": 31
         },
         {
           "competencia": "2025-12-01",
-          "runoff_puro": 2163000.859999999,
+          "runoff_puro": 2163123.379999999,
           "avisado_mes": 2316562.3699999996,
           "ocorrido_mes": 1760040.9499999993,
-          "linha_planilha": 33
+          "linha_planilha": 32
         },
         {
           "competencia": "2026-01-01",
-          "runoff_puro": 2534094.6300000013,
+          "runoff_puro": 2533081.6900000013,
           "avisado_mes": 1800756.0399999989,
-          "ocorrido_mes": 2171849.810000001,
-          "linha_planilha": 34
+          "ocorrido_mes": 2170714.350000001,
+          "linha_planilha": 33
         },
         {
           "competencia": "2026-02-01",
-          "runoff_puro": 2515073.3499999973,
+          "runoff_puro": 2490268.169999997,
           "avisado_mes": 2070419.770000001,
-          "ocorrido_mes": 2051398.4899999963,
-          "linha_planilha": 35
+          "ocorrido_mes": 2027606.2499999963,
+          "linha_planilha": 34
         },
         {
           "competencia": "2026-03-01",
-          "runoff_puro": 3320185.220000005,
+          "runoff_puro": 3149250.7700000056,
           "avisado_mes": 1935481.4399999955,
-          "ocorrido_mes": 2740593.310000003,
-          "linha_planilha": 36
+          "ocorrido_mes": 2594464.0400000038,
+          "linha_planilha": 35
         },
         {
           "competencia": "2026-04-01",
-          "runoff_puro": 3144031.640000004,
+          "runoff_puro": 2931156.770000003,
           "avisado_mes": 2479996.680000003,
-          "ocorrido_mes": 2303843.1000000024,
-          "linha_planilha": 37
+          "ocorrido_mes": 2261902.6800000006,
+          "linha_planilha": 36
         },
         {
           "competencia": "2026-05-01",
-          "runoff_puro": 3077570.9599999986,
+          "runoff_puro": 2885111.160000002,
           "avisado_mes": 2385821.8400000012,
-          "ocorrido_mes": 2319361.1599999964,
-          "linha_planilha": 38
+          "ocorrido_mes": 2339776.230000001,
+          "linha_planilha": 37
         },
         {
           "competencia": "2026-06-01",
-          "runoff_puro": 3218719.199999991,
+          "runoff_puro": 2907000.030000019,
           "avisado_mes": 2320703.8200000008,
-          "ocorrido_mes": 2461852.059999993,
-          "linha_planilha": 39
+          "ocorrido_mes": 2342592.6900000176,
+          "linha_planilha": 38
         },
         {
           "competencia": "2026-07-01",
-          "runoff_puro": 3259238.4699997096,
+          "runoff_puro": 3071674.2599998773,
           "avisado_mes": 2333640.2499999995,
-          "ocorrido_mes": 2374159.5199997183,
-          "linha_planilha": 40
+          "ocorrido_mes": 2498314.4799998575,
+          "linha_planilha": 39
         },
         {
           "competencia": "2026-08-01",
+          "runoff_puro": 2426983.730000093,
+          "avisado_mes": 2697962.0899998946,
+          "ocorrido_mes": 2053271.5600001109,
+          "linha_planilha": 40
+        },
+        {
+          "competencia": "2026-09-01",
           "runoff_puro": 0.0,
-          "avisado_mes": 3349129.659999711,
-          "ocorrido_mes": 89891.19000000117,
+          "avisado_mes": 2541348.2000000924,
+          "ocorrido_mes": 114364.4699999995,
           "linha_planilha": 41
         }
       ],
@@ -29229,13 +29403,6 @@ window.PEONA_DATA = {
   },
   "resultado_aba": [
     {
-      "competencia": "2025-08-01",
-      "competencia_label": "Aug/2025",
-      "peona_mh": 285118609.9884561,
-      "peona_od": 3626440.9898738516,
-      "peona_total": 288745050.9783299
-    },
-    {
       "competencia": "2025-09-01",
       "competencia_label": "Sep/2025",
       "peona_mh": 289276665.4276232,
@@ -29315,20 +29482,27 @@ window.PEONA_DATA = {
     {
       "competencia": "2026-08-01",
       "competencia_label": "Aug/2026",
-      "peona_mh": 294295692.5200001,
-      "peona_od": 3203388.1583332834,
-      "peona_total": 297499080.6783334
+      "peona_mh": 296458183.72166675,
+      "peona_od": 2923454.298333318,
+      "peona_total": 299381638.0200001
+    },
+    {
+      "competencia": "2026-09-01",
+      "competencia_label": "Sep/2026",
+      "peona_mh": 299883582.9183334,
+      "peona_od": 3046222.5099999993,
+      "peona_total": 302929805.4283334
     }
   ],
   "comparativo_ipasgo_rodarte": {
-    "ipasgo_mh": 294295692.5200001,
-    "ipasgo_od": 3203388.1583332834,
-    "ipasgo_total": 297499080.6783334,
+    "ipasgo_mh": 299883582.9183334,
+    "ipasgo_od": 3046222.5099999993,
+    "ipasgo_total": 302929805.4283334,
     "rodarte_mh": 279841255.21,
     "rodarte_od": 2884233.87,
     "rodarte_total": 282725479.08,
-    "var_mh": 0.05165227442663212,
-    "var_od": 0.11065478831412623,
-    "var_total": 0.052254227834036326
+    "var_mh": 0.07162034666151418,
+    "var_od": 0.05616348995998699,
+    "var_total": 0.07146270090010676
   }
 };
